@@ -1,0 +1,58 @@
+/**
+  Global EtherealCSS Config
+*/
+
+// Theme colors
+$default: #435B6E !default;
+$primary: #3CBCE2 !default;
+$info: #00C4AF !default;
+$success: #9AC966 !default;
+$warning: #FAC759 !default;
+$danger: #E75C66 !default;
+$joy: #F2664C !default;
+$muted: #C9CED1 !default;
+// Font settings
+$global-font-size: 20px !default;
+$header-font: 'Noto Sans CJK TC' !default;
+$body-font: 'Helvetica Neue' !default;
+$font-color: $primary !default;
+// Responsive breakpoints
+$large-screen: 1200px !default;
+$medium-screen: 992px !default;
+$small-screen: 768px !default;
+$xsmall-screen: 480px !default;
+
+/*
+  Add transform: translate() with browser prefixes.
+  Same syntax for translate() and translate3d()
+  To get 3D add a $z value and set 'true'
+  @param string | boolean
+  @default 0 | false
+*/
+
+@mixin translate($x, $y, $z: 0, $transform3d: false) {
+    @if $transform3d {
+        -webkit-transform: translate3d($x, $y, $z);
+        -ms-transform: translate3d($x, $y, $z);
+        transform: translate3d($x, $y, $z);
+    }
+    @else {
+        -webkit-transform: translate($x, $y);
+        -ms-transform: translate($x, $y);
+        transform: translate($x, $y);
+    }
+}
+
+
+/*
+  Add global transition styles to selector
+  @param string
+  @default all | 235ms | ease-in-out | 0
+*/
+
+@mixin transition($name:all, $duration:235ms, $animation:ease-in-out, $delay:0s) {
+    -webkit-transition: $name $duration $animation $delay;
+    -moz-transition: $name $duration $animation $delay;
+    -o-transition: $name $duration $animation $delay;
+    transition: $name $duration $animation $delay;
+}
