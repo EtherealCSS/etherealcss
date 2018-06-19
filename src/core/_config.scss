@@ -3,19 +3,19 @@
 */
 
 // Theme colors
-$default: #435B6E !default;
-$primary: #3CBCE2 !default;
-$info: #00C4AF !default;
-$success: #9AC966 !default;
-$warning: #FAC759 !default;
-$danger: #E75C66 !default;
-$joy: #F2664C !default;
-$muted: #C9CED1 !default;
+$default: #2f3944 !default;
+$success: #597a56 !default;
+$info: #5c9cb9 !default;
+$primary: #7896ab !default;
+$joy: #b45c48 !default;
+$danger: #774f4b !default;
+$warning: #d8ca83 !default;
+$muted: #a5afa3 !default;
 // Font settings
 $global-font-size: 20px !default;
 $header-font: 'Noto Sans CJK TC' !default;
 $body-font: 'Helvetica Neue' !default;
-$font-color: $primary !default;
+$font-color: $default !default;
 // Responsive breakpoints
 $large-screen: 1200px !default;
 $medium-screen: 992px !default;
