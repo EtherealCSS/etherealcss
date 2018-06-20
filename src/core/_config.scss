@@ -2,6 +2,7 @@
   Global EtherealCSS Config
 */
 
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
 // Theme colors
 $default: #2f3944 !default;
 $success: #597a56 !default;
@@ -14,14 +15,13 @@ $muted: #a5afa3 !default;
 // Font settings
 $global-font-size: 20px !default;
 $header-font: 'Noto Sans CJK TC' !default;
-$body-font: 'Helvetica Neue' !default;
+$body-font: 'Noto Sans CJK TC' !default;
 $font-color: $default !default;
 // Responsive breakpoints
 $large-screen: 1200px !default;
 $medium-screen: 992px !default;
 $small-screen: 768px !default;
 $xsmall-screen: 480px !default;
-
 /*
   Add transform: translate() with browser prefixes.
   Same syntax for translate() and translate3d()
@@ -31,18 +31,17 @@ $xsmall-screen: 480px !default;
 */
 
 @mixin translate($x, $y, $z: 0, $transform3d: false) {
-    @if $transform3d {
-        -webkit-transform: translate3d($x, $y, $z);
-        -ms-transform: translate3d($x, $y, $z);
-        transform: translate3d($x, $y, $z);
-    }
-    @else {
-        -webkit-transform: translate($x, $y);
-        -ms-transform: translate($x, $y);
-        transform: translate($x, $y);
-    }
+  @if $transform3d {
+    -webkit-transform: translate3d($x, $y, $z);
+    -ms-transform: translate3d($x, $y, $z);
+    transform: translate3d($x, $y, $z);
+  }
+  @else {
+    -webkit-transform: translate($x, $y);
+    -ms-transform: translate($x, $y);
+    transform: translate($x, $y);
+  }
 }
-
 
 /*
   Add global transition styles to selector
@@ -51,8 +50,8 @@ $xsmall-screen: 480px !default;
 */
 
 @mixin transition($name:all, $duration:235ms, $animation:ease-in-out, $delay:0s) {
-    -webkit-transition: $name $duration $animation $delay;
-    -moz-transition: $name $duration $animation $delay;
-    -o-transition: $name $duration $animation $delay;
-    transition: $name $duration $animation $delay;
+  -webkit-transition: $name $duration $animation $delay;
+  -moz-transition: $name $duration $animation $delay;
+  -o-transition: $name $duration $animation $delay;
+  transition: $name $duration $animation $delay;
 }

@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 html {
   line-height: 1.15;
@@ -294,7 +295,7 @@ html {
 }
 html {
   font-size: 20px;
-  font-family: "Helvetica Neue",sans-serif;
+  font-family: "Noto Sans CJK TC",sans-serif;
   color: #2f3944
 }
 a,
@@ -310,7 +311,7 @@ textarea,
 th,
 thead,
 tr {
-  font-family: "Helvetica Neue",sans-serif
+  font-family: "Noto Sans CJK TC",sans-serif
 }
 h1,
 h2,
