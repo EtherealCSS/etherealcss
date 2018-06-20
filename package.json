@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node node_modules/gulp/bin/gulp.js",
-    "dev": "http-server ./docs  -c-1 -p 4000",
+    "dev": "http-server ./docs -o -U -c-1 -p 4000",
     "build": "node node_modules/gulp/bin/gulp.js build",
     "postinstall": "gulp postinstall"
   },
