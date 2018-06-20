@@ -1,4 +1,51 @@
-@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+.text-default {
+  color: #2f3944
+}
+.background-default {
+  background-color: #acb8c6
+}
+.text-primary {
+  color: #7896ab
+}
+.background-primary {
+  background-color: #fff
+}
+.text-success {
+  color: #597a56
+}
+.background-success {
+  background-color: #aac1a8
+}
+.text-info {
+  color: #5c9cb9
+}
+.background-info {
+  background-color: #c7dde7
+}
+.text-joy {
+  color: #b45c48
+}
+.background-joy {
+  background-color: #e1bcb4
+}
+.text-warning {
+  color: #d8ca83
+}
+.background-warning {
+  background-color: #fdfcf7
+}
+.text-danger {
+  color: #774f4b
+}
+.background-danger {
+  background-color: #deccca
+}
+.text-muted {
+  color: #a5afa3
+}
+.background-muted {
+  background-color: #fff
+}
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 html {
   line-height: 1.15;
@@ -295,7 +342,7 @@ html {
 }
 html {
   font-size: 20px;
-  font-family: "Noto Sans CJK TC",sans-serif;
+  font-family: Georgia,"Microsoft YaHei UI","Microsoft Yahei",sans-serif;
   color: #2f3944
 }
 a,
@@ -311,7 +358,7 @@ textarea,
 th,
 thead,
 tr {
-  font-family: "Noto Sans CJK TC",sans-serif
+  font-family: Georgia,"Microsoft YaHei UI","Microsoft Yahei",sans-serif
 }
 h1,
 h2,
@@ -319,7 +366,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Noto Sans CJK TC",sans-serif;
+  font-family: Georgia,"Microsoft YaHei UI","Microsoft Yahei",sans-serif;
   font-weight: 400
 }
 h1 {
@@ -348,4 +395,7 @@ h6 {
 }
 .text-right {
   text-align: right
+}
+.font-light {
+  font-family: Georgia,"Microsoft JhengHei UI","Microsoft JhengHei",sans-serif
 }

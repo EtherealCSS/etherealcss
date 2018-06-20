@@ -2,20 +2,69 @@
   Global EtherealCSS Config
 */
 
-@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
 // Theme colors
 $default: #2f3944 !default;
+$primary: #7896ab !default;
 $success: #597a56 !default;
 $info: #5c9cb9 !default;
-$primary: #7896ab !default;
 $joy: #b45c48 !default;
-$danger: #774f4b !default;
 $warning: #d8ca83 !default;
+$danger: #774f4b !default;
 $muted: #a5afa3 !default;
+// light
+$default-light: lighten($default, 50%) !default;
+$primary-light: lighten($primary, 50%) !default;
+$success-light: lighten($success, 30%) !default;
+$info-light: lighten($info, 30%) !default;
+$joy-light: lighten($joy, 30%) !default;
+$warning-light: lighten($warning, 30%) !default;
+$danger-light: lighten($danger, 45%) !default;
+$muted-light: lighten($muted, 35%) !default;
+// text
+$default-text: #FFF !default;
+$primary-text: $default !default;
+$success-text: $default !default;
+$info-text: $info !default;
+$joy-text: $joy !default;
+$warning-text: $default !default;
+$danger-text: $default !default;
+$muted-text: $default !default;
+// Map to set your color names
+$colors:(default, $default, $default-light, $default-text),
+(primary, $primary, $primary-light, $primary-text),
+(success, $success, $success-light, $success-text),
+(info, $info, $info-light, $info-text),
+(joy, $joy, $joy-light, $joy-text),
+(warning, $warning, $warning-light, $warning-text),
+(danger, $danger, $danger-light, $danger-text),
+(muted, $muted, $muted-light, $muted-text);
+/**
+  This Loop will generate the various .text- and .background- classes
+  based on the $colors map above.
+*/
+
+@each $colorName,
+$color,
+$color-light in $colors {
+  .text-#{$colorName} {
+    color: $color;
+  }
+  .background-#{$colorName} {
+    background-color: $color-light;
+  }
+}
+
 // Font settings
 $global-font-size: 20px !default;
-$header-font: 'Noto Sans CJK TC' !default;
-$body-font: 'Noto Sans CJK TC' !default;
+$header-font:Georgia,
+'Microsoft YaHei UI',
+'Microsoft Yahei' !default;
+$body-font: Georgia,
+'Microsoft YaHei UI',
+'Microsoft Yahei' !default;
+$light-font:Georgia,
+'Microsoft JhengHei UI',
+'Microsoft JhengHei' !default;
 $font-color: $default !default;
 // Responsive breakpoints
 $large-screen: 1200px !default;
