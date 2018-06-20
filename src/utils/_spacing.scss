@@ -1,0 +1,32 @@
+$numberOfSize: 4;
+/**
+  Create space by class name
+  m?-? => mt-2
+  p?-? => pt-2
+*/
+
+@mixin create-space-classes($side, $property) {
+    @for $i from 1 through $numberOfSize {
+        .#{$side}t-#{$i} {
+            #{$property}-top: #{'.'}#{$i}rem;
+        }
+        .#{$side}r-#{$i} {
+            #{$property}-top:#{'.'}#{$i}rem;
+        }
+        .#{$side}b-#{$i} {
+            #{$property}-top: #{'.'}#{$i}rem;
+        }
+        .#{$side}l-#{$i} {
+            #{$property}-top: #{'.'}#{$i}rem;
+        }
+        .#{$side}-#{$i} {
+            #{$property}: #{'.'}#{$i}rem;
+        }
+    }
+    .#{$side}-auto {
+        #{$property}: auto;
+    }
+}
+
+@include create-space-classes(m, 'margin');
+@include create-space-classes(p, 'padding');
