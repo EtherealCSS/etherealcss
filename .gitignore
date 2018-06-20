@@ -1,5 +1,6 @@
 /node_modules
 npm-debug.log
+yarn-error.log
 /tests/node_modules
 .DS_Store
 /public
