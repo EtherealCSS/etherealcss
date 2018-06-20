@@ -1,0 +1,11 @@
+@media only screen and (max-width: 480px) {
+    .title {
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .menu {
+        text-align: center;
+    }
+}

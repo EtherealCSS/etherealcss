@@ -1008,7 +1008,8 @@ table tbody tr td {
   }
 }
 table.table-hover tbody tr:hover {
-  color: #a5afa3
+  color: #a5afa3;
+  cursor: pointer
 }
 table.table-alternating tbody tr:nth-of-type(even) {
   color: #63788f
