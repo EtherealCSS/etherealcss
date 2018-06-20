@@ -250,15 +250,38 @@ html {
   position: relative;
   margin: 0 auto
 }
+@media only screen and (max-width:992px) {
+  .container {
+    width: 85%
+  }
+}
+@media only screen and (max-width:480px) {
+  .container {
+    width: 90%
+  }
+}
 .section {
   margin-top: 1rem;
   margin-bottom: 2rem;
   word-wrap: break-word
 }
 .ethereal {
+  border: 1px solid #fff;
+  background-color: #fff;
+  padding: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   -webkit-box-shadow: -1px 5px 35px -9px rgba(0,0,0,.2);
   -moz-box-shadow: -1px 5px 35px -9px rgba(0,0,0,.2);
   box-shadow: -1px 5px 35px -9px rgba(0,0,0,.2)
+}
+@media only screen and (max-width:480px) {
+  .ethereal {
+    padding: 1rem;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0
+  }
 }
 .row {
   margin-right: auto;

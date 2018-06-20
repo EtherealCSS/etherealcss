@@ -2,6 +2,12 @@
   Global EtherealCSS Config
 */
 
+/**
+  Designed
+  https://colorhunt.co/palette/125366
+  https://colorhunt.co/palette/125367
+*/
+
 // Theme colors
 $default: #2f3944 !default;
 $primary: #7896ab !default;
@@ -20,6 +26,11 @@ $joy-light: lighten($joy, 30%) !default;
 $warning-light: lighten($warning, 30%) !default;
 $danger-light: lighten($danger, 45%) !default;
 $muted-light: lighten($muted, 35%) !default;
+// dark
+$white-dark: rgba(black, 0.03) !default;
+$light-dark: rgba(black, 0.7) !default;
+$white: rgba(white, 1) !default;
+$main-background: rgba(white, 1) !default;
 // text
 $default-text: #FFF !default;
 $primary-text: $default !default;
@@ -71,6 +82,45 @@ $large-screen: 1200px !default;
 $medium-screen: 992px !default;
 $small-screen: 768px !default;
 $xsmall-screen: 480px !default;
+/**
+  Mixin for setting responsive breakpoints
+  @param string | integer
+  @default null
+*/
+
+@mixin resp($max:null, $min:null) {
+  @if $max==large or $max==lg {
+    $max: $large-screen;
+  }
+  @if $max==medium or $max==md {
+    $max: $medium-screen;
+  }
+  @if $max==small or $max==sm {
+    $max: $small-screen;
+  }
+  @if $max==xsmall or $max==xs {
+    $max: $xsmall-screen;
+  }
+  @if ($min !=null and $max !=null) {
+    @media only screen and (max-width: $max) and (min-width: $min) {
+      @content;
+    }
+  }
+  @else if($max !=null and $min==null) {
+    @media only screen and (max-width: $max) {
+      @content;
+    }
+  }
+  @else if($min !=null and $max==null) {
+    @media only screen and (min-width: $min) {
+      @content;
+    }
+  }
+  @else {
+    @error "no matching size found";
+  }
+}
+
 /*
   Add transform: translate() with browser prefixes.
   Same syntax for translate() and translate3d()
@@ -92,7 +142,7 @@ $xsmall-screen: 480px !default;
   }
 }
 
-/*
+/**
   Add global transition styles to selector
   @param string
   @default all | 235ms | ease-in-out | 0
