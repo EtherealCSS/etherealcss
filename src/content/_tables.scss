@@ -25,6 +25,7 @@ table {
     }
     &.table-hover tbody tr:hover {
         color: $muted;
+        cursor: pointer;
     }
     &.table-alternating tbody tr:nth-of-type(even) {
         color: lighten($default, 25%);
