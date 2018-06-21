@@ -9,39 +9,39 @@
 */
 
 // Theme colors
-$default: #2f3944 !default;
-$primary: #7896ab !default;
-$success: #597a56 !default;
-$info: #5c9cb9 !default;
-$joy: #b45c48 !default;
-$warning: #d8ca83 !default;
-$danger: #774f4b !default;
+$dark: #2f3944 !default;
+$primary: #44679f !default;
+$success: #6db193 !default;
+$info: #70a1d7 !default;
+$joy: #ff9071 !default;
+$warning: #f0e48e !default;
+$danger: #d95858 !default;
 $muted: #a5afa3 !default;
 // light
-$default-light: lighten($default, 50%) !default;
-$primary-light: lighten($primary, 50%) !default;
+$dark-light: lighten($dark, 30%) !default;
+$primary-light: lighten($primary, 30%) !default;
 $success-light: lighten($success, 30%) !default;
 $info-light: lighten($info, 30%) !default;
 $joy-light: lighten($joy, 30%) !default;
 $warning-light: lighten($warning, 30%) !default;
-$danger-light: lighten($danger, 45%) !default;
-$muted-light: lighten($muted, 35%) !default;
+$danger-light: lighten($danger, 30%) !default;
+$muted-light: lighten($muted, 30%) !default;
 // dark
 $white-dark: rgba(black, 0.03) !default;
-$light-dark: rgba(black, 0.7) !default;
+$light-dark: rgba(black, 0.75) !default;
 $white: rgba(white, 1) !default;
 $main-background: rgba(white, 1) !default;
 // text
-$default-text: #FFF !default;
-$primary-text: $default !default;
-$success-text: $default !default;
-$info-text: $info !default;
-$joy-text: $joy !default;
-$warning-text: $default !default;
-$danger-text: $default !default;
-$muted-text: $default !default;
+$dark-text: $white !default;
+$primary-text: $white !default;
+$success-text: $white !default;
+$info-text: $white !default;
+$danger-text: $white !default;
+$warning-text: $light-dark !default;
+$joy-text: $white !default;
+$muted-text: $light-dark !default;
 // Map to set your color names
-$colors:(default, $default, $default-light, $default-text),
+$colors:(dark, $dark, $dark-light, $dark-text),
 (primary, $primary, $primary-light, $primary-text),
 (success, $success, $success-light, $success-text),
 (info, $info, $info-light, $info-text),
@@ -76,7 +76,7 @@ $body-font: Georgia,
 $light-font:Georgia,
 'Microsoft JhengHei UI',
 'Microsoft JhengHei' !default;
-$font-color: $default !default;
+$font-color: $dark !default;
 // Responsive breakpoints
 $large-screen: 1200px !default;
 $medium-screen: 992px !default;
