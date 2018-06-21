@@ -2,7 +2,7 @@ img {
     max-width: 100%;
     height: auto;
     display: block;
-    border: 2px solid $default; // @include border-style();
+    border: 2px solid $dark; // @include border-style();
     &.float-left {
         float: left;
         margin: 1rem 1rem 1rem 0rem;

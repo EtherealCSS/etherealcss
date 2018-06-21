@@ -12,7 +12,7 @@ table {
     tbody tr td {
         padding: 8px;
         line-height: 1.5;
-        border-top: 1px dashed lighten($default, 60%);
+        border-top: 1px dashed lighten($dark, 60%);
     }
     @include resp(xsmall) {
         thead tr th {
@@ -27,6 +27,6 @@ table {
         cursor: pointer;
     }
     &.table-alternating tbody tr:nth-of-type(even) {
-        color: lighten($default, 25%);
+        color: lighten($dark, 25%);
     }
 }
