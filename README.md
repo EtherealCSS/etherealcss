@@ -1,14 +1,9 @@
 # etherealcss
-An Ethereal, elegant CSS Framework
+An Ethereal, elegant CSS Framework.
+
+👉 [Demo](http://robby570.tw/etherealcss/)
+
+---
 
 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧
 
-## Design
-
-[https://colorhunt.co/palette/125366](https://colorhunt.co/palette/125366)
-
-![Image](https://i.imgur.com/Vi1vl41.png)
-
-[https://colorhunt.co/palette/125367](https://colorhunt.co/palette/125367)
-
-![Image](https://i.imgur.com/zZNKWAD.png)
