@@ -1,5 +1,5 @@
 # etherealcss
-An Ethereal, elegant CSS Framework.
+An Elegant, Lightweight CSS Framework.
 
 👉 [Demo](http://robby570.tw/etherealcss/)
 
@@ -7,3 +7,8 @@ An Ethereal, elegant CSS Framework.
 
 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧
 
+---
+
+Ethereal example:
+
+![Image](https://i.imgur.com/NgJhJbd.png)
