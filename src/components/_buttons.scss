@@ -1,46 +1,47 @@
-button.btn {
+.btn {
+    display: inline-block;
     align-self: center;
-    background: transparent;
-    @include transition();
-    color: $default;
-    display: inline;
-    outline: none;
-    border: 2px solid $default;
-    border-radius: 4px; // @include border-style();
+    vertical-align: middle;
+    padding: .3rem .75rem;
+    color: $dark;
     font-size: 1rem;
-    padding: .4rem .5rem;
-    cursor: pointer; // @include shadow();
+    border-radius: .25rem;
+    border-style: solid;
+    border-width: 1px;
+    border-color: lighten($muted, 20%);
+    background-color: lighten($muted, 20%);
+    text-decoration: none;
+    outline: none;
+    white-space: nowrap;
+    user-select: none;
+    cursor: pointer;
+    @include transition();
     @include resp(520px) {
         display: inline-block;
         margin: 0 auto;
         text-align: center;
         margin-bottom: 1rem;
     }
-    &.btn-large {
-        // @include shadow(large);
-        font-size: 2rem;
-        padding: 1rem 1rem;
+    &.btn-lg {
+        font-size: 1.25rem;
+        padding: .5rem 1rem;
     }
-    &.btn-small {
-        // @include shadow(small);
-        font-size: .75rem;
+    &.btn-sm {
+        font-size: .8rem;
         padding: .5rem;
     }
     &.btn-block {
         display: block;
         width: 100%;
     }
-    &:hover {
-        // @include shadow(hover);
-    }
     &:focus {
-        border: 2px solid $muted;
-        -webkit-box-shadow: 2px 8px 4px -6px hsla(0, 0%, 0%, .3);
-        -moz-box-shadow: 2px 8px 4px -6px hsla(0, 0%, 0%, .3);
-        box-shadow: 2px 8px 4px -6px hsla(0, 0%, 0%, .3);
+        -webkit-box-shadow: 0 0 0 0.1rem darken($muted-light, 3%);
+        -moz-box-shadow: 0 0 0 0.1rem darken($muted-light, 3%);
+        box-shadow: 0 0 0 0.1rem darken($muted-light, 3%);
     }
+    &:hover,
     &:active {
-        border-color: hsla(0, 0%, 0%, .2);
+        background-color: lighten($muted, 10%);
         transition: none;
     }
     &.disabled,
@@ -48,32 +49,71 @@ button.btn {
         cursor: not-allowed;
         opacity: .5
     }
-}
-
-a.btn {
-    text-decoration: none;
-    background-image: linear-gradient(5deg, transparent 65%, $muted 80%, transparent 90%), linear-gradient(165deg, transparent 5%, $muted 15%, transparent 25%), linear-gradient(165deg, transparent 45%, $muted 55%, transparent 65%), linear-gradient(15deg, transparent 25%, $muted 35%, transparent 50%);
-    background-repeat: repeat-x;
-    background-size: 4px 3px;
-    background-position: 0 90%;
     &:visited {
         text-decoration: none;
-        color: $default;
+    }
+    &.btn-outline {
+        border-color: lighten($muted, 20%);
+        background-color: $white;
+        color: $dark;
+        &:focus {
+            -webkit-box-shadow: 0 0 0 0.1rem darken($muted-light, 3%);
+            -moz-box-shadow: 0 0 0 0.1rem darken($muted-light, 3%);
+            box-shadow: 0 0 0 0.1rem darken($muted-light, 3%);
+        }
+        &:hover,
+        &:active {
+            color: $dark;
+            background-color: lighten($muted, 20%);
+            transition: none;
+        }
     }
 }
 
+// a.btn {
+//     text-decoration: none;
+//     background-image: linear-gradient(5deg, transparent 65%, $muted 80%, transparent 90%), linear-gradient(165deg, transparent 5%, $muted 15%, transparent 25%), linear-gradient(165deg, transparent 45%, $muted 55%, transparent 65%), linear-gradient(15deg, transparent 25%, $muted 35%, transparent 50%);
+//     background-repeat: repeat-x;
+//     background-size: 4px 3px;
+//     background-position: 0 90%;
+//     &:visited {
+//         text-decoration: none;
+//         color: $dark;
+//     }
+// }
 @each $colorName,
 $color,
 $color-light,
 $color-text in $colors {
-    button.btn-#{$colorName} {
+    .btn-#{$colorName} {
         border-color: $color;
-        background-color: $color-light;
+        background-color: $color;
         color: $color-text;
-        &:hover {
-            &:active {
-                background-color: darken($color-light, 10%);
-            }
+        &:focus {
+            -webkit-box-shadow: 0 0 0 0.1rem darken($color-light, 10%);
+            -moz-box-shadow: 0 0 0 0.1rem darken($color-light, 10%);
+            box-shadow: 0 0 0 0.1rem darken($color-light, 10%);
+        }
+        &:hover,
+        &:active {
+            background-color: darken($color, 10%);
+            transition: none;
+        }
+    }
+    .btn-outline-#{$colorName} {
+        border-color: $color;
+        background-color: $white;
+        color: $color;
+        &:focus {
+            -webkit-box-shadow: 0 0 0 0.1rem darken($color-light, 10%);
+            -moz-box-shadow: 0 0 0 0.1rem darken($color-light, 10%);
+            box-shadow: 0 0 0 0.1rem darken($color-light, 10%);
+        }
+        &:hover,
+        &:active {
+            color: $color-text;
+            background-color: $color;
+            transition: none;
         }
     }
 }
