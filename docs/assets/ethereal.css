@@ -996,7 +996,6 @@ table thead tr th {
 table tbody tr td {
   padding: 8px;
   line-height: 1.5;
-  vertical-align: top;
   border-top: 1px dashed #cad2db
 }
 @media only screen and (max-width:480px) {

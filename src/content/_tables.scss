@@ -12,7 +12,6 @@ table {
     tbody tr td {
         padding: 8px;
         line-height: 1.5;
-        vertical-align: top;
         border-top: 1px dashed lighten($default, 60%);
     }
     @include resp(xsmall) {
