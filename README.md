@@ -11,7 +11,7 @@ An Elegant, Lightweight CSS Framework.
 
 ## Todo
 
-## Components
+### Components
 
 - [ ] Alerts
 - [ ] Breadcrumb
@@ -25,7 +25,7 @@ An Elegant, Lightweight CSS Framework.
 - [ ] Tooltips
 - [ ] Tabs
 
-## Content
+### Content
 
 - [x] code
 - [x] fonts
@@ -33,22 +33,18 @@ An Elegant, Lightweight CSS Framework.
 - [x] lists
 - [x] tables
 
-## Layout
+### Layout
 
 - [x] container
 - [x] flexbox
 
-## Utils
+### Utils
 
 - [ ] borders
 - [x] colors
 - [ ] display
 - [ ] position
 - [x] spacing
-
-## Ethereal example:
-
-![Image](https://i.imgur.com/NgJhJbd.png)
 
 ## Ethereal example:
 
