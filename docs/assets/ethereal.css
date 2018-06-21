@@ -1295,7 +1295,7 @@ table.table-alternating tbody tr:nth-of-type(even) {
 }
 .btn.btn-sm {
   font-size: .8rem;
-  padding: .5rem
+  padding: .3rem .6rem
 }
 .btn.btn-block {
   display: block;
