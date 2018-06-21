@@ -1,4 +1,4 @@
-$numberOfSize: 4;
+$numberOfSize: 8;
 /**
   Create space by class name
   m?-? => mt-2
@@ -11,13 +11,13 @@ $numberOfSize: 4;
             #{$property}-top: #{'.'}#{$i}rem;
         }
         .#{$side}r-#{$i} {
-            #{$property}-top:#{'.'}#{$i}rem;
+            #{$property}-right:#{'.'}#{$i}rem;
         }
         .#{$side}b-#{$i} {
-            #{$property}-top: #{'.'}#{$i}rem;
+            #{$property}-bottom: #{'.'}#{$i}rem;
         }
         .#{$side}l-#{$i} {
-            #{$property}-top: #{'.'}#{$i}rem;
+            #{$property}-left: #{'.'}#{$i}rem;
         }
         .#{$side}-#{$i} {
             #{$property}: #{'.'}#{$i}rem;
