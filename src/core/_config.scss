@@ -166,7 +166,7 @@ $xsmall-screen: 480px !default;
   @default all | 235ms | ease-in-out | 0
 */
 
-@mixin transition($name:all, $duration:235ms, $animation:ease-in-out, $delay:0s) {
+@mixin transition($name:all, $duration:183ms, $animation:ease-in-out, $delay:0s) {
     -webkit-transition: $name $duration $animation $delay;
     -moz-transition: $name $duration $animation $delay;
     -o-transition: $name $duration $animation $delay;
