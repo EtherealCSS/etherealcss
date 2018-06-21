@@ -1017,13 +1017,13 @@ table.table-alternating tbody tr:nth-of-type(even) {
   margin-top: .1rem
 }
 .mr-1 {
-  margin-top: .1rem
+  margin-right: .1rem
 }
 .mb-1 {
-  margin-top: .1rem
+  margin-bottom: .1rem
 }
 .ml-1 {
-  margin-top: .1rem
+  margin-left: .1rem
 }
 .m-1 {
   margin: .1rem
@@ -1032,13 +1032,13 @@ table.table-alternating tbody tr:nth-of-type(even) {
   margin-top: .2rem
 }
 .mr-2 {
-  margin-top: .2rem
+  margin-right: .2rem
 }
 .mb-2 {
-  margin-top: .2rem
+  margin-bottom: .2rem
 }
 .ml-2 {
-  margin-top: .2rem
+  margin-left: .2rem
 }
 .m-2 {
   margin: .2rem
@@ -1047,13 +1047,13 @@ table.table-alternating tbody tr:nth-of-type(even) {
   margin-top: .3rem
 }
 .mr-3 {
-  margin-top: .3rem
+  margin-right: .3rem
 }
 .mb-3 {
-  margin-top: .3rem
+  margin-bottom: .3rem
 }
 .ml-3 {
-  margin-top: .3rem
+  margin-left: .3rem
 }
 .m-3 {
   margin: .3rem
@@ -1062,16 +1062,76 @@ table.table-alternating tbody tr:nth-of-type(even) {
   margin-top: .4rem
 }
 .mr-4 {
-  margin-top: .4rem
+  margin-right: .4rem
 }
 .mb-4 {
-  margin-top: .4rem
+  margin-bottom: .4rem
 }
 .ml-4 {
-  margin-top: .4rem
+  margin-left: .4rem
 }
 .m-4 {
   margin: .4rem
+}
+.mt-5 {
+  margin-top: .5rem
+}
+.mr-5 {
+  margin-right: .5rem
+}
+.mb-5 {
+  margin-bottom: .5rem
+}
+.ml-5 {
+  margin-left: .5rem
+}
+.m-5 {
+  margin: .5rem
+}
+.mt-6 {
+  margin-top: .6rem
+}
+.mr-6 {
+  margin-right: .6rem
+}
+.mb-6 {
+  margin-bottom: .6rem
+}
+.ml-6 {
+  margin-left: .6rem
+}
+.m-6 {
+  margin: .6rem
+}
+.mt-7 {
+  margin-top: .7rem
+}
+.mr-7 {
+  margin-right: .7rem
+}
+.mb-7 {
+  margin-bottom: .7rem
+}
+.ml-7 {
+  margin-left: .7rem
+}
+.m-7 {
+  margin: .7rem
+}
+.mt-8 {
+  margin-top: .8rem
+}
+.mr-8 {
+  margin-right: .8rem
+}
+.mb-8 {
+  margin-bottom: .8rem
+}
+.ml-8 {
+  margin-left: .8rem
+}
+.m-8 {
+  margin: .8rem
 }
 .m-auto {
   margin: auto
@@ -1080,13 +1140,13 @@ table.table-alternating tbody tr:nth-of-type(even) {
   padding-top: .1rem
 }
 .pr-1 {
-  padding-top: .1rem
+  padding-right: .1rem
 }
 .pb-1 {
-  padding-top: .1rem
+  padding-bottom: .1rem
 }
 .pl-1 {
-  padding-top: .1rem
+  padding-left: .1rem
 }
 .p-1 {
   padding: .1rem
@@ -1095,13 +1155,13 @@ table.table-alternating tbody tr:nth-of-type(even) {
   padding-top: .2rem
 }
 .pr-2 {
-  padding-top: .2rem
+  padding-right: .2rem
 }
 .pb-2 {
-  padding-top: .2rem
+  padding-bottom: .2rem
 }
 .pl-2 {
-  padding-top: .2rem
+  padding-left: .2rem
 }
 .p-2 {
   padding: .2rem
@@ -1110,13 +1170,13 @@ table.table-alternating tbody tr:nth-of-type(even) {
   padding-top: .3rem
 }
 .pr-3 {
-  padding-top: .3rem
+  padding-right: .3rem
 }
 .pb-3 {
-  padding-top: .3rem
+  padding-bottom: .3rem
 }
 .pl-3 {
-  padding-top: .3rem
+  padding-left: .3rem
 }
 .p-3 {
   padding: .3rem
@@ -1125,17 +1185,203 @@ table.table-alternating tbody tr:nth-of-type(even) {
   padding-top: .4rem
 }
 .pr-4 {
-  padding-top: .4rem
+  padding-right: .4rem
 }
 .pb-4 {
-  padding-top: .4rem
+  padding-bottom: .4rem
 }
 .pl-4 {
-  padding-top: .4rem
+  padding-left: .4rem
 }
 .p-4 {
   padding: .4rem
 }
+.pt-5 {
+  padding-top: .5rem
+}
+.pr-5 {
+  padding-right: .5rem
+}
+.pb-5 {
+  padding-bottom: .5rem
+}
+.pl-5 {
+  padding-left: .5rem
+}
+.p-5 {
+  padding: .5rem
+}
+.pt-6 {
+  padding-top: .6rem
+}
+.pr-6 {
+  padding-right: .6rem
+}
+.pb-6 {
+  padding-bottom: .6rem
+}
+.pl-6 {
+  padding-left: .6rem
+}
+.p-6 {
+  padding: .6rem
+}
+.pt-7 {
+  padding-top: .7rem
+}
+.pr-7 {
+  padding-right: .7rem
+}
+.pb-7 {
+  padding-bottom: .7rem
+}
+.pl-7 {
+  padding-left: .7rem
+}
+.p-7 {
+  padding: .7rem
+}
+.pt-8 {
+  padding-top: .8rem
+}
+.pr-8 {
+  padding-right: .8rem
+}
+.pb-8 {
+  padding-bottom: .8rem
+}
+.pl-8 {
+  padding-left: .8rem
+}
+.p-8 {
+  padding: .8rem
+}
 .p-auto {
   padding: auto
+}
+button.btn {
+  align-self: center;
+  background: 0 0;
+  -webkit-transition: all 235ms ease-in-out 0s;
+  -moz-transition: all 235ms ease-in-out 0s;
+  -o-transition: all 235ms ease-in-out 0s;
+  transition: all 235ms ease-in-out 0s;
+  color: #2f3944;
+  display: inline;
+  outline: 0;
+  border: 2px solid #2f3944;
+  border-radius: 4px;
+  font-size: 1rem;
+  padding: .4rem .5rem;
+  cursor: pointer
+}
+@media only screen and (max-width:520px) {
+  button.btn {
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 1rem
+  }
+}
+button.btn.btn-large {
+  font-size: 2rem;
+  padding: 1rem 1rem
+}
+button.btn.btn-small {
+  font-size: .75rem;
+  padding: .5rem
+}
+button.btn.btn-block {
+  display: block;
+  width: 100%
+}
+button.btn:focus {
+  border: 2px solid #a5afa3;
+  -webkit-box-shadow: 2px 8px 4px -6px rgba(0,0,0,.3);
+  -moz-box-shadow: 2px 8px 4px -6px rgba(0,0,0,.3);
+  box-shadow: 2px 8px 4px -6px rgba(0,0,0,.3)
+}
+button.btn:active {
+  border-color: rgba(0,0,0,.2);
+  transition: none
+}
+button.btn.disabled,
+button.btn[disabled] {
+  cursor: not-allowed;
+  opacity: .5
+}
+a.btn {
+  text-decoration: none;
+  background-image: linear-gradient(5deg,transparent 65%,#a5afa3 80%,transparent 90%),linear-gradient(165deg,transparent 5%,#a5afa3 15%,transparent 25%),linear-gradient(165deg,transparent 45%,#a5afa3 55%,transparent 65%),linear-gradient(15deg,transparent 25%,#a5afa3 35%,transparent 50%);
+  background-repeat: repeat-x;
+  background-size: 4px 3px;
+  background-position: 0 90%
+}
+a.btn:visited {
+  text-decoration: none;
+  color: #2f3944
+}
+button.btn-default {
+  border-color: #2f3944;
+  background-color: #acb8c6;
+  color: #fff
+}
+button.btn-default:hover:active {
+  background-color: #8e9fb1
+}
+button.btn-primary {
+  border-color: #7896ab;
+  background-color: #fff;
+  color: #2f3944
+}
+button.btn-primary:hover:active {
+  background-color: #e6e6e6
+}
+button.btn-success {
+  border-color: #597a56;
+  background-color: #aac1a8;
+  color: #2f3944
+}
+button.btn-success:hover:active {
+  background-color: #8dac8a
+}
+button.btn-info {
+  border-color: #5c9cb9;
+  background-color: #c7dde7;
+  color: #5c9cb9
+}
+button.btn-info:hover:active {
+  background-color: #a3c7d8
+}
+button.btn-joy {
+  border-color: #b45c48;
+  background-color: #e1bcb4;
+  color: #b45c48
+}
+button.btn-joy:hover:active {
+  background-color: #d29c90
+}
+button.btn-warning {
+  border-color: #d8ca83;
+  background-color: #fdfcf7;
+  color: #2f3944
+}
+button.btn-warning:hover:active {
+  background-color: #f0ebd1
+}
+button.btn-danger {
+  border-color: #774f4b;
+  background-color: #deccca;
+  color: #2f3944
+}
+button.btn-danger:hover:active {
+  background-color: #caadab
+}
+button.btn-muted {
+  border-color: #a5afa3;
+  background-color: #fff;
+  color: #2f3944
+}
+button.btn-muted:hover:active {
+  background-color: #e6e6e6
 }
