@@ -1,0 +1,21 @@
+// Map to set your display
+$displays:(block, block),
+(inline, inline),
+(inline-block, inline-block),
+(flex, flex),
+(inline-flex, inline-flex),
+(none, none),
+(hide, none),
+(show, initial),
+(visible, visible),
+(invisible, hidden);
+/**
+    Create display class name
+*/
+
+@each $displayName,
+$style in $displays {
+  .d-#{$displayName} {
+    display: $style;
+  }
+}
