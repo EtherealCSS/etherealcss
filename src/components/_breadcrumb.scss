@@ -6,24 +6,31 @@
 */
 
 .breadcrumb {
-  margin: 0;
-  padding: .256rem .512rem;
-  display: flex;
-  list-style-type: none;
-  background-color: $muted;
-  .breadcrumb-item {
-    padding: .25rem;
-    color: $dark;
-    &:not(:first-child)::before {
-      display: inline-block;
-      padding-right: .5rem;
-      padding-left: 0rem;
-      color: #6c757d;
-      content: "/";
+    padding: .512rem .625rem;
+    display: flex;
+    border-radius: 4px;
+    list-style-type: none;
+    background-color: lighten($muted, 26%);
+    border: 1px solid lighten($muted, 16%);
+    .breadcrumb-item {
+        color: $dark;
+        &:not(:first-child)::before {
+            display: inline-block;
+            padding-right: .5rem;
+            padding-left: .5rem;
+            color: darken($muted, 10%);
+            content: '/';
+        }
+        a {
+            color: $primary;
+            text-decoration: none;
+            border-bottom: 1.5px solid lighten($muted, 26%);
+            cursor: pointer;
+            @include transition();
+            &:hover {
+                border-bottom: 1.5px solid $primary;
+                transition: none;
+            }
+        }
     }
-    a {
-      color: $dark;
-      text-decoration: none;
-    }
-  }
 }

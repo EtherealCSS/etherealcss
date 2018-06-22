@@ -803,7 +803,7 @@ pre code {
 }
 html {
   font-size: 20px;
-  font-family: Georgia,"Microsoft YaHei UI","Microsoft Yahei",sans-serif;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,"Microsoft YaHei UI","Microsoft Yahei",sans-serif;
   color: #2f3944
 }
 a,
@@ -819,7 +819,7 @@ textarea,
 th,
 thead,
 tr {
-  font-family: Georgia,"Microsoft YaHei UI","Microsoft Yahei",sans-serif
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,"Microsoft YaHei UI","Microsoft Yahei",sans-serif
 }
 h1,
 h2,
@@ -827,7 +827,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Georgia,"Microsoft YaHei UI","Microsoft Yahei",sans-serif;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,"Microsoft YaHei UI","Microsoft Yahei",sans-serif;
   font-weight: 400
 }
 h1 {
@@ -858,7 +858,7 @@ h6 {
   text-align: right
 }
 .font-light {
-  font-family: Georgia,"Microsoft JhengHei UI","Microsoft JhengHei",sans-serif
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,"Microsoft JhengHei UI","Microsoft JhengHei",sans-serif
 }
 img {
   max-width: 100%;
@@ -1412,26 +1412,36 @@ table.table-alternating tbody tr:nth-of-type(even) {
   color: rgba(0,0,0,.75)
 }
 .breadcrumb {
-  margin: 0;
-  padding: .256rem .512rem;
+  padding: .512rem .625rem;
   display: flex;
+  border-radius: 4px;
   list-style-type: none;
-  background-color: #a5afa3
+  background-color: #eaedea;
+  border: 1px solid #d0d5cf
 }
 .breadcrumb .breadcrumb-item {
-  padding: .25rem;
   color: #2f3944
 }
 .breadcrumb .breadcrumb-item:not(:first-child)::before {
   display: inline-block;
   padding-right: .5rem;
-  padding-left: 0;
-  color: #6c757d;
-  content: "/"
+  padding-left: .5rem;
+  color: #8a9788;
+  content: '/'
 }
 .breadcrumb .breadcrumb-item a {
-  color: #2f3944;
-  text-decoration: none
+  color: #44679f;
+  text-decoration: none;
+  border-bottom: 1.5px solid #eaedea;
+  cursor: pointer;
+  -webkit-transition: all 183ms ease-in-out 0s;
+  -moz-transition: all 183ms ease-in-out 0s;
+  -o-transition: all 183ms ease-in-out 0s;
+  transition: all 183ms ease-in-out 0s
+}
+.breadcrumb .breadcrumb-item a:hover {
+  border-bottom: 1.5px solid #44679f;
+  transition: none
 }
 .btn {
   display: inline-block;
