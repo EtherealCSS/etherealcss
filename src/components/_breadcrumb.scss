@@ -6,7 +6,7 @@
 */
 
 .breadcrumb {
-    padding: .512rem .625rem;
+    padding: .7rem .625rem;
     display: flex;
     border-radius: 4px;
     list-style-type: none;
@@ -14,6 +14,8 @@
     border: 1px solid lighten($muted, 16%);
     .breadcrumb-item {
         color: $dark;
+        font-size: .8rem;
+        line-height: 1;
         &:not(:first-child)::before {
             display: inline-block;
             padding-right: .5rem;
@@ -24,12 +26,10 @@
         a {
             color: $primary;
             text-decoration: none;
-            border-bottom: 1.5px solid lighten($muted, 26%);
+            border-bottom: 1px solid transparent;
             cursor: pointer;
-            @include transition();
             &:hover {
-                border-bottom: 1.5px solid $primary;
-                transition: none;
+                text-decoration: underline;
             }
         }
     }
