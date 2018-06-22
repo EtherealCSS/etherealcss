@@ -1,0 +1,22 @@
+// Map to set your position
+$positions:(relative, relative),
+(absolute, absolute),
+(fixed, fixed);
+/**
+    Create display class name
+*/
+
+@each $positionName,
+$style in $positions {
+  .#{$positionName} {
+    position: $style;
+  }
+}
+
+// Map to set your float
+$floats:left right;
+@each $style in $floats {
+  .float-#{$style} {
+    float: $style;
+  }
+}

@@ -16,8 +16,10 @@
 @import 'content/tables';
 /* Utilities */
 
-@import 'utils/spacing';
 @import 'utils/colors';
+@import 'utils/display';
+@import 'utils/position';
+@import 'utils/spacing';
 /* Components */
 
 @import 'components/buttons';

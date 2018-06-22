@@ -42,8 +42,8 @@ An Elegant, Lightweight CSS Framework.
 
 - [ ] borders
 - [x] colors
-- [ ] display
-- [ ] position
+- [x] display
+- [x] position
 - [x] spacing
 
 ## Ethereal example:

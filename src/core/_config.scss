@@ -40,15 +40,6 @@ $danger-text: $white !default;
 $warning-text: $light-dark !default;
 $joy-text: $white !default;
 $muted-text: $light-dark !default;
-// Map to set your color names
-$colors:(dark, $dark, $dark-light, $dark-text),
-(primary, $primary, $primary-light, $primary-text),
-(success, $success, $success-light, $success-text),
-(info, $info, $info-light, $info-text),
-(joy, $joy, $joy-light, $joy-text),
-(warning, $warning, $warning-light, $warning-text),
-(danger, $danger, $danger-light, $danger-text),
-(muted, $muted, $muted-light, $muted-text);
 // Font settings
 $global-font-size: 20px !default;
 $header-font:Georgia,
