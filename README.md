@@ -13,7 +13,8 @@ An Elegant, Lightweight CSS Framework.
 
 ### Components
 
-- [ ] Alerts
+- [x] Alerts
+- [ ] Badges
 - [ ] Breadcrumb
 - [x] Buttons
 - [ ] Badges
