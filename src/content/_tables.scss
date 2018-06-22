@@ -31,22 +31,23 @@ table {
     }
     &.table-dark {
         color: $white;
-        background-color: lighten($dark, 5%);
+        background-color: $dark;
         border-radius: 4px;
         tbody tr td {
-            border-top: 2px solid lighten($dark, 15%);
+            border-top: 2px solid lighten($dark, 10%);
         }
         &.table-hover tbody tr:hover {
-            color: lighten($muted, 20%);
-            cursor: pointer;
+            color: $white;
+            background-color: lighten($dark, 10%);
         }
         &.table-alternating tbody tr:nth-of-type(even) {
+            color: $white;
             background-color: lighten($dark, 10%);
         }
     }
     &.table-border {
         thead tr th {
-            border: 2px solid lighten($dark, 15%);
+            border: 2px solid lighten($dark, 10%);
         }
         thead tr:first-child th {
             border-top: 0;
@@ -58,7 +59,7 @@ table {
             border-right: 0;
         }
         tbody tr td {
-            border: 2px solid lighten($dark, 15%);
+            border: 2px solid lighten($dark, 10%);
         }
         tbody tr:last-child td {
             border-bottom: 0;
