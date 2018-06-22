@@ -1,0 +1,26 @@
+/**
+    Class by color theme
+*/
+
+@each $colorName,
+$color,
+$color-light in $colors {
+  .text-#{$colorName} {
+    color: $color;
+  }
+  .bg-#{$colorName} {
+    background-color: $color;
+  }
+}
+
+/**
+    Class by color name
+*/
+
+.text-white {
+  color: $white;
+}
+
+.bg-white {
+  background-color: $white;
+}

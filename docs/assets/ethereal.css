@@ -1,52 +1,4 @@
 @charset "UTF-8";
-.text-dark {
-  color: #2f3944
-}
-.background-dark {
-  background-color: #70859c
-}
-.text-primary {
-  color: #44679f
-}
-.background-primary {
-  background-color: #a4b8d8
-}
-.text-success {
-  color: #6db193
-}
-.background-success {
-  background-color: #d1e6dd
-}
-.text-info {
-  color: #70a1d7
-}
-.background-info {
-  background-color: #e8f0f8
-}
-.text-joy {
-  color: #ff9071
-}
-.background-joy {
-  background-color: #fff
-}
-.text-warning {
-  color: #f0e48e
-}
-.background-warning {
-  background-color: #fff
-}
-.text-danger {
-  color: #d95858
-}
-.background-danger {
-  background-color: #f5d5d5
-}
-.text-muted {
-  color: #a5afa3
-}
-.background-muted {
-  background-color: #f5f6f5
-}
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 html {
   line-height: 1.15;
@@ -1258,6 +1210,60 @@ table.table-alternating tbody tr:nth-of-type(even) {
 }
 .p-auto {
   padding: auto
+}
+.text-dark {
+  color: #2f3944
+}
+.bg-dark {
+  background-color: #2f3944
+}
+.text-primary {
+  color: #44679f
+}
+.bg-primary {
+  background-color: #44679f
+}
+.text-success {
+  color: #6db193
+}
+.bg-success {
+  background-color: #6db193
+}
+.text-info {
+  color: #70a1d7
+}
+.bg-info {
+  background-color: #70a1d7
+}
+.text-joy {
+  color: #ff9071
+}
+.bg-joy {
+  background-color: #ff9071
+}
+.text-warning {
+  color: #f0e48e
+}
+.bg-warning {
+  background-color: #f0e48e
+}
+.text-danger {
+  color: #d95858
+}
+.bg-danger {
+  background-color: #d95858
+}
+.text-muted {
+  color: #a5afa3
+}
+.bg-muted {
+  background-color: #a5afa3
+}
+.text-white {
+  color: #fff
+}
+.bg-white {
+  background-color: #fff
 }
 .btn {
   display: inline-block;
