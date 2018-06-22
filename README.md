@@ -14,10 +14,9 @@ An Elegant, Lightweight CSS Framework.
 ### Components
 
 - [x] Alerts
-- [ ] Badges
+- [x] Badges
 - [ ] Breadcrumb
-- [x] Buttons
-- [ ] Badges
+- [x] Buttons 
 - [ ] Cards
 - [ ] Collapsibles
 - [ ] Forms

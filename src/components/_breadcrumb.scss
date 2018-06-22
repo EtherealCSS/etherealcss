@@ -1,0 +1,29 @@
+/**
+<ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Library</li>
+</ol>
+*/
+
+.breadcrumb {
+  margin: 0;
+  padding: .256rem .512rem;
+  display: flex;
+  list-style-type: none;
+  background-color: $muted;
+  .breadcrumb-item {
+    padding: .25rem;
+    color: $dark;
+    &:not(:first-child)::before {
+      display: inline-block;
+      padding-right: .5rem;
+      padding-left: 0rem;
+      color: #6c757d;
+      content: "/";
+    }
+    a {
+      color: $dark;
+      text-decoration: none;
+    }
+  }
+}
