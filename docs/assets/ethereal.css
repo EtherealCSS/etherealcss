@@ -1634,3 +1634,50 @@ table.table-alternating tbody tr:nth-of-type(even) {
   background-color: #a5afa3;
   transition: none
 }
+.alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #2f3944
+}
+.alert-dark {
+  color: #fff;
+  border-color: #2f3944;
+  background-color: #445262
+}
+.alert-primary {
+  color: #fff;
+  border-color: #44679f;
+  background-color: #5c80ba
+}
+.alert-success {
+  color: #fff;
+  border-color: #6db193;
+  background-color: #8ec3ac
+}
+.alert-info {
+  color: #fff;
+  border-color: #70a1d7;
+  background-color: #98bbe2
+}
+.alert-joy {
+  color: #fff;
+  border-color: #ff9071;
+  background-color: #ffb8a4
+}
+.alert-warning {
+  color: rgba(0,0,0,.75);
+  border-color: #f0e48e;
+  background-color: #f6efbb
+}
+.alert-danger {
+  color: #fff;
+  border-color: #d95858;
+  background-color: #e28282
+}
+.alert-muted {
+  color: rgba(0,0,0,.75);
+  border-color: #a5afa3;
+  background-color: #c0c7be
+}

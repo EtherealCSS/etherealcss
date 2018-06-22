@@ -1,0 +1,18 @@
+.alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid $dark;
+}
+
+@each $colorName,
+$color,
+$color-light,
+$color-text in $colors {
+  .alert-#{$colorName} {
+    color: $color-text;
+    border-color: $color;
+    background-color: lighten($color, 10%);
+  }
+}
