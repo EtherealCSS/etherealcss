@@ -42,15 +42,30 @@ $joy-text: $white !default;
 $muted-text: $light-dark !default;
 // Font settings
 $global-font-size: 20px !default;
-$header-font:Georgia,
-'Microsoft YaHei UI',
-'Microsoft Yahei' !default;
-$body-font: Georgia,
-'Microsoft YaHei UI',
-'Microsoft Yahei' !default;
-$light-font:Georgia,
-'Microsoft JhengHei UI',
-'Microsoft JhengHei' !default;
+$header-font:-apple-system,
+BlinkMacSystemFont,
+"Segoe UI",
+Roboto,
+Arial,
+"Microsoft YaHei UI",
+"Microsoft Yahei",
+ !default;
+$body-font: -apple-system,
+BlinkMacSystemFont,
+"Segoe UI",
+Roboto,
+Arial,
+"Microsoft YaHei UI",
+"Microsoft Yahei",
+ !default;
+$light-font:-apple-system,
+BlinkMacSystemFont,
+"Segoe UI",
+Roboto,
+Arial,
+"Microsoft JhengHei UI",
+"Microsoft JhengHei",
+ !default;
 $font-color: $dark !default;
 // Responsive breakpoints
 $large-screen: 1200px !default;
@@ -64,36 +79,36 @@ $xsmall-screen: 480px !default;
 */
 
 @mixin resp($max:null, $min:null) {
-  @if $max==large or $max==lg {
-    $max: $large-screen;
-  }
-  @if $max==medium or $max==md {
-    $max: $medium-screen;
-  }
-  @if $max==small or $max==sm {
-    $max: $small-screen;
-  }
-  @if $max==xsmall or $max==xs {
-    $max: $xsmall-screen;
-  }
-  @if ($min !=null and $max !=null) {
-    @media only screen and (max-width: $max) and (min-width: $min) {
-      @content;
+    @if $max==large or $max==lg {
+        $max: $large-screen;
     }
-  }
-  @else if($max !=null and $min==null) {
-    @media only screen and (max-width: $max) {
-      @content;
+    @if $max==medium or $max==md {
+        $max: $medium-screen;
     }
-  }
-  @else if($min !=null and $max==null) {
-    @media only screen and (min-width: $min) {
-      @content;
+    @if $max==small or $max==sm {
+        $max: $small-screen;
     }
-  }
-  @else {
-    @error "no matching size found";
-  }
+    @if $max==xsmall or $max==xs {
+        $max: $xsmall-screen;
+    }
+    @if ($min !=null and $max !=null) {
+        @media only screen and (max-width: $max) and (min-width: $min) {
+            @content;
+        }
+    }
+    @else if($max !=null and $min==null) {
+        @media only screen and (max-width: $max) {
+            @content;
+        }
+    }
+    @else if($min !=null and $max==null) {
+        @media only screen and (min-width: $min) {
+            @content;
+        }
+    }
+    @else {
+        @error "no matching size found";
+    }
 }
 
 /**
@@ -101,17 +116,17 @@ $xsmall-screen: 480px !default;
 */
 
 @mixin col-size($percent) {
-  -webkit-box-flex: 0;
-  -webkit-flex: 0 0 $percent;
-  -ms-flex: 0 0 $percent;
-  flex: 0 0 $percent;
-  max-width: $percent;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 $percent;
+    -ms-flex: 0 0 $percent;
+    flex: 0 0 $percent;
+    max-width: $percent;
 }
 
 @mixin li-bullet($char) {
-  li:before {
-    content: $char;
-  }
+    li:before {
+        content: $char;
+    }
 }
 
 /*
@@ -123,16 +138,16 @@ $xsmall-screen: 480px !default;
 */
 
 @mixin translate($x, $y, $z: 0, $transform3d: false) {
-  @if $transform3d {
-    -webkit-transform: translate3d($x, $y, $z);
-    -ms-transform: translate3d($x, $y, $z);
-    transform: translate3d($x, $y, $z);
-  }
-  @else {
-    -webkit-transform: translate($x, $y);
-    -ms-transform: translate($x, $y);
-    transform: translate($x, $y);
-  }
+    @if $transform3d {
+        -webkit-transform: translate3d($x, $y, $z);
+        -ms-transform: translate3d($x, $y, $z);
+        transform: translate3d($x, $y, $z);
+    }
+    @else {
+        -webkit-transform: translate($x, $y);
+        -ms-transform: translate($x, $y);
+        transform: translate($x, $y);
+    }
 }
 
 /**
@@ -142,8 +157,8 @@ $xsmall-screen: 480px !default;
 */
 
 @mixin transition($name:all, $duration:183ms, $animation:ease-in-out, $delay:0s) {
-  -webkit-transition: $name $duration $animation $delay;
-  -moz-transition: $name $duration $animation $delay;
-  -o-transition: $name $duration $animation $delay;
-  transition: $name $duration $animation $delay;
+    -webkit-transition: $name $duration $animation $delay;
+    -moz-transition: $name $duration $animation $delay;
+    -o-transition: $name $duration $animation $delay;
+    transition: $name $duration $animation $delay;
 }
