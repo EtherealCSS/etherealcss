@@ -965,6 +965,105 @@ table.table-hover tbody tr:hover {
 table.table-alternating tbody tr:nth-of-type(even) {
   color: #63788f
 }
+.text-dark {
+  color: #2f3944
+}
+.bg-dark {
+  background-color: #2f3944
+}
+.text-primary {
+  color: #44679f
+}
+.bg-primary {
+  background-color: #44679f
+}
+.text-success {
+  color: #6db193
+}
+.bg-success {
+  background-color: #6db193
+}
+.text-info {
+  color: #70a1d7
+}
+.bg-info {
+  background-color: #70a1d7
+}
+.text-joy {
+  color: #ff9071
+}
+.bg-joy {
+  background-color: #ff9071
+}
+.text-warning {
+  color: #f0e48e
+}
+.bg-warning {
+  background-color: #f0e48e
+}
+.text-danger {
+  color: #d95858
+}
+.bg-danger {
+  background-color: #d95858
+}
+.text-muted {
+  color: #a5afa3
+}
+.bg-muted {
+  background-color: #a5afa3
+}
+.text-white {
+  color: #fff
+}
+.bg-white {
+  background-color: #fff
+}
+.d-block {
+  display: block
+}
+.d-inline {
+  display: inline
+}
+.d-inline-block {
+  display: inline-block
+}
+.d-flex {
+  display: flex
+}
+.d-inline-flex {
+  display: inline-flex
+}
+.d-none {
+  display: none
+}
+.d-hide {
+  display: none
+}
+.d-show {
+  display: initial
+}
+.d-visible {
+  display: visible
+}
+.d-invisible {
+  display: hidden
+}
+.relative {
+  position: relative
+}
+.absolute {
+  position: absolute
+}
+.fixed {
+  position: fixed
+}
+.float-left {
+  float: left
+}
+.float-right {
+  float: right
+}
 .mt-1 {
   margin-top: .1rem
 }
@@ -1210,60 +1309,6 @@ table.table-alternating tbody tr:nth-of-type(even) {
 }
 .p-auto {
   padding: auto
-}
-.text-dark {
-  color: #2f3944
-}
-.bg-dark {
-  background-color: #2f3944
-}
-.text-primary {
-  color: #44679f
-}
-.bg-primary {
-  background-color: #44679f
-}
-.text-success {
-  color: #6db193
-}
-.bg-success {
-  background-color: #6db193
-}
-.text-info {
-  color: #70a1d7
-}
-.bg-info {
-  background-color: #70a1d7
-}
-.text-joy {
-  color: #ff9071
-}
-.bg-joy {
-  background-color: #ff9071
-}
-.text-warning {
-  color: #f0e48e
-}
-.bg-warning {
-  background-color: #f0e48e
-}
-.text-danger {
-  color: #d95858
-}
-.bg-danger {
-  background-color: #d95858
-}
-.text-muted {
-  color: #a5afa3
-}
-.bg-muted {
-  background-color: #a5afa3
-}
-.text-white {
-  color: #fff
-}
-.bg-white {
-  background-color: #fff
 }
 .btn {
   display: inline-block;
