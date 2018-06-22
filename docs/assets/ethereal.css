@@ -1361,15 +1361,17 @@ table.table-alternating tbody tr:nth-of-type(even) {
 }
 .badge {
   display: inline-block;
-  padding: .256rem .512rem;
+  padding: .512rem .625rem;
   vertical-align: baseline;
   text-align: center;
   color: #2f3944;
-  font-weight: 700;
+  font-size: 80%;
   background-color: #dadeda;
   border: 1px solid #c0c7be;
-  border-radius: 6px;
-  white-space: nowrap
+  border-radius: 4px;
+  text-decoration: none;
+  white-space: nowrap;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.16),0 0 0 1px rgba(0,0,0,.08)
 }
 .badge-dark {
   background-color: #2f3944;
@@ -1412,7 +1414,7 @@ table.table-alternating tbody tr:nth-of-type(even) {
   color: rgba(0,0,0,.75)
 }
 .breadcrumb {
-  padding: .512rem .625rem;
+  padding: .7rem .625rem;
   display: flex;
   border-radius: 4px;
   list-style-type: none;
@@ -1420,7 +1422,9 @@ table.table-alternating tbody tr:nth-of-type(even) {
   border: 1px solid #d0d5cf
 }
 .breadcrumb .breadcrumb-item {
-  color: #2f3944
+  color: #2f3944;
+  font-size: .8rem;
+  line-height: 1
 }
 .breadcrumb .breadcrumb-item:not(:first-child)::before {
   display: inline-block;
@@ -1432,16 +1436,11 @@ table.table-alternating tbody tr:nth-of-type(even) {
 .breadcrumb .breadcrumb-item a {
   color: #44679f;
   text-decoration: none;
-  border-bottom: 1.5px solid #eaedea;
-  cursor: pointer;
-  -webkit-transition: all 183ms ease-in-out 0s;
-  -moz-transition: all 183ms ease-in-out 0s;
-  -o-transition: all 183ms ease-in-out 0s;
-  transition: all 183ms ease-in-out 0s
+  border-bottom: 1px solid transparent;
+  cursor: pointer
 }
 .breadcrumb .breadcrumb-item a:hover {
-  border-bottom: 1.5px solid #44679f;
-  transition: none
+  text-decoration: underline
 }
 .btn {
   display: inline-block;
