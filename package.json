@@ -8,7 +8,7 @@
     "dev": "http-server ./docs -o -s -U -c-1 -p 4000",
     "build": "node node_modules/gulp/bin/gulp.js build",
     "postinstall": "gulp postinstall",
-    "lint": "stylelint src/**/*.scss"
+    "lint": "stylelint src/**/*.scss --syntax scss"
   },
   "repository": {
     "type": "git",
