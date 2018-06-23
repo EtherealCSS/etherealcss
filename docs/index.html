@@ -25,32 +25,48 @@
         <a href="https://github.com/explooosion/etherealcss" target="_balnk">Docs</a>
       </li>
     </ul>
-    <h3>Colors</h3>
+    <h3 class="mt-6">Colors</h3>
     <div class="row">
       <div class="col lg-6 md-6 sm-12">
         <h4>Text colors</h4>
-        <div class="p-3">An Elegant, Lightweight CSS Framework</div>
-        <div class="text-primary p-3">An Elegant, Lightweight CSS Framework</div>
-        <div class="text-success p-3">An Elegant, Lightweight CSS Framework</div>
-        <div class="text-info p-3">An Elegant, Lightweight CSS Framework</div>
-        <div class="text-danger p-3">An Elegant, Lightweight CSS Framework</div>
-        <div class="text-warning p-3">An Elegant, Lightweight CSS Framework</div>
-        <div class="text-joy p-3">An Elegant, Lightweight CSS Framework</div>
-        <div class="text-muted p-3">An Elegant, Lightweight CSS Framework</div>
+        <div class="p-1">An Elegant, Lightweight CSS Framework</div>
+        <div class="text-primary p-1">An Elegant, Lightweight CSS Framework</div>
+        <div class="text-success p-1">An Elegant, Lightweight CSS Framework</div>
+        <div class="text-info p-1">An Elegant, Lightweight CSS Framework</div>
+        <div class="text-danger p-1">An Elegant, Lightweight CSS Framework</div>
+        <div class="text-warning p-1">An Elegant, Lightweight CSS Framework</div>
+        <div class="text-joy p-1">An Elegant, Lightweight CSS Framework</div>
+        <div class="text-muted p-1">An Elegant, Lightweight CSS Framework</div>
       </div>
       <div class="col lg-6 md-6 sm-12">
         <h4>Background colors</h4>
-        <div class="bg-dark text-white p-3">An Elegant, Lightweight CSS Framework</div>
-        <div class="bg-primary text-white p-3">An Elegant, Lightweight CSS Framework</div>
-        <div class="bg-success text-white p-3">An Elegant, Lightweight CSS Framework</div>
-        <div class="bg-info text-white p-3">An Elegant, Lightweight CSS Framework</div>
-        <div class="bg-danger text-white p-3">An Elegant, Lightweight CSS Framework</div>
-        <div class="bg-warning text-white p-3">An Elegant, Lightweight CSS Framework</div>
-        <div class="bg-joy text-white p-3">An Elegant, Lightweight CSS Framework</div>
-        <div class="bg-muted text-white p-3">An Elegant, Lightweight CSS Framework</div>
+        <div class="bg-dark text-white p-1">An Elegant, Lightweight CSS Framework</div>
+        <div class="bg-primary text-white p-1">An Elegant, Lightweight CSS Framework</div>
+        <div class="bg-success text-white p-1">An Elegant, Lightweight CSS Framework</div>
+        <div class="bg-info text-white p-1">An Elegant, Lightweight CSS Framework</div>
+        <div class="bg-danger text-white p-1">An Elegant, Lightweight CSS Framework</div>
+        <div class="bg-warning text-white p-1">An Elegant, Lightweight CSS Framework</div>
+        <div class="bg-joy text-white p-1">An Elegant, Lightweight CSS Framework</div>
+        <div class="bg-muted text-white p-1">An Elegant, Lightweight CSS Framework</div>
       </div>
     </div>
-
+    <hr>
+    <div class="row">
+      <div class="col lg-6 md-6 sm-12 text-center">
+        <h4>Image</h4>
+        <img class="no-border circle m-auto" src="https://avatars3.githubusercontent.com/u/13682994?s=460&v=4" width="200" />
+      </div>
+      <div class="col lg-6 md-6 sm-12">
+        <h4>Code, kbd, pre</h4>
+        <code>const Ethereal = [];</code>
+        <kbd>Ctrl + C</kbd>
+        <pre>
+function Greet(){
+  console.info('Hello Ethereal!')
+}</pre>
+      </div>
+    </div>
+    <hr>
     <h3>Buttons</h3>
     <h4>Default Buttons</h4>
     <div class="row">
@@ -102,21 +118,7 @@
         <button class="btn btn-sm btn-block btn-outline-primary mt-4" type="button">Block small outline button</button>
       </div>
     </div>
-    <div class="row">
-      <div class="col lg-6 md-6 sm-12 text-center">
-        <h4>Image</h4>
-        <img class="no-border circle m-auto" src="https://avatars3.githubusercontent.com/u/13682994?s=460&v=4" width="200" />
-      </div>
-      <div class="col lg-6 md-6 sm-12">
-        <h4>Code, kbd, pre</h4>
-        <code>const Ethereal = [];</code>
-        <kbd>Ctrl + C</kbd>
-        <pre>
-function Greet(){
-  console.info('Hello Ethereal!')
-}</pre>
-      </div>
-    </div>
+    <hr>
     <h3>Tables</h3>
     <div class="row">
       <div class="col lg-6 md-6 sm-12">
@@ -230,6 +232,7 @@ function Greet(){
         </table>
       </div>
     </div>
+    <hr>
     <h3>Alerts</h3>
     <div class="row">
       <div class="col lg-12 md-12 sm-12">
@@ -244,6 +247,7 @@ function Greet(){
         <div class="alert alert-muted">This is a muted alert—check it out!</div>
       </div>
     </div>
+    <hr>
     <h3>Badges</h3>
     <div class="row">
       <div class="col lg-12 md-12 sm-12">
@@ -258,6 +262,7 @@ function Greet(){
         <div class="badge badge-muted">muted</div>
       </div>
     </div>
+    <hr>
     <h3>Breadcrumb</h3>
     <div class="breadcrumb">
       <a class="item" href="#">Home</a>
@@ -272,11 +277,90 @@ function Greet(){
       <a class="item active">Profile</a>
     </div>
     <div class="breadcrumb">
-      <a class="item" href="#">首頁</a>
-      <span class="driver">/</span>
-      <a class="item" href="#">帳號</a>
-      <span class="driver">/</span>
-      <a class="item active">個人資料</a>
+      <a class="item" href="#">Home</a>
+      <span class="driver">➤</span>
+      <a class="item" href="#">Account</a>
+      <span class="driver">➤</span>
+      <a class="item" href="#">Profile</a>
+      <span class="driver">➤</span>
+      <a class="item active">Edit</a>
+    </div>
+    <hr>
+    <h3>Card</h3>
+    <div class="row">
+      <div class="col lg-4 md-4 sm-6 xs-12">
+        <h4>Card default</h4>
+        <div class="card mb-6">
+          <a href="https://github.com/explooosion/etherealcss" target="_balnk">
+            <img src="https://picsum.photos/500/250?image=504" alt="picsum">
+          </a>
+          <div class="card-body">
+            <div class="card-title">Card title</div>
+            <div class="card-subtitle">Card subtitle</div>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu ex ut sapien porta pulvinar.</p>
+            <a class="btn btn-primary btn-block" href="#">Check it out</a>
+          </div>
+        </div>
+      </div>
+      <div class="col lg-4 md-4 sm-6 xs-12">
+        <h4>Card img bottom</h4>
+        <div class="card mb-6">
+          <div class="card-body">
+            <div class="card-title">Card title</div>
+            <div class="card-subtitle">Card subtitle</div>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu ex ut sapien porta pulvinar.</p>
+            <a class="btn btn-primary" href="#">Check it out</a>
+          </div>
+          <a href="https://github.com/explooosion/etherealcss" target="_balnk">
+            <img src="https://picsum.photos/500/250/?image=923" alt="picsum">
+          </a>
+        </div>
+      </div>
+      <div class="col lg-4 md-4 sm-6 xs-12">
+        <h4>Card header</h4>
+        <div class="card mb-6">
+          <div class="card-header">Card title</div>
+          <div class="card-body">
+            <div class="card-subtitle">Card subtitle</div>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu ex ut sapien porta pulvinar.</p>
+          </div>
+          <a href="https://github.com/explooosion/etherealcss" target="_balnk">
+            <img src="https://picsum.photos/g/500/250/?image?786" alt="picsum">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col lg-6 md-6 sm-6 xs-12">
+        <h4>Card footer</h4>
+        <div class="card mb-6">
+          <a href="https://github.com/explooosion/etherealcss" target="_balnk">
+            <img src="https://picsum.photos/500/250?image=577" alt="picsum">
+          </a>
+          <div class="card-body">
+            <div class="card-title">Card title</div>
+            <div class="card-subtitle">Card subtitle</div>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu ex ut sapien porta pulvinar.</p>
+          </div>
+          <div class="card-footer">
+            <a class="btn btn-primary btn-block card-footer" href="#">Check it out</a>
+          </div>
+        </div>
+      </div>
+      <div class="col lg-6 md-6 sm-6 xs-12">
+        <h4>Card footer buttom</h4>
+        <div class="card mb-6">
+          <a href="https://github.com/explooosion/etherealcss" target="_balnk">
+            <img src="https://picsum.photos/500/250?image=1061" alt="picsum">
+          </a>
+          <div class="card-body">
+            <div class="card-title">Card title</div>
+            <div class="card-subtitle">Card subtitle</div>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu ex ut sapien porta pulvinar.</p>
+          </div>
+          <a class="card-footer btn btn-primary btn-block" href="#">Check it out</a>
+        </div>
+      </div>
     </div>
   </div>
 </body>
