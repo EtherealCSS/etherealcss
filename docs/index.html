@@ -259,21 +259,25 @@ function Greet(){
       </div>
     </div>
     <h3>Breadcrumb</h3>
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item">
-        <a href="#">Home</a>
-      </li>
-      <li class="breadcrumb-item active">Users</li>
-    </ol>
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item">
-        <a href="#">Home</a>
-      </li>
-      <li class="breadcrumb-item">
-        <a href="#">Users</a>
-      </li>
-      <li class="breadcrumb-item active">Data</li>
-    </ol>
+    <div class="breadcrumb">
+      <a class="item" href="#">Home</a>
+      <span class="driver">/</span>
+      <a class="item active">Account</a>
+    </div>
+    <div class="breadcrumb">
+      <a class="item" href="#">Home</a>
+      <span class="driver">></span>
+      <a class="item" href="#">Account</a>
+      <span class="driver">></span>
+      <a class="item active">Profile</a>
+    </div>
+    <div class="breadcrumb">
+      <a class="item" href="#">首頁</a>
+      <span class="driver">/</span>
+      <a class="item" href="#">帳號</a>
+      <span class="driver">/</span>
+      <a class="item active">個人資料</a>
+    </div>
   </div>
 </body>
 

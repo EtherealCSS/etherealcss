@@ -1454,33 +1454,30 @@ table.table-border tbody tr td:last-child {
   color: rgba(0,0,0,.75)
 }
 .breadcrumb {
-  padding: .7rem .625rem;
   display: flex;
+  padding: .6rem 0;
   border-radius: 4px;
-  list-style-type: none;
-  background-color: #eaedea;
-  border: 1px solid #d0d5cf
+  list-style-type: none
 }
-.breadcrumb .breadcrumb-item {
-  color: #2f3944;
+.breadcrumb .item {
+  color: #70a1d7;
   font-size: .8rem;
-  line-height: 1
-}
-.breadcrumb .breadcrumb-item:not(:first-child)::before {
-  display: inline-block;
-  padding-right: .5rem;
-  padding-left: .5rem;
-  color: #8a9788;
-  content: '/'
-}
-.breadcrumb .breadcrumb-item a {
-  color: #44679f;
+  line-height: 1;
   text-decoration: none;
-  border-bottom: 1px solid transparent;
-  cursor: pointer
+  cursor: default
 }
-.breadcrumb .breadcrumb-item a:hover {
+.breadcrumb .item.active {
+  color: #2f3944
+}
+.breadcrumb .item:not(.active):hover {
+  cursor: pointer;
   text-decoration: underline
+}
+.breadcrumb .driver {
+  padding: 0 .4rem;
+  color: #a5afa3;
+  font-size: .6rem;
+  line-height: 1.4
 }
 .btn {
   display: inline-block;

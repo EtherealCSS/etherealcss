@@ -1,36 +1,36 @@
 /**
-<ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="#">Home</a></li>
-    <li class="breadcrumb-item active" aria-current="page">Library</li>
-</ol>
+<div class="breadcrumb">
+  <a class="item" href="#">Home</a>
+  <span class="driver">></span>
+  <a class="item" href="#">Account</a>
+  <span class="driver">></span>
+  <a class="item active">Profile</a>
+</div>
 */
 
 .breadcrumb {
-    padding: .7rem .625rem;
-    display: flex;
-    border-radius: 4px;
-    list-style-type: none;
-    background-color: lighten($muted, 26%);
-    border: 1px solid lighten($muted, 16%);
-    .breadcrumb-item {
-        color: $dark;
-        font-size: .8rem;
-        line-height: 1;
-        &:not(:first-child)::before {
-            display: inline-block;
-            padding-right: .5rem;
-            padding-left: .5rem;
-            color: darken($muted, 10%);
-            content: '/';
-        }
-        a {
-            color: $primary;
-            text-decoration: none;
-            border-bottom: 1px solid transparent;
-            cursor: pointer;
-            &:hover {
-                text-decoration: underline;
-            }
-        }
+  display: flex;
+  padding: .6rem 0;
+  border-radius: 4px;
+  list-style-type: none;
+  .item {
+    color: $info;
+    font-size: .8rem;
+    line-height: 1;
+    text-decoration: none;
+    cursor: default;
+    &.active {
+      color: $dark;
     }
+    &:not(.active):hover {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  }
+  .driver {
+    padding: 0 .4rem;
+    color: $muted;
+    font-size: .6rem;
+    line-height: 1.4;
+  }
 }
