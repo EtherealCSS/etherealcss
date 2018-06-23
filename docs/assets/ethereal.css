@@ -1758,7 +1758,7 @@ table.table-border tbody tr td:last-child {
 }
 .card .card-footer,
 .card .card-header {
-  padding: .5rem 1.25rem
+  padding: .5rem .8rem
 }
 .card .card-header {
   border-bottom: 1px solid #dadeda
