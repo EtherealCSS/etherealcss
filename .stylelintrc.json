@@ -1,0 +1,20 @@
+{
+  "extends": "stylelint-config-sass-guidelines",
+  "plugins": [
+    "stylelint-scss"
+  ],
+  "rules": {
+    "indentation": "tab",
+    "max-nesting-depth": 5,
+    "number-leading-zero": null,
+    "order/properties-alphabetical-order": null,
+    "order/order": null,
+    "property-no-vendor-prefix": null,
+    "selector-no-qualifying-type": null,
+    "selector-max-compound-selectors": null,
+    "selector-pseudo-element-colon-notation": null,
+    "scss/selector-no-redundant-nesting-selector": null,
+    "scss/at-extend-no-missing-placeholder": null,
+    "value-no-vendor-prefix": null
+  }
+}

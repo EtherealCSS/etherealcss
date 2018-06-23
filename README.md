@@ -46,7 +46,51 @@ An Elegant, Lightweight CSS Framework.
 - [x] position
 - [x] spacing
 
-## Ethereal example:
+## Contribute
+
+### Install
+
+```bash
+git clone https://github.com/explooosion/etherealcss.git
+```
+
+```bash
+git install
+```
+
+### Run
+
+```bash
+yarn dev
+```
+
+### Watch
+
+```
+yarn start
+```
+
+### Build
+
+```
+yarn build
+```
+
+### Stylelint
+
+Please install extensions before running `stylelint` :
+
+- [stylelint](https://marketplace.visualstudio.com/items?itemName=shinnn.stylelint)
+- [vscode-stylefmt](https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-stylefmt)
+- [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
+
+```bash
+yarn lint
+```
+
+## FAQ
+
+What is `Ethereal` ?
 
 ![Image](https://i.imgur.com/NgJhJbd.png)
 
