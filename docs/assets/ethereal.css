@@ -17,8 +17,8 @@ section {
   display: block
 }
 h1 {
-  font-size: 2em;
-  margin: .67em 0
+  margin: .67em 0;
+  font-size: 2em
 }
 figcaption,
 figure,
@@ -29,9 +29,9 @@ figure {
   margin: 1em 40px
 }
 hr {
-  box-sizing: content-box;
+  overflow: visible;
   height: 0;
-  overflow: visible
+  box-sizing: content-box
 }
 pre {
   font-family: monospace,monospace;
@@ -42,7 +42,7 @@ a {
   -webkit-text-decoration-skip: objects
 }
 abbr[title] {
-  border-bottom: none;
+  border-bottom: 0;
   text-decoration: underline;
   text-decoration: underline dotted
 }
@@ -72,10 +72,10 @@ small {
 }
 sub,
 sup {
-  font-size: 75%;
-  line-height: 0;
   position: relative;
-  vertical-align: baseline
+  vertical-align: baseline;
+  font-size: 75%;
+  line-height: 0
 }
 sub {
   bottom: -.25em
@@ -102,10 +102,10 @@ input,
 optgroup,
 select,
 textarea {
+  margin: 0;
   font-family: sans-serif;
   font-size: 100%;
-  line-height: 1.15;
-  margin: 0
+  line-height: 1.15
 }
 button,
 input {
@@ -125,8 +125,8 @@ html [type=button] {
 [type=reset]::-moz-focus-inner,
 [type=submit]::-moz-focus-inner,
 button::-moz-focus-inner {
-  border-style: none;
-  padding: 0
+  padding: 0;
+  border-style: none
 }
 [type=button]:-moz-focusring,
 [type=reset]:-moz-focusring,
@@ -138,11 +138,11 @@ fieldset {
   padding: .35em .75em .625em
 }
 legend {
-  box-sizing: border-box;
-  color: inherit;
+  padding: 0;
   display: table;
   max-width: 100%;
-  padding: 0;
+  color: inherit;
+  box-sizing: border-box;
   white-space: normal
 }
 progress {
@@ -154,8 +154,8 @@ textarea {
 }
 [type=checkbox],
 [type=radio] {
-  box-sizing: border-box;
-  padding: 0
+  padding: 0;
+  box-sizing: border-box
 }
 [type=number]::-webkit-inner-spin-button,
 [type=number]::-webkit-outer-spin-button {
@@ -198,10 +198,10 @@ html {
   box-sizing: inherit
 }
 .container {
-  width: 100%;
-  max-width: 960px;
   position: relative;
-  margin: 0 auto
+  margin: 0 auto;
+  width: 100%;
+  max-width: 960px
 }
 @media only screen and (max-width:992px) {
   .container {
@@ -219,11 +219,11 @@ html {
   word-wrap: break-word
 }
 .ethereal {
-  border: 1px solid #a4b8d8;
-  background-color: #fff;
   padding: 2rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  background-color: #fff;
+  border: 1px solid #a4b8d8;
   -webkit-box-shadow: -1px 5px 35px -9px rgba(0,0,0,.2);
   -moz-box-shadow: -1px 5px 35px -9px rgba(0,0,0,.2);
   box-shadow: -1px 5px 35px -9px rgba(0,0,0,.2)
@@ -231,18 +231,18 @@ html {
 @media only screen and (max-width:480px) {
   .ethereal {
     padding: 1rem;
-    width: 100%;
     margin-top: 0;
-    margin-bottom: 0
+    margin-bottom: 0;
+    width: 100%
   }
 }
 .row {
-  margin-right: auto;
-  margin-left: auto;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  margin-right: auto;
+  margin-left: auto;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-flow: row wrap;
@@ -303,7 +303,7 @@ html {
     max-width: 100%
   }
 }
-@media only screen and (min-width:0px) {
+@media only screen and (min-width:0) {
   .col-1 {
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 8.33333%;
@@ -750,10 +750,10 @@ html {
   align-self: flex-end
 }
 .container {
-  width: 100%;
-  max-width: 960px;
   position: relative;
-  margin: 0 auto
+  margin: 0 auto;
+  max-width: 960px;
+  width: 100%
 }
 @media only screen and (max-width:992px) {
   .container {
@@ -780,25 +780,25 @@ kbd {
   border-radius: 3px
 }
 pre {
-  display: block;
   padding: 1em;
+  display: block;
+  overflow-x: auto;
   font-size: 80%;
   line-height: 1.5;
   color: #2f3944;
-  word-break: break-all;
-  word-wrap: break-word;
   background-color: #f2f4f6;
   border: 1px solid #acb8c6;
   border-radius: 3px;
-  overflow-x: auto;
+  word-break: break-all;
+  word-wrap: break-word;
   white-space: pre
 }
 pre code {
+  padding: initial;
+  display: block;
   color: inherit;
   background: 0 0;
-  display: block;
   font-size: inherit;
-  padding: initial;
   white-space: pre
 }
 html {
@@ -864,22 +864,22 @@ h6 {
 }
 img {
   max-width: 100%;
-  height: auto;
   display: block;
+  height: auto;
   border: 2px solid #2f3944
 }
 img.float-left {
-  float: left;
-  margin: 1rem 1rem 1rem 0
+  margin: 1rem 1rem 1rem 0;
+  float: left
 }
 img.float-right {
-  float: right;
-  margin: 1rem 0 1rem 1rem
+  margin: 1rem 0 1rem 1rem;
+  float: right
 }
 img.no-responsive {
+  display: initial;
   max-width: initial;
-  height: initial;
-  display: initial
+  height: initial
 }
 img.no-border {
   border: 0;
@@ -904,8 +904,8 @@ ol ol ol ol ol {
   list-style-type: lower-roman
 }
 ul {
-  list-style: none;
-  margin-left: 0
+  margin-left: 0;
+  list-style: none
 }
 ul li {
   text-indent: -7px
@@ -936,11 +936,11 @@ ul ul ul ul ul li:before {
   content: "⁎"
 }
 table {
-  border-collapse: collapse;
-  box-sizing: border-box;
+  overflow-x: auto;
   width: 100%;
   max-width: 100%;
-  overflow-x: auto
+  border-collapse: collapse;
+  box-sizing: border-box
 }
 table thead tr th {
   padding: 8px;
@@ -953,10 +953,10 @@ table tbody tr td {
   border-top: 1px dotted #cad2db
 }
 @media only screen and (max-width:480px) {
-  table thead tr th {
+  table tbody tr td thead tr th {
     padding: 2%
   }
-  table tbody tr td {
+  table tbody tr td tbody tr td {
     padding: 2%
   }
 }
@@ -1298,48 +1298,48 @@ table.table-border tbody tr td:last-child {
   width: 100%;
   color: #2f3944;
   background-color: #dadeda;
-  border-radius: .15rem;
-  border: 1px solid #c0c7be
+  border: 1px solid #c0c7be;
+  border-radius: .15rem
 }
 .alert-dark {
   color: #fff;
-  border-color: #2f3944;
-  background-color: #445262
+  background-color: #445262;
+  border-color: #2f3944
 }
 .alert-primary {
   color: #fff;
-  border-color: #44679f;
-  background-color: #5c80ba
+  background-color: #5c80ba;
+  border-color: #44679f
 }
 .alert-success {
   color: #fff;
-  border-color: #6db193;
-  background-color: #8ec3ac
+  background-color: #8ec3ac;
+  border-color: #6db193
 }
 .alert-info {
   color: #fff;
-  border-color: #70a1d7;
-  background-color: #98bbe2
+  background-color: #98bbe2;
+  border-color: #70a1d7
 }
 .alert-joy {
   color: #fff;
-  border-color: #ff9071;
-  background-color: #ffb8a4
+  background-color: #ffb8a4;
+  border-color: #ff9071
 }
 .alert-warning {
   color: rgba(0,0,0,.7);
-  border-color: #f0e48e;
-  background-color: #f6efbb
+  background-color: #f6efbb;
+  border-color: #f0e48e
 }
 .alert-danger {
   color: #fff;
-  border-color: #d95858;
-  background-color: #e28282
+  background-color: #e28282;
+  border-color: #d95858
 }
 .alert-muted {
   color: rgba(0,0,0,.7);
-  border-color: #a5afa3;
-  background-color: #c0c7be
+  background-color: #c0c7be;
+  border-color: #a5afa3
 }
 .badge {
   display: inline-block;
@@ -1357,48 +1357,48 @@ table.table-border tbody tr td:last-child {
   box-shadow: 0 2px 2px 0 rgba(0,0,0,.16),0 0 0 1px rgba(0,0,0,.08)
 }
 .badge-dark {
+  color: #fff;
   background-color: #2f3944;
-  border: 1px solid #2f3944;
-  color: #fff
+  border: 1px solid #2f3944
 }
 .badge-primary {
+  color: #fff;
   background-color: #44679f;
-  border: 1px solid #44679f;
-  color: #fff
+  border: 1px solid #44679f
 }
 .badge-success {
+  color: #fff;
   background-color: #6db193;
-  border: 1px solid #6db193;
-  color: #fff
+  border: 1px solid #6db193
 }
 .badge-info {
+  color: #fff;
   background-color: #70a1d7;
-  border: 1px solid #70a1d7;
-  color: #fff
+  border: 1px solid #70a1d7
 }
 .badge-joy {
+  color: #fff;
   background-color: #ff9071;
-  border: 1px solid #ff9071;
-  color: #fff
+  border: 1px solid #ff9071
 }
 .badge-warning {
+  color: rgba(0,0,0,.7);
   background-color: #f0e48e;
-  border: 1px solid #f0e48e;
-  color: rgba(0,0,0,.7)
+  border: 1px solid #f0e48e
 }
 .badge-danger {
+  color: #fff;
   background-color: #d95858;
-  border: 1px solid #d95858;
-  color: #fff
+  border: 1px solid #d95858
 }
 .badge-muted {
+  color: rgba(0,0,0,.7);
   background-color: #a5afa3;
-  border: 1px solid #a5afa3;
-  color: rgba(0,0,0,.7)
+  border: 1px solid #a5afa3
 }
 .breadcrumb {
-  display: flex;
   padding: .6rem 0;
+  display: flex;
   border-radius: 4px;
   list-style-type: none
 }
@@ -1423,17 +1423,17 @@ table.table-border tbody tr td:last-child {
   line-height: 1.4
 }
 .btn {
+  padding: .3rem .75rem;
   display: inline-block;
   align-self: center;
   vertical-align: middle;
-  padding: .3rem .75rem;
   color: #2f3944;
   font-size: 1rem;
-  border-radius: .15rem;
+  background-color: #dadeda;
   border-style: solid;
   border-width: 1px;
   border-color: #dadeda;
-  background-color: #dadeda;
+  border-radius: .15rem;
   text-align: center;
   text-decoration: none;
   outline: 0;
@@ -1447,19 +1447,19 @@ table.table-border tbody tr td:last-child {
 }
 @media only screen and (max-width:520px) {
   .btn {
-    display: inline-block;
     margin: 0 auto;
-    text-align: center;
-    margin-bottom: 1rem
+    margin-bottom: 1rem;
+    display: inline-block;
+    text-align: center
   }
 }
 .btn.btn-lg {
-  font-size: 1.25rem;
-  padding: .5rem 1rem
+  padding: .5rem 1rem;
+  font-size: 1.25rem
 }
 .btn.btn-sm {
-  font-size: .8rem;
-  padding: .3rem .6rem
+  padding: .3rem .6rem;
+  font-size: .8rem
 }
 .btn.btn-block {
   display: block;
@@ -1477,16 +1477,16 @@ table.table-border tbody tr td:last-child {
 }
 .btn.disabled,
 .btn[disabled] {
-  cursor: not-allowed;
-  opacity: .5
+  opacity: .5;
+  cursor: not-allowed
 }
 .btn:visited {
   text-decoration: none
 }
 .btn.btn-outline {
-  border-color: #dadeda;
+  color: #2f3944;
   background-color: #fff;
-  color: #2f3944
+  border-color: #dadeda
 }
 .btn.btn-outline:focus {
   -webkit-box-shadow: 0 0 0 .1rem #d2d7d1;
@@ -1773,8 +1773,8 @@ table.table-border tbody tr td:last-child {
   border-bottom-left-radius: inherit
 }
 .card .card-body {
-  flex: 1 1 auto;
-  padding: .8rem
+  padding: .8rem;
+  flex: 1 1 auto
 }
 .card .card-body .card-title {
   font-size: 1rem;
@@ -1793,10 +1793,10 @@ table.table-border tbody tr td:last-child {
   line-height: 1.5
 }
 .card img {
-  border-top-right-radius: .15rem;
-  border-top-left-radius: .15rem;
+  min-width: 100%;
   border: 0;
-  min-width: 100%
+  border-top-right-radius: .15rem;
+  border-top-left-radius: .15rem
 }
 .card .card-body + a img,
 .card .card-body + img {
