@@ -1,0 +1,31 @@
+/**
+  Designed on colorhunt
+  https://colorhunt.co/palette/125366
+  https://colorhunt.co/palette/125367
+*/
+
+// Theme colors
+$dark: #2f3944 !default;
+$primary: #44679f !default;
+$success: #6db193 !default;
+$info: #70a1d7 !default;
+$joy: #ff9071 !default;
+$warning: #f0e48e !default;
+$danger: #d95858 !default;
+$muted: #a5afa3 !default;
+
+// light
+$dark-light: lighten($dark, 30%) !default;
+$primary-light: lighten($primary, 30%) !default;
+$success-light: lighten($success, 30%) !default;
+$info-light: lighten($info, 30%) !default;
+$joy-light: lighten($joy, 30%) !default;
+$warning-light: lighten($warning, 20%) !default;
+$danger-light: lighten($danger, 30%) !default;
+$muted-light: lighten($muted, 20%) !default;
+
+// dark
+$white-dark: rgba(#000, 0.03) !default;
+$light-dark: rgba(#000, 0.7) !default;
+$white: rgba(#fff, 1) !default;
+$main-background: rgba(#fff, 1) !default;
