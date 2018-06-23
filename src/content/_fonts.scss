@@ -26,20 +26,22 @@ h3,
 h4,
 h5,
 h6 {
+  margin: .5rem auto;
   font-family: $header-font, sans-serif;
-  font-weight: normal;
+  font-weight: 500;
+  line-height: 1.2;
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 2.5rem;
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 1.75rem;
 }
 
 h4 {
@@ -47,11 +49,11 @@ h4 {
 }
 
 h5 {
-  font-size: 1rem;
+  font-size: 1.25rem;
 }
 
 h6 {
-  font-size: .8rem;
+  font-size: 1rem;
 }
 
 .text-left {
