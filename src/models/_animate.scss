@@ -1,26 +1,3 @@
-/*
-  Add transform: translate() with browser prefixes.
-  Same syntax for translate() and translate3d()
-  To get 3D add a $z value and set 'true'
-  @param string | boolean
-  @default 0 | false
-*/
-@mixin translate($x, $y, $z: 0, $transform3d: false) {
-	@if $transform3d {
-		-webkit-transform: translate3d($x, $y, $z);
-		-ms-transform: translate3d($x, $y, $z);
-		-moz-transform: translate3d($x, $y, $z);
-		-o-transform: translate3d($x, $y, $z);
-		transform: translate3d($x, $y, $z);
-	} @else {
-		-webkit-transform: translate($x, $y);
-		-ms-transform: translate($x, $y);
-		-moz-transform: translate($x, $y);
-		-o-transform: translate($x, $y);
-		transform: translate($x, $y);
-	}
-}
-
 /**
   Add global transition styles to selector
   @param string
