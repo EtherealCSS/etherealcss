@@ -218,24 +218,6 @@ html {
   margin-bottom: 2rem;
   word-wrap: break-word
 }
-.ethereal {
-  padding: 2rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  background-color: #fff;
-  border: 1px solid #a4b8d8;
-  -webkit-box-shadow: -1px 5px 35px -9px rgba(0,0,0,.2);
-  -moz-box-shadow: -1px 5px 35px -9px rgba(0,0,0,.2);
-  box-shadow: -1px 5px 35px -9px rgba(0,0,0,.2)
-}
-@media only screen and (max-width:480px) {
-  .ethereal {
-    padding: 1rem;
-    margin-top: 0;
-    margin-bottom: 0;
-    width: 100%
-  }
-}
 .row {
   display: -webkit-box;
   display: -webkit-flex;

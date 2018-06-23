@@ -81,17 +81,6 @@
 	}
 }
 
-// a.btn {
-//     text-decoration: none;
-//     background-image: linear-gradient(5deg, transparent 65%, $muted 80%, transparent 90%), linear-gradient(165deg, transparent 5%, $muted 15%, transparent 25%), linear-gradient(165deg, transparent 45%, $muted 55%, transparent 65%), linear-gradient(15deg, transparent 25%, $muted 35%, transparent 50%);
-//     background-repeat: repeat-x;
-//     background-size: 4px 3px;
-//     background-position: 0 90%;
-//     &:visited {
-//         text-decoration: none;
-//         color: $dark;
-//     }
-// }
 @each $colorName, $color, $color-light, $color-text in $colors {
 	.btn-#{$colorName} {
 		border-color: $color;

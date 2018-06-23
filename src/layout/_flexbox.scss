@@ -1,8 +1,9 @@
-/**
-Create column by class name
-col-? => col col-2 lg-4 md-6 sm-8 xs-10
-*/
 $columns: 12;
+
+/**
+  Create column by class name
+  col-? => col col-2 lg-4 md-6 sm-8 xs-10
+*/
 
 .row {
 	display: -webkit-box;
