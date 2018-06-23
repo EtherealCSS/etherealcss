@@ -1,3 +1,9 @@
+@mixin li-bullet($char) {
+	li:before {
+		content: $char;
+	}
+}
+
 ol {
 	list-style-type: decimal;
 
