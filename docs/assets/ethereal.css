@@ -1354,6 +1354,8 @@ table.table-border tbody tr td:last-child {
   border-radius: .15rem;
   text-decoration: none;
   white-space: nowrap;
+  -webkit-boxbox-shadow: 0 2px 2px 0 rgba(0,0,0,.16),0 0 0 1px rgba(0,0,0,.08);
+  -moz-box-box-shadow: 0 2px 2px 0 rgba(0,0,0,.16),0 0 0 1px rgba(0,0,0,.08);
   box-shadow: 0 2px 2px 0 rgba(0,0,0,.16),0 0 0 1px rgba(0,0,0,.08)
 }
 .badge-dark {
@@ -1398,6 +1400,8 @@ table.table-border tbody tr td:last-child {
 }
 .breadcrumb {
   padding: .6rem 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   border-radius: 4px;
   list-style-type: none
@@ -1441,6 +1445,7 @@ table.table-border tbody tr td:last-child {
   user-select: none;
   cursor: pointer;
   -webkit-transition: all 183ms ease-in-out 0s;
+  -ms-transition: all 183ms ease-in-out 0s;
   -moz-transition: all 183ms ease-in-out 0s;
   -o-transition: all 183ms ease-in-out 0s;
   transition: all 183ms ease-in-out 0s
@@ -1749,6 +1754,8 @@ table.table-border tbody tr td:last-child {
 }
 .card {
   position: relative;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   border-radius: .15rem;

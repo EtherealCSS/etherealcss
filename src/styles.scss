@@ -1,17 +1,20 @@
-@charset 'UTF-8';
-// EtherealCSS core
-@import 'core/config';
-@import 'core/reset';
-// Layout styling
+@charset 'utf-8';
+// Models
+@import 'models/animate';
+@import 'models/colors';
+@import 'models/fonts';
+@import 'models/rwd';
+@import 'models/reset';
+// Layout
 @import 'layout/container';
 @import 'layout/flexbox';
-// Content styling
+// Content
 @import 'content/code';
 @import 'content/fonts';
 @import 'content/images';
 @import 'content/lists';
 @import 'content/tables';
-// Utilities
+// Utils
 @import 'utils/colors';
 @import 'utils/display';
 @import 'utils/position';

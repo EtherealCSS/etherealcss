@@ -1,5 +1,7 @@
 .card {
 	position: relative;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
 	flex-direction: column;
 	border-radius: .15rem;
