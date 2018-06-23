@@ -3,12 +3,6 @@ An Elegant, Lightweight CSS Framework.
 
 👉 [Demo](http://robby570.tw/etherealcss/)
 
----
-
-🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧
-
----
-
 ## Todo
 
 ### Components
