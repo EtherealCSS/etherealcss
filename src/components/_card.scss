@@ -1,64 +1,76 @@
 .card {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  border-radius: .15rem;
-  border: 1px solid $muted-light;
-  backface-visibility: hidden;
-  word-wrap: break-word;
-  .card-header,
-  .card-footer {
-    padding: .5rem .8rem;
-  }
-  .card-header {
-    border-bottom: 1px solid $muted-light;
-  }
-  .card-footer:not(.btn) {
-    border-top: 1px solid $muted-light;
-  }
-  .card-footer.btn {
-    border-top-right-radius: 0;
-    border-top-left-radius: 0;
-    border-bottom-right-radius: inherit;
-    border-bottom-left-radius: inherit;
-  }
-  .card-body {
-    flex: 1 1 auto;
-    padding: .8rem;
-    .card-title {
-      font-size: 1rem;
-      font-weight: 500;
-    }
-    .card-title+.card-subtitle {
-      margin-top: .512rem;
-    }
-    .card-subtitle {
-      margin-bottom: .8rem;
-      font-size: .8rem;
-      color: $muted;
-    }
-    .card-text {
-      font-size: .8rem;
-      line-height: 1.5;
-    }
-  }
-  img {
-    border-top-right-radius: .15rem;
-    border-top-left-radius: .15rem;
-    border: 0;
-    min-width: 100%;
-  }
-  .card-body+a img,
-  .card-body+img {
-    /* check img position */
-    border-top-right-radius: 0;
-    border-top-left-radius: 0;
-    border-bottom-right-radius: .15rem;
-    border-bottom-left-radius: .15rem;
-  }
-  .btn {
-    @include resp(520px) {
-      margin-bottom: 0;
-    }
-  }
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	border-radius: .15rem;
+	border: 1px solid $muted-light;
+	backface-visibility: hidden;
+	word-wrap: break-word;
+
+	.card-header,
+	.card-footer {
+		padding: .5rem .8rem;
+	}
+
+	.card-header {
+		border-bottom: 1px solid $muted-light;
+	}
+
+	.card-footer:not(.btn) {
+		border-top: 1px solid $muted-light;
+	}
+
+	.card-footer.btn {
+		border-top-right-radius: 0;
+		border-top-left-radius: 0;
+		border-bottom-right-radius: inherit;
+		border-bottom-left-radius: inherit;
+	}
+
+	.card-body {
+		padding: .8rem;
+		flex: 1 1 auto;
+
+		.card-title {
+			font-size: 1rem;
+			font-weight: 500;
+		}
+
+		.card-title + .card-subtitle {
+			margin-top: .512rem;
+		}
+
+		.card-subtitle {
+			margin-bottom: .8rem;
+			font-size: .8rem;
+			color: $muted;
+		}
+
+		.card-text {
+			font-size: .8rem;
+			line-height: 1.5;
+		}
+	}
+
+	img {
+		min-width: 100%;
+		border: 0;
+		border-top-right-radius: .15rem;
+		border-top-left-radius: .15rem;
+	}
+
+	.card-body + a img,
+	.card-body + img {
+		/* check img position */
+		border-top-right-radius: 0;
+		border-top-left-radius: 0;
+		border-bottom-right-radius: .15rem;
+		border-bottom-left-radius: .15rem;
+	}
+
+	.btn {
+		@include resp(520px) {
+			margin-bottom: 0;
+		}
+	}
 }

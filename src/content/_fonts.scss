@@ -1,7 +1,7 @@
 html {
-  font-size: $global-font-size;
-  font-family: $body-font, sans-serif;
-  color: $font-color;
+	font-size: $global-font-size;
+	font-family: $body-font, sans-serif;
+	color: $font-color;
 }
 
 p,
@@ -17,7 +17,7 @@ input,
 textarea,
 select,
 option {
-  font-family: $body-font, sans-serif;
+	font-family: $body-font, sans-serif;
 }
 
 h1,
@@ -26,48 +26,48 @@ h3,
 h4,
 h5,
 h6 {
-  margin: .5rem auto;
-  font-family: $header-font, sans-serif;
-  font-weight: 500;
-  line-height: 1.2;
+	margin: .5rem auto;
+	font-family: $header-font, sans-serif;
+	font-weight: 500;
+	line-height: 1.2;
 }
 
 h1 {
-  font-size: 2.5rem;
+	font-size: 2.5rem;
 }
 
 h2 {
-  font-size: 2rem;
+	font-size: 2rem;
 }
 
 h3 {
-  font-size: 1.75rem;
+	font-size: 1.75rem;
 }
 
 h4 {
-  font-size: 1.5rem;
+	font-size: 1.5rem;
 }
 
 h5 {
-  font-size: 1.25rem;
+	font-size: 1.25rem;
 }
 
 h6 {
-  font-size: 1rem;
+	font-size: 1rem;
 }
 
 .text-left {
-  text-align: left;
+	text-align: left;
 }
 
 .text-center {
-  text-align: center;
+	text-align: center;
 }
 
 .text-right {
-  text-align: right;
+	text-align: right;
 }
 
 .font-light {
-  font-family: $light-font, sans-serif;
+	font-family: $light-font, sans-serif;
 }

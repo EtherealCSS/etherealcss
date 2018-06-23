@@ -1,35 +1,28 @@
 // Map to set your color names
-$colors:(dark, $dark, $dark-light, $dark-text),
-(primary, $primary, $primary-light, $primary-text),
-(success, $success, $success-light, $success-text),
-(info, $info, $info-light, $info-text),
-(joy, $joy, $joy-light, $joy-text),
-(warning, $warning, $warning-light, $warning-text),
-(danger, $danger, $danger-light, $danger-text),
-(muted, $muted, $muted-light, $muted-text);
+$colors: (dark, $dark, $dark-light, $dark-text), (primary, $primary, $primary-light, $primary-text), (success, $success, $success-light, $success-text), (info, $info, $info-light, $info-text), (joy, $joy, $joy-light, $joy-text), (warning, $warning, $warning-light, $warning-text), (danger, $danger, $danger-light, $danger-text), (muted, $muted, $muted-light, $muted-text);
+
 /**
-    Class by color theme
+  Class by color theme
 */
 
-@each $colorName,
-$color,
-$color-light in $colors {
-  .text-#{$colorName} {
-    color: $color;
-  }
-  .bg-#{$colorName} {
-    background-color: $color;
-  }
+@each $colorName, $color, $color-light in $colors {
+	.text-#{$colorName} {
+		color: $color;
+	}
+
+	.bg-#{$colorName} {
+		background-color: $color;
+	}
 }
 
 /**
-    Class by color name
+  Class by color name
 */
 
 .text-white {
-  color: $white;
+	color: $white;
 }
 
 .bg-white {
-  background-color: $white;
+	background-color: $white;
 }

@@ -1327,7 +1327,7 @@ table.table-border tbody tr td:last-child {
   background-color: #ffb8a4
 }
 .alert-warning {
-  color: rgba(0,0,0,.75);
+  color: rgba(0,0,0,.7);
   border-color: #f0e48e;
   background-color: #f6efbb
 }
@@ -1337,7 +1337,7 @@ table.table-border tbody tr td:last-child {
   background-color: #e28282
 }
 .alert-muted {
-  color: rgba(0,0,0,.75);
+  color: rgba(0,0,0,.7);
   border-color: #a5afa3;
   background-color: #c0c7be
 }
@@ -1384,7 +1384,7 @@ table.table-border tbody tr td:last-child {
 .badge-warning {
   background-color: #f0e48e;
   border: 1px solid #f0e48e;
-  color: rgba(0,0,0,.75)
+  color: rgba(0,0,0,.7)
 }
 .badge-danger {
   background-color: #d95858;
@@ -1394,7 +1394,7 @@ table.table-border tbody tr td:last-child {
 .badge-muted {
   background-color: #a5afa3;
   border: 1px solid #a5afa3;
-  color: rgba(0,0,0,.75)
+  color: rgba(0,0,0,.7)
 }
 .breadcrumb {
   display: flex;
@@ -1657,7 +1657,7 @@ table.table-border tbody tr td:last-child {
 .btn-warning {
   border-color: #f0e48e;
   background-color: #f0e48e;
-  color: rgba(0,0,0,.75)
+  color: rgba(0,0,0,.7)
 }
 .btn-warning:focus {
   -webkit-box-shadow: 0 0 0 .1rem #f6efbb;
@@ -1681,7 +1681,7 @@ table.table-border tbody tr td:last-child {
 }
 .btn-outline-warning:active,
 .btn-outline-warning:hover {
-  color: rgba(0,0,0,.75);
+  color: rgba(0,0,0,.7);
   background-color: #f0e48e;
   transition: none
 }
@@ -1719,7 +1719,7 @@ table.table-border tbody tr td:last-child {
 .btn-muted {
   border-color: #a5afa3;
   background-color: #a5afa3;
-  color: rgba(0,0,0,.75)
+  color: rgba(0,0,0,.7)
 }
 .btn-muted:focus {
   -webkit-box-shadow: 0 0 0 .1rem #c0c7be;
@@ -1743,7 +1743,7 @@ table.table-border tbody tr td:last-child {
 }
 .btn-outline-muted:active,
 .btn-outline-muted:hover {
-  color: rgba(0,0,0,.75);
+  color: rgba(0,0,0,.7);
   background-color: #a5afa3;
   transition: none
 }

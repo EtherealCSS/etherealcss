@@ -1,48 +1,61 @@
 ol {
-    list-style-type: decimal;
-    ol {
-        list-style-type: upper-alpha;
-        ol {
-            list-style-type: upper-roman;
-            ol {
-                list-style-type: lower-alpha;
-                ol {
-                    list-style-type: lower-roman;
-                }
-            }
-        }
-    }
+	list-style-type: decimal;
+
+	ol {
+		list-style-type: upper-alpha;
+
+		ol {
+			list-style-type: upper-roman;
+
+			ol {
+				list-style-type: lower-alpha;
+
+				ol {
+					list-style-type: lower-roman;
+				}
+			}
+		}
+	}
 }
 
 ul {
-    list-style: none;
-    margin-left: 0;
-    li {
-        text-indent: -7px;
-        &:before {
-            position: relative;
-            left: -7px;
-        }
-    }
-    &.inline {
-        padding: 0;
-        li {
-            display: inline;
-        }
-    }
-    &:not(.inline) {
-        @include li-bullet("-");
-    }
-    ul {
-        @include li-bullet("+");
-        ul {
-            @include li-bullet("~");
-            ul {
-                @include li-bullet("⤍");
-                ul {
-                    @include li-bullet("⁎");
-                }
-            }
-        }
-    }
+	margin-left: 0;
+	list-style: none;
+
+	li {
+		text-indent: -7px;
+
+		&:before {
+			position: relative;
+			left: -7px;
+		}
+	}
+
+	&.inline {
+		padding: 0;
+
+		li {
+			display: inline;
+		}
+	}
+
+	&:not(.inline) {
+		@include li-bullet('-');
+	}
+
+	ul {
+		@include li-bullet('+');
+
+		ul {
+			@include li-bullet('~');
+
+			ul {
+				@include li-bullet('⤍');
+
+				ul {
+					@include li-bullet('⁎');
+				}
+			}
+		}
+	}
 }

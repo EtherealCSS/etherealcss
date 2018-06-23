@@ -1,4 +1,4 @@
-$numberOfSize: 6;
+$sizes: 6;
 $spacer: 0.25;
 /**
   Create space by class name
@@ -7,26 +7,31 @@ $spacer: 0.25;
 */
 
 @mixin create-space-classes($side, $property) {
-  @for $i from 1 through $numberOfSize {
-    .#{$side}t-#{$i} {
-      #{$property}-top: #{$spacer*$i}rem;
-    }
-    .#{$side}r-#{$i} {
-      #{$property}-right:#{$spacer*$i}rem;
-    }
-    .#{$side}b-#{$i} {
-      #{$property}-bottom: #{$spacer*$i}rem;
-    }
-    .#{$side}l-#{$i} {
-      #{$property}-left: #{'.'}#{$spacer*$i}rem;
-    }
-    .#{$side}-#{$i} {
-      #{$property}: #{'.'}#{$spacer*$i}rem;
-    }
-  }
-  .#{$side}-auto {
-    #{$property}: auto;
-  }
+	@for $i from 1 through $sizes {
+		.#{$side}t-#{$i} {
+			#{$property}-top: #{$spacer * $i}rem;
+		}
+
+		.#{$side}r-#{$i} {
+			#{$property}-right: #{$spacer * $i}rem;
+		}
+
+		.#{$side}b-#{$i} {
+			#{$property}-bottom: #{$spacer * $i}rem;
+		}
+
+		.#{$side}l-#{$i} {
+			#{$property}-left: #{'.'}#{$spacer * $i}rem;
+		}
+
+		.#{$side}-#{$i} {
+			#{$property}: #{'.'}#{$spacer * $i}rem;
+		}
+	}
+
+	.#{$side}-auto {
+		#{$property}: auto;
+	}
 }
 
 @include create-space-classes(m, margin);

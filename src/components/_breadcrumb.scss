@@ -9,28 +9,32 @@
 */
 
 .breadcrumb {
-  display: flex;
-  padding: .6rem 0;
-  border-radius: 4px;
-  list-style-type: none;
-  .item {
-    color: $info;
-    font-size: .8rem;
-    line-height: 1;
-    text-decoration: none;
-    cursor: default;
-    &.active {
-      color: $dark;
-    }
-    &:not(.active):hover {
-      cursor: pointer;
-      text-decoration: underline;
-    }
-  }
-  .driver {
-    padding: 0 .4rem;
-    color: $muted;
-    font-size: .6rem;
-    line-height: 1.4;
-  }
+	padding: .6rem 0;
+	display: flex;
+	border-radius: 4px;
+	list-style-type: none;
+
+	.item {
+		color: $info;
+		font-size: .8rem;
+		line-height: 1;
+		text-decoration: none;
+		cursor: default;
+
+		&.active {
+			color: $dark;
+		}
+
+		&:not(.active):hover {
+			cursor: pointer;
+			text-decoration: underline;
+		}
+	}
+
+	.driver {
+		padding: 0 .4rem;
+		color: $muted;
+		font-size: .6rem;
+		line-height: 1.4;
+	}
 }

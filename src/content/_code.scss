@@ -1,38 +1,39 @@
 code {
-    padding: 2px 4px;
-    font-size: 80%;
-    color: $muted;
-    background-color: lighten($dark, 70%);
-    border-radius: 3px;
+	padding: 2px 4px;
+	font-size: 80%;
+	color: $muted;
+	background-color: lighten($dark, 70%);
+	border-radius: 3px;
 }
 
 kbd {
-    padding: 2px 4px;
-    font-size: 80%;
-    color: $white;
-    background-color: $dark;
-    border-radius: 3px;
+	padding: 2px 4px;
+	font-size: 80%;
+	color: $white;
+	background-color: $dark;
+	border-radius: 3px;
 }
 
 pre {
-    display: block;
-    padding: 1em;
-    font-size: 80%;
-    line-height: 1.5;
-    color: $dark;
-    word-break: break-all;
-    word-wrap: break-word;
-    background-color: lighten($dark, 73%);
-    border: 1px solid lighten($dark, 50%);
-    border-radius: 3px;
-    overflow-x: auto;
-    white-space: pre;
-    code {
-        color: inherit;
-        background: transparent;
-        display: block;
-        font-size: inherit;
-        padding: initial;
-        white-space: pre;
-    }
+	padding: 1em;
+	display: block;
+	overflow-x: auto;
+	font-size: 80%;
+	line-height: 1.5;
+	color: $dark;
+	background-color: lighten($dark, 73%);
+	border: 1px solid lighten($dark, 50%);
+	border-radius: 3px;
+	word-break: break-all;
+	word-wrap: break-word;
+	white-space: pre;
+
+	code {
+		padding: initial;
+		display: block;
+		color: inherit;
+		background: transparent;
+		font-size: inherit;
+		white-space: pre;
+	}
 }

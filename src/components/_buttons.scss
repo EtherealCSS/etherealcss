@@ -1,74 +1,84 @@
 .btn {
-  display: inline-block;
-  align-self: center;
-  vertical-align: middle;
-  padding: .3rem .75rem;
-  color: $dark;
-  font-size: 1rem;
-  border-radius: .15rem;
-  border-style: solid;
-  border-width: 1px;
-  border-color: lighten($muted, 20%);
-  background-color: lighten($muted, 20%);
-  text-align: center;
-  text-decoration: none;
-  outline: none;
-  white-space: nowrap;
-  user-select: none;
-  cursor: pointer;
-  @include transition();
-  @include resp(520px) {
-    display: inline-block;
-    margin: 0 auto;
-    text-align: center;
-    margin-bottom: 1rem;
-  }
-  &.btn-lg {
-    font-size: 1.25rem;
-    padding: .5rem 1rem;
-  }
-  &.btn-sm {
-    font-size: .8rem;
-    padding: .3rem .6rem;
-  }
-  &.btn-block {
-    display: block;
-    width: 100%;
-  }
-  &:focus {
-    -webkit-box-shadow: 0 0 0 0.1rem darken($muted-light, 3%);
-    -moz-box-shadow: 0 0 0 0.1rem darken($muted-light, 3%);
-    box-shadow: 0 0 0 0.1rem darken($muted-light, 3%);
-  }
-  &:hover,
-  &:active {
-    background-color: lighten($muted, 10%);
-    transition: none;
-  }
-  &.disabled,
-  &[disabled] {
-    cursor: not-allowed;
-    opacity: .5
-  }
-  &:visited {
-    text-decoration: none;
-  }
-  &.btn-outline {
-    border-color: lighten($muted, 20%);
-    background-color: $white;
-    color: $dark;
-    &:focus {
-      -webkit-box-shadow: 0 0 0 0.1rem darken($muted-light, 3%);
-      -moz-box-shadow: 0 0 0 0.1rem darken($muted-light, 3%);
-      box-shadow: 0 0 0 0.1rem darken($muted-light, 3%);
-    }
-    &:hover,
-    &:active {
-      color: $dark;
-      background-color: lighten($muted, 20%);
-      transition: none;
-    }
-  }
+	padding: .3rem .75rem;
+	display: inline-block;
+	align-self: center;
+	vertical-align: middle;
+	color: $dark;
+	font-size: 1rem;
+	background-color: lighten($muted, 20%);
+	border-style: solid;
+	border-width: 1px;
+	border-color: lighten($muted, 20%);
+	border-radius: .15rem;
+	text-align: center;
+	text-decoration: none;
+	outline: none;
+	white-space: nowrap;
+	user-select: none;
+	cursor: pointer;
+	@include transition();
+	@include resp(520px) {
+		margin: 0 auto;
+		margin-bottom: 1rem;
+		display: inline-block;
+		text-align: center;
+	}
+
+	&.btn-lg {
+		padding: .5rem 1rem;
+		font-size: 1.25rem;
+	}
+
+	&.btn-sm {
+		padding: .3rem .6rem;
+		font-size: .8rem;
+	}
+
+	&.btn-block {
+		display: block;
+		width: 100%;
+	}
+
+	&:focus {
+		-webkit-box-shadow: 0 0 0 0.1rem darken($muted-light, 3%);
+		-moz-box-shadow: 0 0 0 0.1rem darken($muted-light, 3%);
+		box-shadow: 0 0 0 0.1rem darken($muted-light, 3%);
+	}
+
+	&:hover,
+	&:active {
+		background-color: lighten($muted, 10%);
+		transition: none;
+	}
+
+	&.disabled,
+	&[disabled] {
+		opacity: .5;
+		cursor: not-allowed;
+	}
+
+	&:visited {
+		text-decoration: none;
+	}
+
+	&.btn-outline {
+		color: $dark;
+		background-color: $white;
+		border-color: lighten($muted, 20%);
+
+		&:focus {
+			-webkit-box-shadow: 0 0 0 0.1rem darken($muted-light, 3%);
+			-moz-box-shadow: 0 0 0 0.1rem darken($muted-light, 3%);
+			box-shadow: 0 0 0 0.1rem darken($muted-light, 3%);
+		}
+
+		&:hover,
+		&:active {
+			color: $dark;
+			background-color: lighten($muted, 20%);
+			transition: none;
+		}
+	}
 }
 
 // a.btn {
@@ -82,39 +92,41 @@
 //         color: $dark;
 //     }
 // }
-@each $colorName,
-$color,
-$color-light,
-$color-text in $colors {
-  .btn-#{$colorName} {
-    border-color: $color;
-    background-color: $color;
-    color: $color-text;
-    &:focus {
-      -webkit-box-shadow: 0 0 0 0.1rem darken($color-light, 10%);
-      -moz-box-shadow: 0 0 0 0.1rem darken($color-light, 10%);
-      box-shadow: 0 0 0 0.1rem darken($color-light, 10%);
-    }
-    &:hover,
-    &:active {
-      background-color: darken($color, 10%);
-      transition: none;
-    }
-  }
-  .btn-outline-#{$colorName} {
-    border-color: $color;
-    background-color: $white;
-    color: $color;
-    &:focus {
-      -webkit-box-shadow: 0 0 0 0.1rem darken($color-light, 10%);
-      -moz-box-shadow: 0 0 0 0.1rem darken($color-light, 10%);
-      box-shadow: 0 0 0 0.1rem darken($color-light, 10%);
-    }
-    &:hover,
-    &:active {
-      color: $color-text;
-      background-color: $color;
-      transition: none;
-    }
-  }
+@each $colorName, $color, $color-light, $color-text in $colors {
+	.btn-#{$colorName} {
+		border-color: $color;
+		background-color: $color;
+		color: $color-text;
+
+		&:focus {
+			-webkit-box-shadow: 0 0 0 0.1rem darken($color-light, 10%);
+			-moz-box-shadow: 0 0 0 0.1rem darken($color-light, 10%);
+			box-shadow: 0 0 0 0.1rem darken($color-light, 10%);
+		}
+
+		&:hover,
+		&:active {
+			background-color: darken($color, 10%);
+			transition: none;
+		}
+	}
+
+	.btn-outline-#{$colorName} {
+		border-color: $color;
+		background-color: $white;
+		color: $color;
+
+		&:focus {
+			-webkit-box-shadow: 0 0 0 0.1rem darken($color-light, 10%);
+			-moz-box-shadow: 0 0 0 0.1rem darken($color-light, 10%);
+			box-shadow: 0 0 0 0.1rem darken($color-light, 10%);
+		}
+
+		&:hover,
+		&:active {
+			color: $color-text;
+			background-color: $color;
+			transition: none;
+		}
+	}
 }
