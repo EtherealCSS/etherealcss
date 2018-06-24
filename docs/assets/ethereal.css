@@ -1403,9 +1403,9 @@ table.table-border tbody tr td:last-child {
   text-decoration: underline
 }
 .breadcrumb .driver {
-  display: inline-block;
   padding: 0 .4rem;
   color: #a5afa3;
+  text-align: center;
   font-size: .6rem;
   line-height: 1.4
 }
