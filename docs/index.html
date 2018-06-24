@@ -29,6 +29,7 @@
     <div class="row">
       <div class="col lg-6 md-6 sm-12">
         <h5>Text colors</h5>
+        <pre data-type="html"><div class="text-primary"></div></pre>
         <div class="p-1">An Elegant, Lightweight CSS Framework</div>
         <div class="text-primary p-1">An Elegant, Lightweight CSS Framework</div>
         <div class="text-success p-1">An Elegant, Lightweight CSS Framework</div>
@@ -40,6 +41,7 @@
       </div>
       <div class="col lg-6 md-6 sm-12">
         <h5>Background colors</h5>
+        <pre data-type="html"><div class="bg-primary"></div></pre>
         <div class="bg-dark text-white p-1">An Elegant, Lightweight CSS Framework</div>
         <div class="bg-primary text-white p-1">An Elegant, Lightweight CSS Framework</div>
         <div class="bg-success text-white p-1">An Elegant, Lightweight CSS Framework</div>
@@ -52,25 +54,35 @@
     </div>
     <hr>
     <div class="row">
-      <div class="col lg-6 md-6 sm-12 text-center">
+      <div class="col lg-6 md-6 sm-12">
         <h5>Image</h5>
+        <pre data-type="html"><img class="no-border circle" src="" /></pre>
         <img class="no-border circle m-auto" src="https://avatars3.githubusercontent.com/u/13682994?s=460&v=4" width="200" />
       </div>
       <div class="col lg-6 md-6 sm-12">
-        <h5>Code, kbd, pre</h5>
-        <code>const Ethereal = [];</code>
-        <kbd>Ctrl + C</kbd>
-        <pre>
+        <div>
+          <h5>code</h5>
+          <code>const Ethereal = [];</code>
+        </div>
+        <div class="mt-2">
+          <h5>kbd</h5>
+          <kbd>Ctrl + C</kbd>
+        </div>
+        <div>
+          <h5>pre</h5>
+          <pre>
 function Greet(){
   console.info('Hello Ethereal!')
 }</pre>
+        </div>
       </div>
     </div>
     <hr>
     <h4>Buttons</h4>
-    <h5>Default Buttons</h5>
     <div class="row">
       <div class="col lg-12 md-12 sm-12">
+        <h5>Default Buttons</h5>
+        <pre data-type="html"><button class="btn btn-primary"></button></pre>
         <button class="btn" type="button">Default</button>
         <button class="btn btn-primary" type="button">Primary</button>
         <button class="btn btn-success" type="button">Success</button>
@@ -82,9 +94,10 @@ function Greet(){
         <button class="btn btn-muted" type="button">Muted</button>
       </div>
     </div>
-    <h5>Outline Buttons</h5>
     <div class="row">
       <div class="col lg-12 md-12 sm-12">
+        <h5>Outline Buttons</h5>
+        <pre data-type="html"><button class="btn btn-outline-primary"></button></pre>
         <button class="btn btn-outline" type="button">Default</button>
         <button class="btn btn-outline-primary" type="button">Primary</button>
         <button class="btn btn-outline-success" type="button">Success</button>
@@ -96,9 +109,10 @@ function Greet(){
         <button class="btn btn-outline-muted" type="button">Muted</button>
       </div>
     </div>
-    <h5>Button sizes</h5>
     <div class="row">
       <div class="col lg-12 md-12 sm-12">
+        <h5>Button sizes</h5>
+        <pre data-type="html"><button class="btn btn-lg"></button></pre>
         <button class="btn btn-lg" type="button">Large</button>
         <button class="btn" type="button">Default</button>
         <button class="btn btn-sm" type="button">Small</button>
@@ -110,9 +124,10 @@ function Greet(){
         <button class="btn btn-sm btn-outline-primary" type="button">Small</button>
       </div>
     </div>
-    <h5>Button display</h5>
     <div class="row">
       <div class="col lg-12 md-12 sm-12">
+        <h5>Button display</h5>
+        <pre data-type="html"><button class="btn btn-block"></button></pre>
         <button class="btn btn-lg btn-block" type="button">Block large button</button>
         <button class="btn btn-block btn-primary mt-4" type="button">Block button</button>
         <button class="btn btn-sm btn-block btn-outline-primary mt-4" type="button">Block small outline button</button>
@@ -123,6 +138,8 @@ function Greet(){
     <div class="row">
       <div class="col lg-6 md-6 sm-12">
         <h5>Table alternating</h5>
+        <pre data-type="html"><table class="table-alternating">
+</table></pre>
         <table class="table-alternating text-center framework">
           <thead>
             <tr>
@@ -172,6 +189,8 @@ function Greet(){
       </div>
       <div class="col lg-6 md-6 sm-12">
         <h5>Table dark hover</h5>
+        <pre data-type="html"><table class="table-dark table-hover">
+</table></pre>
         <table class="table-dark table-hover text-center">
           <thead>
             <tr>
@@ -194,6 +213,8 @@ function Greet(){
           </tbody>
         </table>
         <h5>Table dark border</h5>
+        <pre data-type="html"><table class="table-dark table-border">
+</table></pre>
         <table class="table-dark table-border text-center">
           <thead>
             <tr>
@@ -236,6 +257,7 @@ function Greet(){
     <h4>Alerts</h4>
     <div class="row">
       <div class="col lg-12 md-12 sm-12">
+        <pre data-type="html"><div class="alert alert-primary"></div></pre>
         <div class="alert">This is a default alert—check it out!</div>
         <div class="alert alert-primary">This is a primary alert—check it out!</div>
         <div class="alert alert-success">This is a success alert—check it out!</div>
@@ -251,6 +273,7 @@ function Greet(){
     <h4>Badges</h4>
     <div class="row">
       <div class="col lg-12 md-12 sm-12">
+        <pre data-type="html"><div class="badge badge-primary"></div></pre>
         <div class="badge">tags</div>
         <div class="badge badge-primary">primary</div>
         <div class="badge badge-success">success</div>
@@ -264,6 +287,13 @@ function Greet(){
     </div>
     <hr>
     <h4>Breadcrumb</h4>
+    <pre data-type="html">
+<div class="breadcrumb">
+  <a class="item" href="#">Home</a>
+  <span class="driver">/</span>
+  <a class="item active">Account</a>
+</div>
+</pre>
     <div class="breadcrumb">
       <a class="item" href="#">Home</a>
       <span class="driver">/</span>
@@ -278,6 +308,19 @@ function Greet(){
     </div>
     <hr>
     <h4>Card</h4>
+    <div class="col lg-12">
+      <pre data-type="html">
+<div class="card">
+  <a href="#"><img src=""></a>
+  <div class="card-body">
+    <div class="card-title">Card title</div>
+    <div class="card-subtitle">Card subtitle</div>
+    <p class="card-text">Card text</p>
+    <a class="btn btn-primary btn-block" href="#">Check it out</a>
+  </div>
+</div>
+</pre>
+    </div>
     <div class="row">
       <div class="col lg-4 md-4 sm-6 xs-12">
         <h5>Card default</h5>
@@ -354,6 +397,7 @@ function Greet(){
       </div>
     </div>
   </div>
+  <script src="./index.js"></script>
 </body>
 
 </html>
