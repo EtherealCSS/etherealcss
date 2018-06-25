@@ -12,7 +12,7 @@ An Elegant, Lightweight CSS Framework.
 - [x] Breadcrumb
 - [x] Buttons
 - [x] Cards
-- [ ] Collapsibles
+- [x] Collapsibles
 - [ ] Forms
 - [ ] Modals
 - [ ] Navbar
