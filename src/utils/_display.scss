@@ -7,6 +7,6 @@ $displays: (block, block), (inline, inline), (inline-block, inline-block), (flex
 
 @each $displayName, $style in $displays {
 	.d-#{$displayName} {
-		display: $style;
+		display: $style !important;
 	}
 }

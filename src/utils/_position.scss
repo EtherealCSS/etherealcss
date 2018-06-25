@@ -7,7 +7,7 @@ $positions: (relative, relative), (absolute, absolute), (fixed, fixed);
 
 @each $positionName, $style in $positions {
 	.#{$positionName} {
-		position: $style;
+		position: $style !important;
 	}
 }
 
@@ -16,6 +16,6 @@ $floats: left right;
 
 @each $style in $floats {
 	.float-#{$style} {
-		float: $style;
+		float: $style !important;
 	}
 }

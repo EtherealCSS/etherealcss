@@ -1093,49 +1093,49 @@ table.table-border tbody tr td:last-child {
   background-color: #fff!important
 }
 .d-block {
-  display: block
+  display: block!important
 }
 .d-inline {
-  display: inline
+  display: inline!important
 }
 .d-inline-block {
-  display: inline-block
+  display: inline-block!important
 }
 .d-flex {
-  display: flex
+  display: flex!important
 }
 .d-inline-flex {
-  display: inline-flex
+  display: inline-flex!important
 }
 .d-none {
-  display: none
+  display: none!important
 }
 .d-hide {
-  display: none
+  display: none!important
 }
 .d-show {
-  display: initial
+  display: initial!important
 }
 .d-visible {
-  display: visible
+  display: visible!important
 }
 .d-invisible {
-  display: hidden
+  display: hidden!important
 }
 .relative {
-  position: relative
+  position: relative!important
 }
 .absolute {
-  position: absolute
+  position: absolute!important
 }
 .fixed {
-  position: fixed
+  position: fixed!important
 }
 .float-left {
-  float: left
+  float: left!important
 }
 .float-right {
-  float: right
+  float: right!important
 }
 .mt-1 {
   margin-top: .25rem
