@@ -1,14 +1,14 @@
 code {
-	padding: 2px 4px;
-	font-size: 80%;
-	color: $muted;
+	padding: .256rem .4rem;
+	font-size: 70%;
+	color: lighten($dark, 20%);
 	background-color: lighten($dark, 70%);
 	border-radius: 3px;
 }
 
 kbd {
-	padding: 2px 4px;
-	font-size: 80%;
+	padding: .2rem .4rem;
+	font-size: 70%;
 	color: $white;
 	background-color: $dark;
 	border-radius: 3px;
@@ -18,10 +18,10 @@ pre {
 	padding: 1em;
 	display: block;
 	overflow-x: auto;
-	font-size: 80%;
+	font-size: 70%;
 	line-height: 1.5;
 	color: $dark;
-	background-color: lighten($dark, 73%);
+	background-color: lighten($info, 33%);
 	border: 1px solid lighten($dark, 50%);
 	border-radius: 3px;
 	word-break: break-all;
