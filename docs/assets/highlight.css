@@ -1,22 +1,32 @@
-pre {
+pre[data-type='html'] {
+	font-size: 10px;
+	background-color: #f8fafc;
+}
+
+pre[data-type='html'] code.html {
 	padding: 0;
 }
 
 .html,
 .html.hljs {
-	background: #333;
+	/* background-color: #333; */
+	background-color: #f8fafc;
 }
 
 .html,
 .html.hljs,
 .hljs-name {
-	color: #d96bad;
+	font-weight: normal;
+	/* color: #d96bad; */
+	color: #2779bd;
 }
 
 .hljs-attr {
-	color: #4ad970;
+	/* color: #4ad970; */
+	color: #2779bd;
 }
 
 .hljs-string {
-	color: #c9d17b;
+	/* color: #c9d17b; */
+	color: #9561e2;
 }

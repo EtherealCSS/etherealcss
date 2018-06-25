@@ -748,15 +748,15 @@ html {
   }
 }
 code {
-  padding: 2px 4px;
-  font-size: 80%;
-  color: #a5afa3;
+  padding: .256rem .4rem;
+  font-size: 70%;
+  color: #596c80;
   background-color: #e9ecef;
   border-radius: 3px
 }
 kbd {
-  padding: 2px 4px;
-  font-size: 80%;
+  padding: .2rem .4rem;
+  font-size: 70%;
   color: #fff;
   background-color: #2f3944;
   border-radius: 3px
@@ -765,10 +765,10 @@ pre {
   padding: 1em;
   display: block;
   overflow-x: auto;
-  font-size: 80%;
+  font-size: 70%;
   line-height: 1.5;
   color: #2f3944;
-  background-color: #f2f4f6;
+  background-color: #f4f7fc;
   border: 1px solid #acb8c6;
   border-radius: 3px;
   word-break: break-all;
