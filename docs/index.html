@@ -140,6 +140,7 @@
       <div class="col lg-6 md-6 sm-12">
         <h5>Table alternating</h5>
         <pre data-type="html"><code class="html"><table class="table-alternating">
+  <!-- ... -->
 </table></code></pre>
         <table class="table-alternating text-center framework">
           <thead>
@@ -191,6 +192,7 @@
       <div class="col lg-6 md-6 sm-12">
         <h5>Table dark hover</h5>
         <pre data-type="html"><code class="html"><table class="table-dark table-hover">
+  <!-- ... -->
 </table></code></pre>
         <table class="table-dark table-hover text-center">
           <thead>
@@ -215,6 +217,7 @@
         </table>
         <h5>Table dark border</h5>
         <pre data-type="html"><code class="html"><table class="table-dark table-border">
+  <!-- ... -->
 </table></code></pre>
         <table class="table-dark table-border text-center">
           <thead>
@@ -274,8 +277,12 @@
     <h4>Badges</h4>
     <div class="row">
       <div class="col lg-12 md-12 sm-12">
-        <pre data-type="html"><code class="html"><div class="badge badge-primary"></div></code></pre>
+        <pre data-type="html"><code class="html"><div class="badge badge-primary"></div>
+<!-- or -->
+<a class="badge badge-primary" href="#" target="_blank"></a></code></pre>
         <div class="badge">tags</div>
+        <div class="badge badge-primary">標籤</div>
+        <a class="badge badge-primary" href="https://github.com/explooosion/etherealcss" target="_blank">連結</a>
         <div class="badge badge-primary">primary</div>
         <div class="badge badge-success">success</div>
         <div class="badge badge-info">info</div>
@@ -315,7 +322,7 @@
       <pre data-type="html"><code class="html"><div class="card">
   <a href="#"><img src=""></a>
   <div class="card-body">
-    <div class="card-title">Card title</div>
+    <h5 class="card-title">Card title</h5>
     <div class="card-subtitle">Card subtitle</div>
     <p class="card-text">Card text</p>
     <a class="btn btn-primary btn-block" href="#">Check it out</a>
@@ -330,7 +337,7 @@
             <img src="https://picsum.photos/500/250?image=504" alt="picsum">
           </a>
           <div class="card-body">
-            <div class="card-title">Card title</div>
+            <h5 class="card-title">Card title</h5>
             <div class="card-subtitle">Card subtitle</div>
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu ex ut sapien porta pulvinar.</p>
             <a class="btn btn-primary btn-block" href="#">Check it out</a>
@@ -341,7 +348,7 @@
         <h5>Card img bottom</h5>
         <div class="card">
           <div class="card-body">
-            <div class="card-title">Card title</div>
+            <h5 class="card-title">Card title</h5>
             <div class="card-subtitle">Card subtitle</div>
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu ex ut sapien porta pulvinar.</p>
             <a class="btn btn-primary" href="#">Check it out</a>
@@ -354,7 +361,9 @@
       <div class="col lg-4 md-4 sm-6 xs-12">
         <h5>Card header</h5>
         <div class="card">
-          <div class="card-header">Card header</div>
+          <div class="card-header">
+            <h5>Card header</h5>
+          </div>
           <div class="card-body">
             <div class="card-subtitle">Card subtitle</div>
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu ex ut sapien porta pulvinar.</p>
@@ -373,7 +382,7 @@
             <img src="https://picsum.photos/500/250?image=577" alt="picsum">
           </a>
           <div class="card-body">
-            <div class="card-title">Card title</div>
+            <h5 class="card-title">Card title</h5>
             <div class="card-subtitle">Card subtitle</div>
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu ex ut sapien porta pulvinar.</p>
           </div>
@@ -389,7 +398,7 @@
             <img src="https://picsum.photos/500/250?image=1061" alt="picsum">
           </a>
           <div class="card-body">
-            <div class="card-title">Card title</div>
+            <h5 class="card-title">Card title</h5>
             <div class="card-subtitle">Card subtitle</div>
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu ex ut sapien porta pulvinar.</p>
           </div>
@@ -445,6 +454,40 @@
           <div class="collapse-body">
             <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut vulputate diam, ac venenatis tortor.</span>
           </div>
+        </div>
+      </div>
+    </div>
+    <h4>Forms</h4>
+    <div class="row">
+      <div class="col lg-6 md-6 sm-12 xl-12">
+        <div class="form-group">
+          <label for="InputEmail">Email address</label>
+          <input type="email" id="InputEmail" placeholder="Enter email">
+          <small class="text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label for="InputPassword">Password</label>
+          <input type="password" id="InputPassword" placeholder="Password">
+        </div>
+        <div class="form-check">
+          <input type="checkbox" id="InputCheck" checked>
+          <label for="InputCheck">Check me out</label>
+        </div>
+      </div>
+      <div class="col lg-6 md-6 sm-12 xl-12">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" id="exampleInputEmail1" placeholder="Enter email">
+          <small class="text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail2">Email address</label>
+          <input type="email" id="exampleInputEmail2" placeholder="Enter email">
+          <small class="text-muted">我們絕不會與其他人分享您的電子郵件。</small>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" id="exampleInputPassword1" placeholder="Password">
         </div>
       </div>
     </div>
