@@ -470,25 +470,30 @@
           <input type="password" id="InputPassword" placeholder="Password">
         </div>
         <div class="form-check">
-          <input type="checkbox" id="InputCheck" checked>
-          <label for="InputCheck">Check me out</label>
+          <input type="checkbox" id="InputCheck">
+          <label for="InputCheck">Remember Me</label>
+          <input type="checkbox" id="InputCheckForget" disabled>
+          <label for="InputCheckForget" class="disabled">Forget Me</label>
         </div>
+        <button type="button" class="btn btn-primary btn-block">Login</button>
       </div>
       <div class="col lg-6 md-6 sm-12 xl-12">
-        <div class="form-group">
-          <label for="exampleInputEmail1">Email address</label>
-          <input type="email" id="exampleInputEmail1" placeholder="Enter email">
-          <small class="text-muted">We'll never share your email with anyone else.</small>
-        </div>
-        <div class="form-group">
-          <label for="exampleInputEmail2">Email address</label>
-          <input type="email" id="exampleInputEmail2" placeholder="Enter email">
-          <small class="text-muted">我們絕不會與其他人分享您的電子郵件。</small>
-        </div>
-        <div class="form-group">
-          <label for="exampleInputPassword1">Password</label>
-          <input type="password" id="exampleInputPassword1" placeholder="Password">
-        </div>
+        <fieldset class="form-group">
+          <legend>SignUp</legend>
+          <div class="form-group">
+            <label for="InputSignupName">Name (disabled)</label>
+            <input type="text" id="InputSignupName" placeholder="Name" disabled>
+          </div>
+          <div class="form-group">
+            <label for="InputSignupText">Account</label>
+            <input type="text" id="InputSignupText" placeholder="account">
+            <small class="text-danger">Must be fewer than 15 characters.</small>
+          </div>
+          <div class="form-group">
+            <label for="InputSignupPassword">Password</label>
+            <input type="password" id="InputSignupPassword" placeholder="Password">
+          </div>
+        </fieldset>
       </div>
     </div>
   </div>
