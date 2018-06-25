@@ -1,0 +1,22 @@
+pre {
+	padding: 0;
+}
+
+.html,
+.html.hljs {
+	background: #333;
+}
+
+.html,
+.html.hljs,
+.hljs-name {
+	color: #d96bad;
+}
+
+.hljs-attr {
+	color: #4ad970;
+}
+
+.hljs-string {
+	color: #c9d17b;
+}
