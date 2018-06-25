@@ -42,6 +42,7 @@
 		font-weight: 600;
 		text-align: center;
 		color: $primary;
+		user-select: none;
 
 		&:hover {
 			color: $dark-light;
