@@ -749,28 +749,28 @@ html {
 }
 code {
   padding: .256rem .4rem;
-  font-size: 70%;
+  font-size: 85%;
   color: #596c80;
   background-color: #e9ecef;
-  border-radius: 3px
+  border-radius: .15rem
 }
 kbd {
   padding: .2rem .4rem;
-  font-size: 70%;
+  font-size: 85%;
   color: #fff;
   background-color: #2f3944;
-  border-radius: 3px
+  border-radius: .15rem
 }
 pre {
   padding: 1em;
   display: block;
   overflow-x: auto;
-  font-size: 70%;
+  font-size: 85%;
   line-height: 1.5;
   color: #2f3944;
   background-color: #f4f7fc;
   border: 1px solid #acb8c6;
-  border-radius: 3px;
+  border-radius: .15rem;
   word-break: break-all;
   word-wrap: break-word;
   white-space: pre
@@ -784,8 +784,9 @@ pre code {
   white-space: pre
 }
 html {
-  font-size: 20px;
+  font-size: 1rem;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,"Microsoft YaHei UI","Microsoft Yahei",sans-serif;
+  line-height: 1.5;
   color: #2f3944
 }
 a,
@@ -992,50 +993,98 @@ table.table-border tbody tr td:last-child {
 .text-dark {
   color: #2f3944!important
 }
+.text-dark-light {
+  color: #70859c!important
+}
 .bg-dark {
   background-color: #2f3944!important
+}
+.bg-dark-light {
+  background-color: #70859c!important
 }
 .text-primary {
   color: #44679f!important
 }
+.text-primary-light {
+  color: #a4b8d8!important
+}
 .bg-primary {
   background-color: #44679f!important
+}
+.bg-primary-light {
+  background-color: #a4b8d8!important
 }
 .text-success {
   color: #6db193!important
 }
+.text-success-light {
+  color: #d1e6dd!important
+}
 .bg-success {
   background-color: #6db193!important
+}
+.bg-success-light {
+  background-color: #d1e6dd!important
 }
 .text-info {
   color: #70a1d7!important
 }
+.text-info-light {
+  color: #e8f0f8!important
+}
 .bg-info {
   background-color: #70a1d7!important
+}
+.bg-info-light {
+  background-color: #e8f0f8!important
 }
 .text-joy {
   color: #ff9071!important
 }
+.text-joy-light {
+  color: #fff!important
+}
 .bg-joy {
   background-color: #ff9071!important
+}
+.bg-joy-light {
+  background-color: #fff!important
 }
 .text-warning {
   color: #f0e48e!important
 }
+.text-warning-light {
+  color: #fcfae8!important
+}
 .bg-warning {
   background-color: #f0e48e!important
+}
+.bg-warning-light {
+  background-color: #fcfae8!important
 }
 .text-danger {
   color: #d95858!important
 }
+.text-danger-light {
+  color: #f5d5d5!important
+}
 .bg-danger {
   background-color: #d95858!important
+}
+.bg-danger-light {
+  background-color: #f5d5d5!important
 }
 .text-muted {
   color: #a5afa3!important
 }
+.text-muted-light {
+  color: #dadeda!important
+}
 .bg-muted {
   background-color: #a5afa3!important
+}
+.bg-muted-light {
+  background-color: #dadeda!important
 }
 .text-white {
   color: #fff!important
@@ -1143,10 +1192,10 @@ table.table-border tbody tr td:last-child {
   margin-bottom: 1rem
 }
 .ml-4 {
-  margin-left: .1rem
+  margin-left: 1rem
 }
 .m-4 {
-  margin: .1rem
+  margin: 1rem
 }
 .mt-5 {
   margin-top: 1.25rem
@@ -1158,10 +1207,10 @@ table.table-border tbody tr td:last-child {
   margin-bottom: 1.25rem
 }
 .ml-5 {
-  margin-left: .1.25rem
+  margin-left: 1.25rem
 }
 .m-5 {
-  margin: .1.25rem
+  margin: 1.25rem
 }
 .mt-6 {
   margin-top: 1.5rem
@@ -1173,10 +1222,10 @@ table.table-border tbody tr td:last-child {
   margin-bottom: 1.5rem
 }
 .ml-6 {
-  margin-left: .1.5rem
+  margin-left: 1.5rem
 }
 .m-6 {
-  margin: .1.5rem
+  margin: 1.5rem
 }
 .m-auto {
   margin: auto
@@ -1236,10 +1285,10 @@ table.table-border tbody tr td:last-child {
   padding-bottom: 1rem
 }
 .pl-4 {
-  padding-left: .1rem
+  padding-left: 1rem
 }
 .p-4 {
-  padding: .1rem
+  padding: 1rem
 }
 .pt-5 {
   padding-top: 1.25rem
@@ -1251,10 +1300,10 @@ table.table-border tbody tr td:last-child {
   padding-bottom: 1.25rem
 }
 .pl-5 {
-  padding-left: .1.25rem
+  padding-left: 1.25rem
 }
 .p-5 {
-  padding: .1.25rem
+  padding: 1.25rem
 }
 .pt-6 {
   padding-top: 1.5rem
@@ -1266,10 +1315,10 @@ table.table-border tbody tr td:last-child {
   padding-bottom: 1.5rem
 }
 .pl-6 {
-  padding-left: .1.5rem
+  padding-left: 1.5rem
 }
 .p-6 {
-  padding: .1.5rem
+  padding: 1.5rem
 }
 .p-auto {
   padding: auto
@@ -1330,7 +1379,8 @@ table.table-border tbody tr td:last-child {
   vertical-align: baseline;
   text-align: center;
   color: #2f3944;
-  font-size: 80%;
+  font-size: 90%;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,"Microsoft JhengHei UI","Microsoft JhengHei";
   background-color: #dadeda;
   border: 1px solid #c0c7be;
   border-radius: .15rem;
@@ -1338,7 +1388,17 @@ table.table-border tbody tr td:last-child {
   white-space: nowrap;
   -webkit-boxbox-shadow: 0 2px 2px 0 rgba(0,0,0,.16),0 0 0 1px rgba(0,0,0,.08);
   -moz-box-box-shadow: 0 2px 2px 0 rgba(0,0,0,.16),0 0 0 1px rgba(0,0,0,.08);
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,.16),0 0 0 1px rgba(0,0,0,.08)
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.16),0 0 0 1px rgba(0,0,0,.08);
+  -webkit-transition: all 183ms ease-in-out 0s;
+  -ms-transition: all 183ms ease-in-out 0s;
+  -moz-transition: all 183ms ease-in-out 0s;
+  -o-transition: all 183ms ease-in-out 0s;
+  transition: all 183ms ease-in-out 0s
+}
+.badge[href^=http]:hover {
+  -webkit-boxbox-shadow: 0 2px 3px 0 rgba(0,0,0,.36),0 0 0 1px rgba(0,0,0,.15);
+  -moz-box-box-shadow: 0 2px 3px 0 rgba(0,0,0,.36),0 0 0 1px rgba(0,0,0,.15);
+  box-shadow: 0 2px 3px 0 rgba(0,0,0,.36),0 0 0 1px rgba(0,0,0,.15)
 }
 .badge-dark {
   color: #fff;
@@ -1390,8 +1450,8 @@ table.table-border tbody tr td:last-child {
 }
 .breadcrumb .item {
   color: #70a1d7;
-  font-size: .8rem;
-  line-height: 1;
+  font-weight: 500;
+  line-height: 1.5;
   text-decoration: none;
   cursor: default
 }
@@ -1407,22 +1467,22 @@ table.table-border tbody tr td:last-child {
   color: #a5afa3;
   text-align: center;
   font-size: .6rem;
-  line-height: 1.4
+  line-height: 2
 }
 .btn {
-  padding: .3rem .75rem;
+  padding: .375rem .75rem;
   display: inline-block;
   align-self: center;
   vertical-align: middle;
   color: #2f3944;
-  font-size: 1rem;
   background-color: #dadeda;
   border-style: solid;
   border-width: 1px;
   border-color: #dadeda;
-  border-radius: .15rem;
+  border-radius: .25rem;
   text-align: center;
   text-decoration: none;
+  line-height: 1.5;
   outline: 0;
   white-space: nowrap;
   user-select: none;
@@ -1464,7 +1524,10 @@ table.table-border tbody tr td:last-child {
   transition: none
 }
 .btn.disabled,
-.btn[disabled] {
+.btn[disabled],
+input.btn[disabled],
+select.btn[disabled],
+textarea.btn[disabled] {
   opacity: .5;
   cursor: not-allowed
 }
@@ -1473,7 +1536,7 @@ table.table-border tbody tr td:last-child {
 }
 .btn.btn-outline {
   color: #2f3944;
-  background-color: #fff;
+  background-color: transparent;
   border-color: #dadeda
 }
 .btn.btn-outline:focus {
@@ -1504,7 +1567,7 @@ table.table-border tbody tr td:last-child {
 }
 .btn-outline-dark {
   border-color: #2f3944;
-  background-color: #fff;
+  background-color: transparent;
   color: #2f3944
 }
 .btn-outline-dark:focus {
@@ -1535,7 +1598,7 @@ table.table-border tbody tr td:last-child {
 }
 .btn-outline-primary {
   border-color: #44679f;
-  background-color: #fff;
+  background-color: transparent;
   color: #44679f
 }
 .btn-outline-primary:focus {
@@ -1566,7 +1629,7 @@ table.table-border tbody tr td:last-child {
 }
 .btn-outline-success {
   border-color: #6db193;
-  background-color: #fff;
+  background-color: transparent;
   color: #6db193
 }
 .btn-outline-success:focus {
@@ -1597,7 +1660,7 @@ table.table-border tbody tr td:last-child {
 }
 .btn-outline-info {
   border-color: #70a1d7;
-  background-color: #fff;
+  background-color: transparent;
   color: #70a1d7
 }
 .btn-outline-info:focus {
@@ -1628,7 +1691,7 @@ table.table-border tbody tr td:last-child {
 }
 .btn-outline-joy {
   border-color: #ff9071;
-  background-color: #fff;
+  background-color: transparent;
   color: #ff9071
 }
 .btn-outline-joy:focus {
@@ -1659,7 +1722,7 @@ table.table-border tbody tr td:last-child {
 }
 .btn-outline-warning {
   border-color: #f0e48e;
-  background-color: #fff;
+  background-color: transparent;
   color: #f0e48e
 }
 .btn-outline-warning:focus {
@@ -1690,7 +1753,7 @@ table.table-border tbody tr td:last-child {
 }
 .btn-outline-danger {
   border-color: #d95858;
-  background-color: #fff;
+  background-color: transparent;
   color: #d95858
 }
 .btn-outline-danger:focus {
@@ -1721,7 +1784,7 @@ table.table-border tbody tr td:last-child {
 }
 .btn-outline-muted {
   border-color: #a5afa3;
-  background-color: #fff;
+  background-color: transparent;
   color: #a5afa3
 }
 .btn-outline-muted:focus {
@@ -1763,24 +1826,23 @@ table.table-border tbody tr td:last-child {
   border-bottom-left-radius: inherit
 }
 .card .card-body {
-  padding: .8rem;
+  padding: 1rem;
   flex: 1 1 auto
 }
 .card .card-body .card-title {
-  font-size: 1rem;
   font-weight: 500
 }
 .card .card-body .card-title + .card-subtitle {
-  margin-top: .512rem
+  margin-top: .256rem
 }
 .card .card-body .card-subtitle {
-  margin-bottom: .8rem;
-  font-size: .8rem;
-  color: #a5afa3
+  margin-bottom: .4rem;
+  color: #a5afa3;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,"Microsoft JhengHei UI","Microsoft JhengHei"
 }
 .card .card-body .card-text {
-  font-size: .8rem;
-  line-height: 1.5
+  font-size: 1rem;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,"Microsoft JhengHei UI","Microsoft JhengHei"
 }
 .card img {
   min-width: 100%;
@@ -1817,11 +1879,11 @@ table.table-border tbody tr td:last-child {
   max-height: 0;
   opacity: 0;
   border-top: 1px solid #dadeda;
-  -webkit-transition: all 183ms ease-in-out 0s;
-  -ms-transition: all 183ms ease-in-out 0s;
-  -moz-transition: all 183ms ease-in-out 0s;
-  -o-transition: all 183ms ease-in-out 0s;
-  transition: all 183ms ease-in-out 0s
+  -webkit-transition: all .25s ease-in-out 0s;
+  -ms-transition: all .25s ease-in-out 0s;
+  -moz-transition: all .25s ease-in-out 0s;
+  -o-transition: all .25s ease-in-out 0s;
+  transition: all .25s ease-in-out 0s
 }
 .collapse input {
   display: none
@@ -1846,4 +1908,100 @@ table.table-border tbody tr td:last-child {
 .collapse label:hover {
   color: #70859c;
   cursor: pointer
+}
+input,
+select,
+textarea {
+  display: block;
+  padding: .375rem .75rem;
+  width: 100%;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #2f3944;
+  background-color: #fff;
+  background-clip: padding-box;
+  border-radius: .25rem;
+  border: 1px solid #dadeda;
+  outline: 0;
+  -webkit-transition: all 183ms ease-in-out 0s;
+  -ms-transition: all 183ms ease-in-out 0s;
+  -moz-transition: all 183ms ease-in-out 0s;
+  -o-transition: all 183ms ease-in-out 0s;
+  transition: all 183ms ease-in-out 0s
+}
+input:focus,
+select:focus,
+textarea:focus {
+  border: 1px solid #a4b8d8;
+  box-shadow: 0 0 0 .1rem #e8f0f8
+}
+.disabled,
+input.disabled,
+input[disabled],
+select.disabled,
+select[disabled],
+textarea.disabled,
+textarea[disabled] {
+  cursor: not-allowed;
+  opacity: .5
+}
+.form-group {
+  margin-bottom: 1rem
+}
+.form-group > label,
+.form-group legend {
+  display: inline-block;
+  margin-bottom: .5rem
+}
+.form-group .input-block {
+  width: 100%
+}
+.form-group textarea {
+  max-height: 90vh;
+  max-width: 100%
+}
+.form-group textarea.no-resize {
+  resize: none
+}
+.form-group small {
+  font-size: .7rem;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,"Microsoft JhengHei UI","Microsoft JhengHei"
+}
+.form-check {
+  position: relative;
+  display: block;
+  padding-left: 1.25rem
+}
+.form-check:not(.radio) input[type=checkbox] {
+  display: none
+}
+.form-check input:checked + label::before {
+  background-color: #0074d9
+}
+.form-check label {
+  line-height: 17px;
+  position: relative;
+  padding-left: 1.85714em;
+  font-size: 1em;
+  display: inline-block;
+  color: #646464
+}
+.form-check label::before {
+  position: absolute;
+  transform: none;
+  width: 15px;
+  height: 15px;
+  border-radius: .28571rem;
+  top: 0;
+  left: 0;
+  content: '';
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 60% 60%;
+  background-color: #0074d9;
+  border: 0 solid #d4d4d5
+}
+fieldset.form-group {
+  border: 0;
+  padding: 0
 }
