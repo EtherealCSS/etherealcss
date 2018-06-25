@@ -16,7 +16,7 @@
 		max-height: 0;
 		opacity: 0;
 		border-top: 1px solid $muted-light;
-		@include transition(all, .25s);
+		@include transition(padding, .5s, ease);
 	}
 
 	input {
@@ -33,6 +33,7 @@
 			padding: 0.75rem;
 			max-height: 960px;
 			opacity: 1;
+			@include transition(all, .5s, ease);
 		}
 	}
 
