@@ -3,7 +3,7 @@
   @param string
   @default all | 235ms | ease-in-out | 0
 */
-@mixin transition($name: all, $duration: 183ms, $animation: ease-in-out, $delay: 0s) {
+@mixin transition($name: all, $duration: .183s, $animation: ease-in-out, $delay: 0s) {
 	-webkit-transition: $name $duration $animation $delay;
 	-ms-transition: $name $duration $animation $delay;
 	-moz-transition: $name $duration $animation $delay;

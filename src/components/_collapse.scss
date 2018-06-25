@@ -16,7 +16,7 @@
 		max-height: 0;
 		opacity: 0;
 		border-top: 1px solid $muted-light;
-		@include transition;
+		@include transition(all, .25s);
 	}
 
 	input {
