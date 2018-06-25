@@ -21,11 +21,11 @@ $spacer: 0.25;
 		}
 
 		.#{$side}l-#{$i} {
-			#{$property}-left: #{'.'}#{$spacer * $i}rem;
+			#{$property}-left: #{$spacer * $i}rem;
 		}
 
 		.#{$side}-#{$i} {
-			#{$property}: #{'.'}#{$spacer * $i}rem;
+			#{$property}: #{$spacer * $i}rem;
 		}
 	}
 
