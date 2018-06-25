@@ -7,11 +7,11 @@ $colors: (dark, $dark, $dark-light, $dark-text), (primary, $primary, $primary-li
 
 @each $colorName, $color, $color-light in $colors {
 	.text-#{$colorName} {
-		color: $color;
+		color: $color !important;
 	}
 
 	.bg-#{$colorName} {
-		background-color: $color;
+		background-color: $color !important;
 	}
 }
 
@@ -20,9 +20,9 @@ $colors: (dark, $dark, $dark-light, $dark-text), (primary, $primary, $primary-li
 */
 
 .text-white {
-	color: $white;
+	color: $white !important;
 }
 
 .bg-white {
-	background-color: $white;
+	background-color: $white !important;
 }
