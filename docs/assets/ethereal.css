@@ -990,58 +990,58 @@ table.table-border tbody tr td:last-child {
   border-right: 0
 }
 .text-dark {
-  color: #2f3944
+  color: #2f3944!important
 }
 .bg-dark {
-  background-color: #2f3944
+  background-color: #2f3944!important
 }
 .text-primary {
-  color: #44679f
+  color: #44679f!important
 }
 .bg-primary {
-  background-color: #44679f
+  background-color: #44679f!important
 }
 .text-success {
-  color: #6db193
+  color: #6db193!important
 }
 .bg-success {
-  background-color: #6db193
+  background-color: #6db193!important
 }
 .text-info {
-  color: #70a1d7
+  color: #70a1d7!important
 }
 .bg-info {
-  background-color: #70a1d7
+  background-color: #70a1d7!important
 }
 .text-joy {
-  color: #ff9071
+  color: #ff9071!important
 }
 .bg-joy {
-  background-color: #ff9071
+  background-color: #ff9071!important
 }
 .text-warning {
-  color: #f0e48e
+  color: #f0e48e!important
 }
 .bg-warning {
-  background-color: #f0e48e
+  background-color: #f0e48e!important
 }
 .text-danger {
-  color: #d95858
+  color: #d95858!important
 }
 .bg-danger {
-  background-color: #d95858
+  background-color: #d95858!important
 }
 .text-muted {
-  color: #a5afa3
+  color: #a5afa3!important
 }
 .bg-muted {
-  background-color: #a5afa3
+  background-color: #a5afa3!important
 }
 .text-white {
-  color: #fff
+  color: #fff!important
 }
 .bg-white {
-  background-color: #fff
+  background-color: #fff!important
 }
 .d-block {
   display: block
@@ -1283,42 +1283,42 @@ table.table-border tbody tr td:last-child {
   border: 1px solid #c0c7be;
   border-radius: .15rem
 }
-.alert-dark {
+.alert.alert-dark {
   color: #fff;
   background-color: #445262;
   border-color: #2f3944
 }
-.alert-primary {
+.alert.alert-primary {
   color: #fff;
   background-color: #5c80ba;
   border-color: #44679f
 }
-.alert-success {
+.alert.alert-success {
   color: #fff;
   background-color: #8ec3ac;
   border-color: #6db193
 }
-.alert-info {
+.alert.alert-info {
   color: #fff;
   background-color: #98bbe2;
   border-color: #70a1d7
 }
-.alert-joy {
+.alert.alert-joy {
   color: #fff;
   background-color: #ffb8a4;
   border-color: #ff9071
 }
-.alert-warning {
+.alert.alert-warning {
   color: rgba(0,0,0,.7);
   background-color: #f6efbb;
   border-color: #f0e48e
 }
-.alert-danger {
+.alert.alert-danger {
   color: #fff;
   background-color: #e28282;
   border-color: #d95858
 }
-.alert-muted {
+.alert.alert-muted {
   color: rgba(0,0,0,.7);
   background-color: #c0c7be;
   border-color: #a5afa3
@@ -1799,4 +1799,51 @@ table.table-border tbody tr td:last-child {
   .card .btn {
     margin-bottom: 0
   }
+}
+.collapse {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #dadeda;
+  border-left: 1px solid #dadeda;
+  border-right: 1px solid #dadeda
+}
+.collapse:last-child {
+  border-bottom: 1px solid #dadeda
+}
+.collapse .collapse-body {
+  overflow: hidden;
+  padding: 0 .75rem;
+  margin: 0;
+  max-height: 0;
+  opacity: 0;
+  border-top: 1px solid #dadeda;
+  -webkit-transition: all 183ms ease-in-out 0s;
+  -ms-transition: all 183ms ease-in-out 0s;
+  -moz-transition: all 183ms ease-in-out 0s;
+  -o-transition: all 183ms ease-in-out 0s;
+  transition: all 183ms ease-in-out 0s
+}
+.collapse input {
+  display: none
+}
+.collapse input:checked + label {
+  color: #44679f;
+  background-color: rgba(0,0,0,.03)
+}
+.collapse input:checked ~ div.collapse-body {
+  margin: 0;
+  padding: .75rem;
+  max-height: 960px;
+  opacity: 1
+}
+.collapse label {
+  display: inline-block;
+  line-height: 2.8;
+  font-weight: 600;
+  text-align: center;
+  color: #44679f
+}
+.collapse label:hover {
+  color: #70859c;
+  cursor: pointer
 }
