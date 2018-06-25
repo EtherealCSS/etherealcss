@@ -30,27 +30,26 @@
 	}
 
 	.card-body {
-		padding: .8rem;
+		padding: 1rem;
 		flex: 1 1 auto;
 
 		.card-title {
-			font-size: 1rem;
 			font-weight: 500;
 		}
 
 		.card-title + .card-subtitle {
-			margin-top: .512rem;
+			margin-top: .256rem;
 		}
 
 		.card-subtitle {
-			margin-bottom: .8rem;
-			font-size: .8rem;
+			margin-bottom: .4rem;
 			color: $muted;
+			font-family: $light-font;
 		}
 
 		.card-text {
-			font-size: .8rem;
-			line-height: 1.5;
+			font-size: 1rem;
+			font-family: $light-font;
 		}
 	}
 
