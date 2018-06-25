@@ -63,7 +63,7 @@
 
 	&.btn-outline {
 		color: $dark;
-		background-color: $white;
+		background-color: transparent;
 		border-color: lighten($muted, 20%);
 
 		&:focus {
@@ -102,7 +102,7 @@
 
 	.btn-outline-#{$colorName} {
 		border-color: $color;
-		background-color: $white;
+		background-color: transparent;
 		color: $color;
 
 		&:focus {
