@@ -10,8 +10,16 @@ $colors: (dark, $dark, $dark-light, $dark-text), (primary, $primary, $primary-li
 		color: $color !important;
 	}
 
+	.text-#{$colorName}-light {
+		color: $color-light !important;
+	}
+
 	.bg-#{$colorName} {
 		background-color: $color !important;
+	}
+
+	.bg-#{$colorName}-light {
+		background-color: $color-light !important;
 	}
 }
 
