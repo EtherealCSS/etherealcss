@@ -25,6 +25,23 @@ textarea {
 	}
 }
 
+select {
+	color: #5a5a5a;
+	background-size: .8em;
+	background-repeat: no-repeat;
+	background-position: right 1rem center;
+	background-color: #fff;
+	background-image: url($svg-arrow-bottom);
+	text-overflow: '';
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+
+	&:hover {
+		cursor: pointer;
+	}
+}
+
 .disabled {
 	cursor: not-allowed !important;
 	opacity: 0.512;
@@ -36,6 +53,37 @@ textarea {
 	> label {
 		display: inline-block;
 		margin-bottom: 0.5rem;
+	}
+
+	input[type='file'] {
+		overflow: hidden;
+		position: relative;
+		cursor: pointer;
+
+		&[data-prefix]::before {
+			content: attr(data-prefix);
+			position: absolute;
+			padding: 0 .2rem;
+			left: .5rem;
+			width: 5.3rem;
+			line-height: 2;
+			font-family: $light-font;
+			font-size: 90%;
+			text-align: center;
+			letter-spacing: -.03rem;
+			background-color: lighten($muted, 30%);
+			border: 1px solid $muted-light;
+			border-radius: .15rem;
+			@include transition;
+		}
+
+		&[data-prefix]:hover::before {
+			background-color: lighten($muted, 28%);
+		}
+
+		&[data-prefix]:active::before {
+			background-color: lighten($muted, 25%);
+		}
 	}
 
 	textarea {
@@ -157,7 +205,7 @@ textarea {
 }
 
 fieldset.form-group {
-  padding: 1rem;
+	padding: 1rem;
 	border: 2px solid $muted-light;
 
 	legend {
