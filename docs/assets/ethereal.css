@@ -229,8 +229,7 @@ html {
   -webkit-box-direction: normal;
   -webkit-flex-flow: row wrap;
   -ms-flex-flow: row wrap;
-  flex-flow: row wrap;
-  margin-bottom: 1rem
+  flex-flow: row wrap
 }
 .row.flex-right {
   -webkit-box-pack: end;
@@ -1947,13 +1946,14 @@ select {
   background-repeat: no-repeat;
   background-position: right 1rem center;
   background-color: #fff;
-  background-image: url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px' width='54.7px' height='26.3px' fill='%235a5a5a'><polygon points='54.7,0 27.3,26.3 0,0' /></svg>");
+  background-image: url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px' width='54.7px' height='26.3px' fill='%238a8a8a'><polygon points='54.7,0 27.3,26.3 0,0' /></svg>");
   text-overflow: '';
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none
 }
 select:hover {
+  background-image: url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px' width='54.7px' height='26.3px' fill='%235a5a5a'><polygon points='54.7,0 27.3,26.3 0,0' /></svg>");
   cursor: pointer
 }
 .disabled,
@@ -2067,12 +2067,12 @@ textarea[disabled] {
   border: 0 solid #dadeda
 }
 .form-check label:hover::before {
+  background-color: #dadeda;
   -webkit-transition: all 183ms ease-in-out 0s;
   -ms-transition: all 183ms ease-in-out 0s;
   -moz-transition: all 183ms ease-in-out 0s;
   -o-transition: all 183ms ease-in-out 0s;
-  transition: all 183ms ease-in-out 0s;
-  background-color: #dadeda
+  transition: all 183ms ease-in-out 0s
 }
 .form-radio {
   position: relative;
@@ -2128,6 +2128,9 @@ fieldset.form-group legend {
 }
 .modal {
   position: fixed;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2180,6 +2183,9 @@ fieldset.form-group legend {
     width: 90%
   }
 }
+.modal .modal-body:hover .modal-close {
+  opacity: 1
+}
 .modal .modal-close {
   position: absolute;
   top: 1.2rem;
@@ -2192,6 +2198,7 @@ fieldset.form-group legend {
   font-weight: 700;
   text-align: center;
   text-decoration: none;
+  opacity: 0;
   cursor: pointer;
   -webkit-transition: all 183ms ease-in-out 0s;
   -ms-transition: all 183ms ease-in-out 0s;
