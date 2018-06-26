@@ -14,7 +14,7 @@ An Elegant, Lightweight CSS Framework.
 - [x] Cards
 - [x] Collapsibles
 - [x] Forms
-- [ ] Modals
+- [x] Modals
 - [ ] Navbar
 - [ ] Tooltips
 - [ ] Tabs
