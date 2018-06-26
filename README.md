@@ -13,7 +13,7 @@ An Elegant, Lightweight CSS Framework.
 - [x] Buttons
 - [x] Cards
 - [x] Collapsibles
-- [ ] Forms
+- [x] Forms
 - [ ] Modals
 - [ ] Navbar
 - [ ] Tooltips
