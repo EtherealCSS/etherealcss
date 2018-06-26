@@ -12,12 +12,12 @@ $columns: 12;
 	display: flex;
 	margin-right: auto;
 	margin-left: auto;
+	/* margin-bottom: 1rem; */
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
 	-webkit-flex-flow: row wrap;
 	-ms-flex-flow: row wrap;
 	flex-flow: row wrap;
-	margin-bottom: 1rem;
 
 	&.flex-right {
 		-webkit-box-pack: end;
