@@ -1,0 +1,122 @@
+.modal {
+	position: fixed;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(#000, 0.8);
+	opacity: 0;
+	visibility: hidden;
+	word-wrap: break-word;
+	z-index: 13;
+	@include transition(opacity);
+
+	// modal background
+	&-bg {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+
+	.modal-body {
+		display: block;
+		position: relative;
+		padding: 1.25rem;
+		max-width: 712px;
+		width: 512px;
+		border-radius: .25rem;
+		background: $white;
+		backface-visibility: hidden;
+		border: 1px solid $muted-light;
+		transform: scale(0);
+		@include transition(all, .25s);
+		@include resp(md) {
+			width: 90%;
+		}
+		@include resp(sm) {
+			width: 90%;
+		}
+	}
+
+	.modal-close {
+		position: absolute;
+		top: 1.2rem;
+		right: 1.2rem;
+		width: 1.2rem;
+		height: 1.2rem;
+		color: $dark-light;
+		line-height: 1.2;
+		font-size: 1.5rem;
+		font-weight: 700;
+		text-align: center;
+		text-decoration: none;
+		cursor: pointer;
+		@include transition;
+
+		&:hover,
+		&:active,
+		&:focus {
+			color: $dark;
+		}
+	}
+
+	h4,
+	.modal-title {
+		margin-top: 0;
+		padding-bottom: .6rem;
+	}
+
+	.modal-text {
+		margin-bottom: 1rem;
+		border-top: 1px solid $muted-light;
+		border-bottom: 1px solid $muted-light;
+
+		> .row {
+			margin-bottom: 0;
+
+			> .col {
+				padding: 1rem 0;
+			}
+		}
+	}
+
+	.modal-link + .modal-link,
+	a + a {
+		margin-left: 1.25rem;
+	}
+
+	.modal-link,
+	a {
+		background-image: linear-gradient(5deg, transparent 65%, $muted 80%, transparent 90%), linear-gradient(165deg, transparent 5%, $muted 15%, transparent 25%), linear-gradient(165deg, transparent 45%, $muted 55%, transparent 65%), linear-gradient(15deg, transparent 25%, $muted 35%, transparent 50%);
+		background-position: 0 90%;
+		background-repeat: repeat-x;
+		background-size: 4px 3px;
+		cursor: pointer;
+		text-decoration: none;
+
+		&:hover,
+		&:focus,
+		&:visited {
+			color: $primary;
+			text-decoration: none;
+		}
+	}
+}
+
+.modal-state {
+	display: none;
+
+	&:checked + .modal {
+		opacity: 1;
+		visibility: visible;
+
+		.modal-body {
+			transform: scale(1);
+		}
+	}
+}

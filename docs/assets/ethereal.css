@@ -2126,3 +2126,129 @@ fieldset.form-group legend {
   padding: 0 .4rem;
   color: #70859c
 }
+.modal {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,.8);
+  opacity: 0;
+  visibility: hidden;
+  word-wrap: break-word;
+  z-index: 13;
+  -webkit-transition: opacity 183ms ease-in-out 0s;
+  -ms-transition: opacity 183ms ease-in-out 0s;
+  -moz-transition: opacity 183ms ease-in-out 0s;
+  -o-transition: opacity 183ms ease-in-out 0s;
+  transition: opacity 183ms ease-in-out 0s
+}
+.modal-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0
+}
+.modal .modal-body {
+  display: block;
+  position: relative;
+  padding: 1.25rem;
+  max-width: 712px;
+  width: 512px;
+  border-radius: .25rem;
+  background: #fff;
+  backface-visibility: hidden;
+  border: 1px solid #dadeda;
+  transform: scale(0);
+  -webkit-transition: all .25s ease-in-out 0s;
+  -ms-transition: all .25s ease-in-out 0s;
+  -moz-transition: all .25s ease-in-out 0s;
+  -o-transition: all .25s ease-in-out 0s;
+  transition: all .25s ease-in-out 0s
+}
+@media only screen and (max-width:992px) {
+  .modal .modal-body {
+    width: 90%
+  }
+}
+@media only screen and (max-width:768px) {
+  .modal .modal-body {
+    width: 90%
+  }
+}
+.modal .modal-close {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.2rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  color: #70859c;
+  line-height: 1.2;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-transition: all 183ms ease-in-out 0s;
+  -ms-transition: all 183ms ease-in-out 0s;
+  -moz-transition: all 183ms ease-in-out 0s;
+  -o-transition: all 183ms ease-in-out 0s;
+  transition: all 183ms ease-in-out 0s
+}
+.modal .modal-close:active,
+.modal .modal-close:focus,
+.modal .modal-close:hover {
+  color: #2f3944
+}
+.modal .modal-title,
+.modal h4 {
+  margin-top: 0;
+  padding-bottom: .6rem
+}
+.modal .modal-text {
+  margin-bottom: 1rem;
+  border-top: 1px solid #dadeda;
+  border-bottom: 1px solid #dadeda
+}
+.modal .modal-text > .row {
+  margin-bottom: 0
+}
+.modal .modal-text > .row > .col {
+  padding: 1rem 0
+}
+.modal .modal-link + .modal-link,
+.modal a + a {
+  margin-left: 1.25rem
+}
+.modal .modal-link,
+.modal a {
+  background-image: linear-gradient(5deg,transparent 65%,#a5afa3 80%,transparent 90%),linear-gradient(165deg,transparent 5%,#a5afa3 15%,transparent 25%),linear-gradient(165deg,transparent 45%,#a5afa3 55%,transparent 65%),linear-gradient(15deg,transparent 25%,#a5afa3 35%,transparent 50%);
+  background-position: 0 90%;
+  background-repeat: repeat-x;
+  background-size: 4px 3px;
+  cursor: pointer;
+  text-decoration: none
+}
+.modal .modal-link:focus,
+.modal .modal-link:hover,
+.modal .modal-link:visited,
+.modal a:focus,
+.modal a:hover,
+.modal a:visited {
+  color: #44679f;
+  text-decoration: none
+}
+.modal-state {
+  display: none
+}
+.modal-state:checked + .modal {
+  opacity: 1;
+  visibility: visible
+}
+.modal-state:checked + .modal .modal-body {
+  transform: scale(1)
+}
