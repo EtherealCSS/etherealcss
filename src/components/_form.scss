@@ -31,13 +31,14 @@ select {
 	background-repeat: no-repeat;
 	background-position: right 1rem center;
 	background-color: #fff;
-	background-image: url($svg-arrow-bottom);
+	background-image: url($svg-arrow-bottom-light);
 	text-overflow: '';
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
 
 	&:hover {
+		background-image: url($svg-arrow-bottom);
 		cursor: pointer;
 	}
 }
@@ -156,8 +157,8 @@ select {
 		}
 
 		&:hover::before {
-			@include transition;
 			background-color: lighten($muted, 20%);
+			@include transition;
 		}
 	}
 }
