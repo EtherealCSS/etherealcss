@@ -318,8 +318,9 @@
     </div>
     <hr>
     <h4>Card</h4>
-    <div class="col lg-12">
-      <pre data-type="html"><code class="html"><div class="card">
+    <div class="row">
+      <div class="col lg-12">
+        <pre data-type="html"><code class="html"><div class="card">
   <a href="#"><img src=""></a>
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
@@ -328,6 +329,7 @@
     <a class="btn btn-primary btn-block" href="#">Check it out</a>
   </div>
 </div></code></pre>
+      </div>
     </div>
     <div class="row">
       <div class="col lg-4 md-4 sm-6 xs-12">
@@ -406,10 +408,25 @@
         </div>
       </div>
     </div>
+    <hr>
     <h4>Collapse</h4>
     <div class="row">
       <div class="col lg-6 md-6 sm-12 xs-12">
         <h5>Collapse checkbox</h5>
+        <pre data-type="html"><code class="html"><div class="collapse">
+  <input id="clpCheck1" type="checkbox">
+  <label for="clpCheck1">First</label>
+  <div class="collapse-body">
+    <span>Collapse content</span>
+  </div>
+</div>
+<div class="collapse">
+  <input id="clpCheck2" type="checkbox">
+  <label for="clpCheck2">Second</label>
+  <div class="collapse-body">
+    <span>Collapse content</span>
+  </div>
+</div></code></pre>
         <div class="collapse">
           <input id="collapse1" type="checkbox" name="collapse">
           <label for="collapse1">First</label>
@@ -434,6 +451,20 @@
       </div>
       <div class="col lg-6 md-6 sm-12 xs-12">
         <h5>Collapse radio</h5>
+        <pre data-type="html"><code class="html"><div class="collapse">
+  <input id="clpRadio1" type="radio" name="clpRadio">
+  <label for="clpRadio1">First</label>
+  <div class="collapse-body">
+    <span>Collapse content</span>
+  </div>
+</div>
+<div class="collapse">
+  <input id="clpRadio2" type="radio" name="clpRadio">
+  <label for="clpRadio2">Second</label>
+  <div class="collapse-body">
+    <span>Collapse content</span>
+  </div>
+</div></code></pre>
         <div class="collapse">
           <input id="collapse10" type="radio" name="collapse">
           <label for="collapse10">First</label>
@@ -457,9 +488,35 @@
         </div>
       </div>
     </div>
+    <hr>
     <h4>Forms</h4>
     <div class="row">
+      <div class="col lg-12">
+        <pre data-type="html"><code class="html"><div class="form-group">
+  <label for="InputEmail">Email address</label>
+  <input type="email" id="InputEmail" placeholder="Enter email">
+  <small class="text-muted">We'll never share your email with anyone else.</small>
+</div>
+
+<div class="form-check">
+  <input type="checkbox" id="InputCheck">
+  <label for="InputCheck">Remember Me</label>
+</div>
+
+<button type="button" class="btn btn-primary btn-block">Login</button>
+
+<fieldset class="form-group">
+  <legend>Sign Up</legend>
+  <div class="form-group">
+    <!-- ... -->
+  </div>
+</fieldset>
+</code></pre>
+      </div>
+    </div>
+    <div class="row">
       <div class="col lg-6 md-6 sm-12 xl-12">
+        <h5>Small, checkbox, disabled</h5>
         <div class="form-group">
           <label for="InputEmail">Email address</label>
           <input type="email" id="InputEmail" placeholder="Enter email">
@@ -478,8 +535,9 @@
         <button type="button" class="btn btn-primary btn-block">Login</button>
       </div>
       <div class="col lg-6 md-6 sm-12 xl-12">
+        <h5>Fieldset, legend, disabled</h5>
         <fieldset class="form-group">
-          <legend>SignUp</legend>
+          <legend>Sign Up</legend>
           <div class="form-group">
             <label for="InputSignupName">Name (disabled)</label>
             <input type="text" id="InputSignupName" placeholder="Name" disabled>
@@ -493,7 +551,109 @@
             <label for="InputSignupPassword">Password</label>
             <input type="password" id="InputSignupPassword" placeholder="Password">
           </div>
+          <button type="button" class="btn btn-primary btn-block">Login</button>
         </fieldset>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col lg-6 md-6 sm-12 xl-12">
+        <h5>Inline, radio, checkbox</h5>
+        <pre data-type="html"><code class="html"><div class="form-group row">
+  <label class="col md-3 sm-3" for="InputRowEmail">Email address</label>
+  <div class="col md-9 sm-9">
+    <input type="email" id="InputRowEmail" placeholder="Enter email">
+  </div>
+</div>
+
+<div class="form-group row">
+  <label class="col md-3 sm-3">Gender</label>
+  <div class="col md-9 sm-9">
+    <div class="form-radio">
+      <input type="radio" id="InputRowRadioMale" name="InputRowRadio">
+      <label for="InputRowRadioMale">Male</label>
+      <input type="radio" id="InputRowRadioFemale" name="InputRowRadio">
+      <label for="InputRowRadioFemale">Female</label>
+    </div>
+  </div>
+</div>
+</code></pre>
+        <div class="form-group row">
+          <label class="col md-3 sm-3" for="InputRowEmail">Email address</label>
+          <div class="col md-9 sm-9">
+            <input type="email" id="InputRowEmail" placeholder="Enter email">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label class="col md-3 sm-3" for="InputRowPassword">Password</label>
+          <div class="col md-9 sm-9">
+            <input type="password" id="InputRowPassword" placeholder="Password">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label class="col md-3 sm-3">Gender</label>
+          <div class="col md-9 sm-9">
+            <div class="form-radio">
+              <input type="radio" id="InputRowRadioMale" name="InputRowRadio" checked>
+              <label for="InputRowRadioMale">Male</label>
+              <input type="radio" id="InputRowRadioFemale" name="InputRowRadio">
+              <label for="InputRowRadioFemale">Female</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label class="col md-3 sm-3">Skill</label>
+          <div class="col md-9 sm-9">
+            <div class="form-check">
+              <input type="checkbox" id="InputRowCheckNg">
+              <label for="InputRowCheckNg">Angular</label>
+              <input type="checkbox" id="InputRowCheckReact" checked>
+              <label for="InputRowCheckReact">React</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col lg-6 md-6 sm-12 xl-12">
+        <h5>Inline, radio & checkbox block</h5>
+        <pre data-type="html"><code class="html"><div class="form-group row">
+  <label class="col md-3 sm-3">Gender</label>
+  <div class="col md-9 sm-9">
+    <div class="form-radio">
+      <input type="radio" id="InputBlockRadioMale" name="InputBlockRadio">
+      <label for="InputBlockRadioMale">Male</label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" id="InputBlockRadioFemale" name="InputBlockRadio">
+      <label for="InputBlockRadioFemale">Female</label>
+    </div>
+  </div>
+</div>
+</code></pre>
+        <div class="form-group row">
+          <label class="col md-3 sm-3">Gender</label>
+          <div class="col md-9 sm-9">
+            <div class="form-radio">
+              <input type="radio" id="InputBlockRadioMale" name="InputBlockRadio" checked>
+              <label for="InputBlockRadioMale">Male</label>
+            </div>
+            <div class="form-radio">
+              <input type="radio" id="InputBlockRadioFemale" name="InputBlockRadio">
+              <label for="InputBlockRadioFemale">Female</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label class="col md-3 sm-3">Skill</label>
+          <div class="col md-9 sm-9">
+            <div class="form-check">
+              <input type="checkbox" id="InputBlockCheckNg">
+              <label for="InputBlockCheckNg">Angular</label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" id="InputBlockCheckReact" checked>
+              <label for="InputBlockCheckReact">React</label>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

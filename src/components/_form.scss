@@ -33,8 +33,7 @@ textarea {
 .form-group {
 	margin-bottom: 1rem;
 
-	> label,
-	legend {
+	> label {
 		display: inline-block;
 		margin-bottom: 0.5rem;
 	}
@@ -53,6 +52,24 @@ textarea {
 		font-size: .8rem;
 		font-family: $light-font;
 	}
+
+	&.row {
+		margin-bottom: .5rem;
+
+		label.col {
+			line-height: 2.4;
+		}
+
+		.col {
+			padding: 0;
+
+			.form-check,
+			.form-radio {
+				line-height: 2.4;
+				margin-bottom: 0;
+			}
+		}
+	}
 }
 
 .form-check {
@@ -60,7 +77,7 @@ textarea {
 	display: block;
 	margin-bottom: 1rem;
 
-	&:not(.radio) input[type='checkbox'] {
+	input[type='checkbox'] {
 		display: none;
 	}
 
@@ -92,12 +109,55 @@ textarea {
 
 		&:hover::before {
 			@include transition;
-			background-color: lighten($muted, 22%);
+			background-color: lighten($muted, 20%);
+		}
+	}
+}
+
+.form-radio {
+	position: relative;
+	display: block;
+	margin-bottom: 1rem;
+
+	input[type='radio'] {
+		display: none;
+	}
+
+	input:checked + label::before {
+		background-color: $primary;
+		background-image: url($svg-dot);
+		@include transition(all, .1s, ease-out);
+	}
+
+	label {
+		position: relative;
+		display: inline-block;
+		margin-right: .4rem;
+		color: $dark;
+		user-select: none;
+		cursor: pointer;
+
+		&::before {
+			content: '';
+			padding-right: 1.2rem;
+			margin-right: .512rem;
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: 50% 50%;
+			background-color: lighten($muted, 25%);
+			border-radius: 100%;
+			border: 0 solid $muted-light;
+		}
+
+		&:hover::before {
+			@include transition;
+			background-color: lighten($muted, 20%);
 		}
 	}
 }
 
 fieldset.form-group {
+  padding: 1rem;
 	border: 2px solid $muted-light;
 
 	legend {
