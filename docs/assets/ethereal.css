@@ -2157,21 +2157,20 @@ fieldset.form-group legend {
   left: 0
 }
 .modal .modal-body {
-  display: block;
   position: relative;
   padding: 1.25rem;
   max-width: 712px;
   width: 512px;
-  border-radius: .25rem;
   background: #fff;
-  backface-visibility: hidden;
+  border-radius: .25rem;
   border: 1px solid #dadeda;
+  backface-visibility: hidden;
   transform: scale(0);
-  -webkit-transition: all .25s ease-in-out 0s;
-  -ms-transition: all .25s ease-in-out 0s;
-  -moz-transition: all .25s ease-in-out 0s;
-  -o-transition: all .25s ease-in-out 0s;
-  transition: all .25s ease-in-out 0s
+  -webkit-transition: all .3s ease-in-out 0s;
+  -ms-transition: all .3s ease-in-out 0s;
+  -moz-transition: all .3s ease-in-out 0s;
+  -o-transition: all .3s ease-in-out 0s;
+  transition: all .3s ease-in-out 0s
 }
 @media only screen and (max-width:992px) {
   .modal .modal-body {
@@ -2226,28 +2225,6 @@ fieldset.form-group legend {
 }
 .modal .modal-text > .row > .col {
   padding: 1rem 0
-}
-.modal .modal-link + .modal-link,
-.modal a + a {
-  margin-left: 1.25rem
-}
-.modal .modal-link,
-.modal a {
-  background-image: linear-gradient(5deg,transparent 65%,#a5afa3 80%,transparent 90%),linear-gradient(165deg,transparent 5%,#a5afa3 15%,transparent 25%),linear-gradient(165deg,transparent 45%,#a5afa3 55%,transparent 65%),linear-gradient(15deg,transparent 25%,#a5afa3 35%,transparent 50%);
-  background-position: 0 90%;
-  background-repeat: repeat-x;
-  background-size: 4px 3px;
-  cursor: pointer;
-  text-decoration: none
-}
-.modal .modal-link:focus,
-.modal .modal-link:hover,
-.modal .modal-link:visited,
-.modal a:focus,
-.modal a:hover,
-.modal a:visited {
-  color: #44679f;
-  text-decoration: none
 }
 .modal-state {
   display: none

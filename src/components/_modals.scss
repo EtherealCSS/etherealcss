@@ -27,17 +27,16 @@
 	}
 
 	.modal-body {
-		display: block;
 		position: relative;
 		padding: 1.25rem;
 		max-width: 712px;
 		width: 512px;
-		border-radius: .25rem;
 		background: $white;
-		backface-visibility: hidden;
+		border-radius: .25rem;
 		border: 1px solid $muted-light;
+		backface-visibility: hidden;
 		transform: scale(0);
-		@include transition(all, .25s);
+		@include transition(all, .3s);
 		@include resp(md) {
 			width: 90%;
 		}
@@ -90,28 +89,6 @@
 			> .col {
 				padding: 1rem 0;
 			}
-		}
-	}
-
-	.modal-link + .modal-link,
-	a + a {
-		margin-left: 1.25rem;
-	}
-
-	.modal-link,
-	a {
-		background-image: linear-gradient(5deg, transparent 65%, $muted 80%, transparent 90%), linear-gradient(165deg, transparent 5%, $muted 15%, transparent 25%), linear-gradient(165deg, transparent 45%, $muted 55%, transparent 65%), linear-gradient(15deg, transparent 25%, $muted 35%, transparent 50%);
-		background-position: 0 90%;
-		background-repeat: repeat-x;
-		background-size: 4px 3px;
-		cursor: pointer;
-		text-decoration: none;
-
-		&:hover,
-		&:focus,
-		&:visited {
-			color: $primary;
-			text-decoration: none;
 		}
 	}
 }
