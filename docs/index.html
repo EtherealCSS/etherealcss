@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <div class="container mt-6 mb-6">
+  <div class="container">
     <h1 class="title">Ethereal
       <small>.css</small>
     </h1>
@@ -802,32 +802,271 @@
           </div>
         </div>
       </div>
-
     </div>
-    <nav>
-      <div class="nav-brand">
-        <h3>
-          <a href="#">Ethereal</a>
-        </h3>
+    <hr>
+    <h4>Navbar</h4>
+    <div class="row">
+      <div class="col lg-12 md-12 sm-12">
+        <!-- Fixd Example -->
+        <nav class="nav-primary fixed">
+          <div class="nav-brand">
+            <h5>
+              <a href="#">Ethereal</a>
+            </h5>
+          </div>
+          <input id="togglerFixed" type="checkbox">
+          <label class="nav-toggler" for="togglerFixed">
+            <div class="bar"></div>
+          </label>
+          <div class="nav-collapse">
+            <ul>
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">Docs</a>
+              </li>
+              <li>
+                <a href="#">Github</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <h5>Default</h5>
+        <nav>
+          <div class="nav-brand">
+            <h5>
+              <a href="#">Ethereal</a>
+            </h5>
+          </div>
+          <input id="toggler" type="checkbox">
+          <label class="nav-toggler" for="toggler">
+            <div class="bar"></div>
+          </label>
+          <div class="nav-collapse">
+            <ul>
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">Docs</a>
+              </li>
+              <li>
+                <a href="#">Github</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <h5>Color schemes</h5>
+        <nav class="nav-primary">
+          <div class="nav-brand">
+            <h5>
+              <a href="#">Ethereal</a>
+            </h5>
+          </div>
+          <input id="togglerPrimary" type="checkbox">
+          <label class="nav-toggler" for="togglerPrimary">
+            <div class="bar"></div>
+          </label>
+          <div class="nav-collapse">
+            <ul>
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">Docs</a>
+              </li>
+              <li>
+                <a href="#">Github</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <nav class="nav-dark">
+          <div class="nav-brand">
+            <h5>
+              <a href="#">Ethereal</a>
+            </h5>
+          </div>
+          <input id="togglerDark" type="checkbox">
+          <label class="nav-toggler" for="togglerDark">
+            <div class="bar"></div>
+          </label>
+          <div class="nav-collapse">
+            <ul>
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">Docs</a>
+              </li>
+              <li>
+                <a href="#">Github</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <nav class="nav-info">
+          <div class="nav-brand">
+            <h5>
+              <a href="#">Ethereal</a>
+            </h5>
+          </div>
+          <input id="togglerInfo" type="checkbox">
+          <label class="nav-toggler" for="togglerInfo">
+            <div class="bar"></div>
+          </label>
+          <div class="nav-collapse">
+            <ul>
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">Docs</a>
+              </li>
+              <li>
+                <a href="#">Github</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <nav class="nav-success">
+          <div class="nav-brand">
+            <h5>
+              <a href="#">Ethereal</a>
+            </h5>
+          </div>
+          <input id="togglerSuccess" type="checkbox">
+          <label class="nav-toggler" for="togglerSuccess">
+            <div class="bar"></div>
+          </label>
+          <div class="nav-collapse">
+            <ul>
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">Docs</a>
+              </li>
+              <li>
+                <a href="#">Github</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <nav class="nav-danger">
+          <div class="nav-brand">
+            <h5>
+              <a href="#">Ethereal</a>
+            </h5>
+          </div>
+          <input id="togglerDanger" type="checkbox">
+          <label class="nav-toggler" for="togglerDanger">
+            <div class="bar"></div>
+          </label>
+          <div class="nav-collapse">
+            <ul>
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">Docs</a>
+              </li>
+              <li>
+                <a href="#">Github</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <h5>Active</h5>
+        <nav class="nav-primary">
+          <div class="nav-brand">
+            <h5>
+              <a href="#">Ethereal</a>
+            </h5>
+          </div>
+          <input id="togglerActive" type="checkbox">
+          <label class="nav-toggler" for="togglerActive">
+            <div class="bar"></div>
+          </label>
+          <div class="nav-collapse">
+            <ul>
+              <li class="active">
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">Docs</a>
+              </li>
+              <li>
+                <a href="#">Github</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <h5>Split</h5>
+        <nav class="nav-primary split-nav">
+          <div class="nav-brand">
+            <h5>
+              <a href="#">Ethereal</a>
+            </h5>
+          </div>
+          <input id="togglerSplit" type="checkbox">
+          <label class="nav-toggler" for="togglerSplit">
+            <div class="bar"></div>
+          </label>
+          <div class="nav-collapse">
+            <ul>
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">Docs</a>
+              </li>
+              <li>
+                <a href="#">Github</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <h5>Form</h5>
+        <nav class="nav-primary split-nav">
+          <div class="nav-brand">
+            <h5>
+              <a href="#">Ethereal</a>
+            </h5>
+          </div>
+          <input id="togglerForm" type="checkbox">
+          <label class="nav-toggler" for="togglerForm">
+            <div class="bar"></div>
+          </label>
+          <div class="nav-collapse">
+            <ul>
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">Docs</a>
+              </li>
+              <li>
+                <a href="#">Github</a>
+              </li>
+              <li>
+                <div class="form-group row mb-1 mt-1">
+                  <div class="col md-8 sm-8 xs-8">
+                    <input type="text" placeholder="Search">
+                  </div>
+                  <div class="col md-4 sm-4 xs-4">
+                    <button class="btn btn-info ml-2" type="button">Search</button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+          </div>
+        </nav>
       </div>
-      <input id="toggler" type="checkbox">
-      <label class="nav-toggler" for="toggler">
-        <div class="bar"></div>
-      </label>
-      <div class="nav-collapse">
-        <ul class="inline">
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">Docs</a>
-          </li>
-          <li>
-            <a href="#">Github</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    </div>
+
   </div>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>

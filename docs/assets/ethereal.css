@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 html {
   line-height: 1.15;
@@ -900,22 +899,7 @@ ul.inline {
   padding: 0
 }
 ul.inline li {
-  display: inline
-}
-ul:not(.inline) li:before {
-  content: "-"
-}
-ul ul li:before {
-  content: "+"
-}
-ul ul ul li:before {
-  content: "~"
-}
-ul ul ul ul li:before {
-  content: "⤍"
-}
-ul ul ul ul ul li:before {
-  content: "⁎"
+  display: inline-block
 }
 table {
   overflow-x: auto;
@@ -1136,191 +1120,221 @@ table.table-border tbody tr td:last-child {
 .float-right {
   float: right!important
 }
+.mt-0 {
+  margin-top: 0!important
+}
+.mr-0 {
+  margin-right: 0!important
+}
+.mb-0 {
+  margin-bottom: 0!important
+}
+.ml-0 {
+  margin-left: 0!important
+}
+.m-0 {
+  margin: 0!important
+}
 .mt-1 {
-  margin-top: .3rem
+  margin-top: .3rem!important
 }
 .mr-1 {
-  margin-right: .3rem
+  margin-right: .3rem!important
 }
 .mb-1 {
-  margin-bottom: .3rem
+  margin-bottom: .3rem!important
 }
 .ml-1 {
-  margin-left: .3rem
+  margin-left: .3rem!important
 }
 .m-1 {
-  margin: .3rem
+  margin: .3rem!important
 }
 .mt-2 {
-  margin-top: .6rem
+  margin-top: .6rem!important
 }
 .mr-2 {
-  margin-right: .6rem
+  margin-right: .6rem!important
 }
 .mb-2 {
-  margin-bottom: .6rem
+  margin-bottom: .6rem!important
 }
 .ml-2 {
-  margin-left: .6rem
+  margin-left: .6rem!important
 }
 .m-2 {
-  margin: .6rem
+  margin: .6rem!important
 }
 .mt-3 {
-  margin-top: .9rem
+  margin-top: .9rem!important
 }
 .mr-3 {
-  margin-right: .9rem
+  margin-right: .9rem!important
 }
 .mb-3 {
-  margin-bottom: .9rem
+  margin-bottom: .9rem!important
 }
 .ml-3 {
-  margin-left: .9rem
+  margin-left: .9rem!important
 }
 .m-3 {
-  margin: .9rem
+  margin: .9rem!important
 }
 .mt-4 {
-  margin-top: 1.2rem
+  margin-top: 1.2rem!important
 }
 .mr-4 {
-  margin-right: 1.2rem
+  margin-right: 1.2rem!important
 }
 .mb-4 {
-  margin-bottom: 1.2rem
+  margin-bottom: 1.2rem!important
 }
 .ml-4 {
-  margin-left: 1.2rem
+  margin-left: 1.2rem!important
 }
 .m-4 {
-  margin: 1.2rem
+  margin: 1.2rem!important
 }
 .mt-5 {
-  margin-top: 1.5rem
+  margin-top: 1.5rem!important
 }
 .mr-5 {
-  margin-right: 1.5rem
+  margin-right: 1.5rem!important
 }
 .mb-5 {
-  margin-bottom: 1.5rem
+  margin-bottom: 1.5rem!important
 }
 .ml-5 {
-  margin-left: 1.5rem
+  margin-left: 1.5rem!important
 }
 .m-5 {
-  margin: 1.5rem
+  margin: 1.5rem!important
 }
 .mt-6 {
-  margin-top: 1.8rem
+  margin-top: 1.8rem!important
 }
 .mr-6 {
-  margin-right: 1.8rem
+  margin-right: 1.8rem!important
 }
 .mb-6 {
-  margin-bottom: 1.8rem
+  margin-bottom: 1.8rem!important
 }
 .ml-6 {
-  margin-left: 1.8rem
+  margin-left: 1.8rem!important
 }
 .m-6 {
-  margin: 1.8rem
+  margin: 1.8rem!important
 }
 .m-auto {
-  margin: auto
+  margin: auto!important
+}
+.pt-0 {
+  padding-top: 0!important
+}
+.pr-0 {
+  padding-right: 0!important
+}
+.pb-0 {
+  padding-bottom: 0!important
+}
+.pl-0 {
+  padding-left: 0!important
+}
+.p-0 {
+  padding: 0!important
 }
 .pt-1 {
-  padding-top: .3rem
+  padding-top: .3rem!important
 }
 .pr-1 {
-  padding-right: .3rem
+  padding-right: .3rem!important
 }
 .pb-1 {
-  padding-bottom: .3rem
+  padding-bottom: .3rem!important
 }
 .pl-1 {
-  padding-left: .3rem
+  padding-left: .3rem!important
 }
 .p-1 {
-  padding: .3rem
+  padding: .3rem!important
 }
 .pt-2 {
-  padding-top: .6rem
+  padding-top: .6rem!important
 }
 .pr-2 {
-  padding-right: .6rem
+  padding-right: .6rem!important
 }
 .pb-2 {
-  padding-bottom: .6rem
+  padding-bottom: .6rem!important
 }
 .pl-2 {
-  padding-left: .6rem
+  padding-left: .6rem!important
 }
 .p-2 {
-  padding: .6rem
+  padding: .6rem!important
 }
 .pt-3 {
-  padding-top: .9rem
+  padding-top: .9rem!important
 }
 .pr-3 {
-  padding-right: .9rem
+  padding-right: .9rem!important
 }
 .pb-3 {
-  padding-bottom: .9rem
+  padding-bottom: .9rem!important
 }
 .pl-3 {
-  padding-left: .9rem
+  padding-left: .9rem!important
 }
 .p-3 {
-  padding: .9rem
+  padding: .9rem!important
 }
 .pt-4 {
-  padding-top: 1.2rem
+  padding-top: 1.2rem!important
 }
 .pr-4 {
-  padding-right: 1.2rem
+  padding-right: 1.2rem!important
 }
 .pb-4 {
-  padding-bottom: 1.2rem
+  padding-bottom: 1.2rem!important
 }
 .pl-4 {
-  padding-left: 1.2rem
+  padding-left: 1.2rem!important
 }
 .p-4 {
-  padding: 1.2rem
+  padding: 1.2rem!important
 }
 .pt-5 {
-  padding-top: 1.5rem
+  padding-top: 1.5rem!important
 }
 .pr-5 {
-  padding-right: 1.5rem
+  padding-right: 1.5rem!important
 }
 .pb-5 {
-  padding-bottom: 1.5rem
+  padding-bottom: 1.5rem!important
 }
 .pl-5 {
-  padding-left: 1.5rem
+  padding-left: 1.5rem!important
 }
 .p-5 {
-  padding: 1.5rem
+  padding: 1.5rem!important
 }
 .pt-6 {
-  padding-top: 1.8rem
+  padding-top: 1.8rem!important
 }
 .pr-6 {
-  padding-right: 1.8rem
+  padding-right: 1.8rem!important
 }
 .pb-6 {
-  padding-bottom: 1.8rem
+  padding-bottom: 1.8rem!important
 }
 .pl-6 {
-  padding-left: 1.8rem
+  padding-left: 1.8rem!important
 }
 .p-6 {
-  padding: 1.8rem
+  padding: 1.8rem!important
 }
 .p-auto {
-  padding: auto
+  padding: auto!important
 }
 .alert {
   padding: 15px;
@@ -2142,7 +2156,7 @@ fieldset.form-group legend {
   opacity: 0;
   visibility: hidden;
   word-wrap: break-word;
-  z-index: 13;
+  z-index: 500;
   -webkit-transition: opacity 183ms ease-in-out 0s;
   -ms-transition: opacity 183ms ease-in-out 0s;
   -moz-transition: opacity 183ms ease-in-out 0s;
@@ -2245,11 +2259,12 @@ fieldset.form-group legend {
   transform: scale(1)
 }
 nav {
-  background-color: #fff;
-  display: flex;
-  padding: .3rem;
   position: relative;
+  display: flex;
+  align-items: center;
+  padding: .5rem .85rem;
   width: 100%;
+  background-color: #fff;
   line-height: 1;
   z-index: 100
 }
@@ -2258,14 +2273,134 @@ nav {
     display: block
   }
 }
+nav.nav-dark {
+  border-color: #2f3944;
+  background-color: #2f3944;
+  color: #fff
+}
+nav.nav-dark ul li {
+  color: #e6e6e6
+}
+nav.nav-dark ul li.active {
+  background-color: #1a2026
+}
+nav.nav-dark .nav-brand:hover,
+nav.nav-dark ul li:hover {
+  color: #fff
+}
+nav.nav-primary {
+  border-color: #44679f;
+  background-color: #44679f;
+  color: #fff
+}
+nav.nav-primary ul li {
+  color: #e6e6e6
+}
+nav.nav-primary ul li.active {
+  background-color: #35507b
+}
+nav.nav-primary .nav-brand:hover,
+nav.nav-primary ul li:hover {
+  color: #fff
+}
+nav.nav-success {
+  border-color: #6db193;
+  background-color: #6db193;
+  color: #fff
+}
+nav.nav-success ul li {
+  color: #e6e6e6
+}
+nav.nav-success ul li.active {
+  background-color: #52997a
+}
+nav.nav-success .nav-brand:hover,
+nav.nav-success ul li:hover {
+  color: #fff
+}
+nav.nav-info {
+  border-color: #70a1d7;
+  background-color: #70a1d7;
+  color: #fff
+}
+nav.nav-info ul li {
+  color: #e6e6e6
+}
+nav.nav-info ul li.active {
+  background-color: #4887cc
+}
+nav.nav-info .nav-brand:hover,
+nav.nav-info ul li:hover {
+  color: #fff
+}
+nav.nav-joy {
+  border-color: #ff9071;
+  background-color: #ff9071;
+  color: #fff
+}
+nav.nav-joy ul li {
+  color: #e6e6e6
+}
+nav.nav-joy ul li.active {
+  background-color: #ff683e
+}
+nav.nav-joy .nav-brand:hover,
+nav.nav-joy ul li:hover {
+  color: #fff
+}
+nav.nav-warning {
+  border-color: #f0e48e;
+  background-color: #f0e48e;
+  color: rgba(0,0,0,.7)
+}
+nav.nav-warning ul li {
+  color: rgba(0,0,0,.7)
+}
+nav.nav-warning ul li.active {
+  background-color: #ead961
+}
+nav.nav-warning .nav-brand:hover,
+nav.nav-warning ul li:hover {
+  color: rgba(51,51,51,.7)
+}
+nav.nav-danger {
+  border-color: #d95858;
+  background-color: #d95858;
+  color: #fff
+}
+nav.nav-danger ul li {
+  color: #e6e6e6
+}
+nav.nav-danger ul li.active {
+  background-color: #cf2f2f
+}
+nav.nav-danger .nav-brand:hover,
+nav.nav-danger ul li:hover {
+  color: #fff
+}
+nav.nav-muted {
+  border-color: #a5afa3;
+  background-color: #a5afa3;
+  color: rgba(0,0,0,.7)
+}
+nav.nav-muted ul li {
+  color: rgba(0,0,0,.7)
+}
+nav.nav-muted ul li.active {
+  background-color: #8a9788
+}
+nav.nav-muted .nav-brand:hover,
+nav.nav-muted ul li:hover {
+  color: rgba(51,51,51,.7)
+}
 nav.split-nav {
   justify-content: space-between
 }
 nav.fixed {
-  left: 0;
   position: fixed;
+  top: 0;
   right: 0;
-  top: 0
+  left: 0
 }
 nav .nav-brand h1,
 nav .nav-brand h2,
@@ -2273,9 +2408,7 @@ nav .nav-brand h3,
 nav .nav-brand h4,
 nav .nav-brand h5,
 nav .nav-brand h6 {
-  margin: 0;
-  margin-bottom: .2rem;
-  color: #2f3944
+  color: inherit
 }
 nav .nav-brand h1 a,
 nav .nav-brand h2 a,
@@ -2283,18 +2416,18 @@ nav .nav-brand h3 a,
 nav .nav-brand h4 a,
 nav .nav-brand h5 a,
 nav .nav-brand h6 a {
-  color: #2f3944;
+  color: inherit;
   text-decoration: none
 }
 nav .nav-toggler {
   position: absolute;
   display: none;
-  top: .2rem;
+  top: .6rem;
   right: 0;
   padding: .25rem;
   margin-right: 1rem;
   width: 3rem;
-  height: 2.5rem;
+  height: 2.2rem;
   border-radius: .25rem;
   background-color: #fff;
   -webkit-transition: all 183ms ease-in-out 0s;
@@ -2339,6 +2472,47 @@ nav .nav-toggler .bar::before {
   -o-transition: all .3s ease 0s;
   transition: all .3s ease 0s
 }
+nav .nav-collapse {
+  overflow-y: hidden;
+  max-height: 0;
+  -webkit-transition: all .5s ease-in-out 0s;
+  -ms-transition: all .5s ease-in-out 0s;
+  -moz-transition: all .5s ease-in-out 0s;
+  -o-transition: all .5s ease-in-out 0s;
+  transition: all .5s ease-in-out 0s
+}
+@media only screen and (min-width:769px) {
+  nav .nav-collapse {
+    margin-left: 1rem;
+    max-height: initial
+  }
+}
+nav .nav-collapse ul {
+  padding: 0;
+  margin: 0;
+  line-height: 2
+}
+@media only screen and (max-width:768px) {
+  nav .nav-collapse ul {
+    margin-top: 1rem
+  }
+}
+nav .nav-collapse ul li {
+  display: inline-block;
+  padding: 0 .5rem;
+  list-style-type: none;
+  text-indent: 0
+}
+@media only screen and (max-width:768px) {
+  nav .nav-collapse ul li {
+    display: block
+  }
+}
+nav .nav-collapse ul li a {
+  color: inherit;
+  font-size: 1.2rem;
+  text-decoration: none
+}
 nav input[type=checkbox] {
   display: none
 }
@@ -2361,36 +2535,6 @@ nav input[type=checkbox]:checked + .nav-toggler .bar::after {
   -o-transform: rotate(45deg);
   transform: rotate(45deg)
 }
-nav ul.inline {
-  margin-top: 10px;
-  padding: 0;
-  list-style-type: none
-}
-nav ul.inline li {
-  display: inline-block;
-  margin: 0 .5rem;
-  text-indent: 0;
-  color: #2f3944
-}
-@media only screen and (max-width:768px) {
-  nav ul.inline li {
-    display: block;
-    margin: 1rem 0
-  }
-}
-nav ul.inline li a {
-  color: inherit;
-  font-size: 1.2rem;
-  text-decoration: none
-}
-nav ul.inline li a:hover {
-  color: #70859c
-}
-nav .nav-collapse {
-  background-color: #00f
-}
-@media only screen and (min-width:769px) {
-  nav .nav-collapse {
-    background-color: red
-  }
+nav input[type=checkbox]:checked ~ .nav-collapse {
+  max-height: 20rem
 }
