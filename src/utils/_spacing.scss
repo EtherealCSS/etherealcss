@@ -7,30 +7,30 @@ $spacer: 0.3;
 */
 
 @mixin create-space-classes($side, $property) {
-	@for $i from 1 through $sizes {
+	@for $i from 0 through $sizes {
 		.#{$side}t-#{$i} {
-			#{$property}-top: #{$spacer * $i}rem;
+			#{$property}-top: #{$spacer * $i}rem !important;
 		}
 
 		.#{$side}r-#{$i} {
-			#{$property}-right: #{$spacer * $i}rem;
+			#{$property}-right: #{$spacer * $i}rem !important;
 		}
 
 		.#{$side}b-#{$i} {
-			#{$property}-bottom: #{$spacer * $i}rem;
+			#{$property}-bottom: #{$spacer * $i}rem !important;
 		}
 
 		.#{$side}l-#{$i} {
-			#{$property}-left: #{$spacer * $i}rem;
+			#{$property}-left: #{$spacer * $i}rem !important;
 		}
 
 		.#{$side}-#{$i} {
-			#{$property}: #{$spacer * $i}rem;
+			#{$property}: #{$spacer * $i}rem !important;
 		}
 	}
 
 	.#{$side}-auto {
-		#{$property}: auto;
+		#{$property}: auto !important;
 	}
 }
 
