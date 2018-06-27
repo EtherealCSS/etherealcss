@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <div class="container pt-4 pb-4">
+  <div class="container mt-6 mb-6">
     <h1 class="title">Ethereal
       <small>.css</small>
     </h1>
@@ -731,11 +731,10 @@
       <div class="col lg-12">
         <label class="btn btn-primary mr" for="ModalBasic">Basic</label>
         <label class="btn btn-primary" for="ModalForm">Form</label>
+        <label class="btn btn-primary" for="ModalCloseBG">Close by background</label>
       </div>
       <input class="modal-state" id="ModalBasic" type="checkbox">
       <div class="modal">
-        <!-- Close by background click -->
-        <label class="modal-bg" for="ModalBasic"></label>
         <div class="modal-body">
           <label class="modal-close" for="ModalBasic">×</label>
           <h4 class="modal-title">Modal Title</h4>
@@ -754,8 +753,6 @@
 
       <input class="modal-state" id="ModalForm" type="checkbox">
       <div class="modal">
-        <!-- Close by background click -->
-        <label class="modal-bg" for="ModalForm"></label>
         <div class="modal-body">
           <label class="modal-close" for="ModalForm">×</label>
           <h4 class="modal-title">Form Group</h4>
@@ -788,11 +785,53 @@
           </div>
         </div>
       </div>
+
+      <input class="modal-state" id="ModalCloseBG" type="checkbox">
+      <div class="modal">
+        <!-- Close by background click -->
+        <label class="modal-bg" for="ModalCloseBG"></label>
+        <div class="modal-body">
+          <label class="modal-close" for="ModalCloseBG">×</label>
+          <h4 class="modal-title">Close by backgroun</h4>
+          <div class="modal-text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="float-right">
+            <label class="btn" for="ModalCloseBG">Close</label>
+            <label class="btn btn-primary" for="ModalCloseBG">Save</label>
+          </div>
+        </div>
+      </div>
+
     </div>
-    </n>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
-    <script src="./index.js"></script>
+    <nav>
+      <div class="nav-brand">
+        <h3>
+          <a href="#">Ethereal</a>
+        </h3>
+      </div>
+      <input id="toggler" type="checkbox">
+      <label class="nav-toggler" for="toggler">
+        <div class="bar"></div>
+      </label>
+      <div class="nav-collapse">
+        <ul class="inline">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">Docs</a>
+          </li>
+          <li>
+            <a href="#">Github</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script src="./index.js"></script>
 </body>
 
 </html>

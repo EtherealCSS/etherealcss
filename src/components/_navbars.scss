@@ -1,0 +1,152 @@
+nav {
+	background-color: $main-background;
+	display: flex;
+	padding: 0.3rem;
+	position: relative;
+	width: 100%;
+	line-height: 1;
+	z-index: 100;
+	@include resp(small) {
+		display: block;
+	}
+
+	/* Split brand and nav */
+	&.split-nav {
+		justify-content: space-between;
+	}
+
+	/* Set to top */
+	&.fixed {
+		left: 0;
+		position: fixed;
+		right: 0;
+		top: 0;
+	}
+
+	/* Nav brand or logo */
+	.nav-brand {
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6,
+		 {
+			margin: 0;
+			margin-bottom: 0.2rem;
+			color: $dark;
+
+			a {
+				color: $dark;
+				text-decoration: none;
+			}
+		}
+	}
+
+	/* Close or open menu */
+	.nav-toggler {
+		position: absolute;
+		display: none;
+		top: 0.2rem;
+		right: 0;
+		padding: .25rem;
+		margin-right: 1rem;
+		width: 3rem;
+		height: 2.5rem;
+		border-radius: .25rem;
+		background-color: $main-background;
+		@include transition;
+		@include resp(small) {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		&:hover {
+			cursor: pointer;
+			background-color: lighten($muted, 33%);
+		}
+
+		.bar::before,
+		.bar::after {
+			content: '';
+			display: inline-block;
+			position: absolute;
+		}
+
+		.bar::before {
+			top: 25%;
+		}
+
+		.bar::after {
+			top: 70%;
+		}
+
+		.bar,
+		.bar::before,
+		.bar::after,
+		 {
+			width: 1.5rem;
+			height: .185rem;
+			color: $dark-light;
+			background-color: $dark-light;
+			@include transition(all, .3s, ease);
+		}
+	}
+
+	/* Toggle menu checkbox */
+	input[type=checkbox] {
+		display: none;
+
+		&:checked + .nav-toggler {
+			.bar {
+				background-color: transparent;
+			}
+
+			.bar::before {
+				top: 50%;
+				@include transform(rotate(-45deg));
+			}
+
+			.bar::after {
+				top: 50%;
+				@include transform(rotate(45deg));
+			}
+		}
+	}
+
+	/* Menu style */
+	ul.inline {
+		margin-top: 10px;
+		padding: 0;
+		list-style-type: none;
+
+		li {
+			display: inline-block;
+			margin: 0 0.5rem;
+			text-indent: 0;
+			color: $dark;
+			@include resp(small) {
+				display: block;
+				margin: 1rem 0;
+			}
+
+			a {
+				color: inherit;
+				font-size: 1.2rem;
+				text-decoration: none;
+
+				&:hover {
+					color: $dark-light;
+				}
+			}
+		}
+	}
+
+	.nav-collapse {
+		background-color: blue;
+		@include resp(null, $small-screen + 1px) {
+			background-color: red;
+		}
+	}
+}
