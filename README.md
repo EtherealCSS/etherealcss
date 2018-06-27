@@ -15,7 +15,7 @@ An Elegant, Lightweight CSS Framework.
 - [x] Collapsibles
 - [x] Forms
 - [x] Modals
-- [ ] Navbar
+- [x] Navbars
 - [ ] Tooltips
 - [ ] Tabs
 
