@@ -35,7 +35,7 @@
 		border-radius: .25rem;
 		border: 1px solid $muted-light;
 		backface-visibility: hidden;
-		transform: scale(0);
+		@include transform(scale(0));
 		@include transition(all, .3s);
 		@include resp(md) {
 			width: 90%;
@@ -101,7 +101,7 @@
 		visibility: visible;
 
 		.modal-body {
-			transform: scale(1);
+			@include transform(scale(1));
 		}
 	}
 }

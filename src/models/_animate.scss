@@ -10,3 +10,14 @@
 	-o-transition: $name $duration $animation $delay;
 	transition: $name $duration $animation $delay;
 }
+
+/**
+  Add global transform styles to selector
+*/
+@mixin transform($transform) {
+	-webkit-transform: $transform;
+	-ms-transform: $transform;
+	-moz-transform: $transform;
+	-o-transform: $transform;
+	transform: $transform;
+}
