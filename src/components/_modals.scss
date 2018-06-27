@@ -14,7 +14,7 @@
 	opacity: 0;
 	visibility: hidden;
 	word-wrap: break-word;
-	z-index: 13;
+	z-index: 500;
 	@include transition(opacity);
 
 	// modal background
