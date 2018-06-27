@@ -1,9 +1,3 @@
-@mixin li-bullet($char) {
-	li:before {
-		content: $char;
-	}
-}
-
 ol {
 	list-style-type: decimal;
 
@@ -41,27 +35,7 @@ ul {
 		padding: 0;
 
 		li {
-			display: inline;
-		}
-	}
-
-	&:not(.inline) {
-		@include li-bullet('-');
-	}
-
-	ul {
-		@include li-bullet('+');
-
-		ul {
-			@include li-bullet('~');
-
-			ul {
-				@include li-bullet('⤍');
-
-				ul {
-					@include li-bullet('⁎');
-				}
-			}
+			display: inline-block;
 		}
 	}
 }
