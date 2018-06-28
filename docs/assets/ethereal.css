@@ -2263,7 +2263,6 @@ nav {
   display: flex;
   align-items: center;
   padding: .5rem .85rem;
-  width: 100%;
   background-color: #fff;
   line-height: 1;
   z-index: 100
@@ -2407,6 +2406,17 @@ nav.absolute {
   top: 0;
   right: 0;
   left: 0
+}
+@media only screen and (min-width:769px) {
+  nav > .container {
+    display: flex;
+    justify-content: space-between
+  }
+}
+@media only screen and (max-width:768px) {
+  nav > .container .nav-toggler {
+    top: -.3rem
+  }
 }
 nav .nav-brand h1,
 nav .nav-brand h2,

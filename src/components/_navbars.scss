@@ -3,7 +3,6 @@ nav {
 	display: flex;
 	align-items: center;
 	padding: .5rem .85rem;
-	width: 100%;
 	background-color: $main-background;
 	line-height: 1;
 	z-index: 100;
@@ -36,6 +35,7 @@ nav {
 	/* Split brand and nav */
 	&.split-nav {
 		justify-content: space-between;
+		/* Split brand and nav in container */
 	}
 
 	/* Pin to top, use fixed */
@@ -52,6 +52,20 @@ nav {
 		top: 0;
 		right: 0;
 		left: 0;
+	}
+
+	/* Fix display in container mode */
+	> .container {
+		@include resp(null, $small-screen + 1px) {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.nav-toggler {
+			@include resp(small) {
+				top: -.3rem;
+			}
+		}
 	}
 
 	/* Nav brand or logo */
