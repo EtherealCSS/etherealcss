@@ -61,6 +61,7 @@ select {
 		position: relative;
 		cursor: pointer;
 
+		/* Only run in chrome */
 		&[data-prefix]::before {
 			content: attr(data-prefix);
 			position: absolute;
@@ -92,6 +93,7 @@ select {
 		max-width: 100%;
 	}
 
+	/* No scroll */
 	textarea.no-resize {
 		resize: none;
 	}
@@ -144,6 +146,7 @@ select {
 		user-select: none;
 		cursor: pointer;
 
+		/* Check svg */
 		&::before {
 			content: '';
 			padding-right: 1.2rem;
@@ -186,9 +189,10 @@ select {
 		user-select: none;
 		cursor: pointer;
 
+		/* Circle svg */
 		&::before {
 			content: '';
-			padding-right: 1.4rem;
+			padding-right: 1.35rem;
 			margin-right: .512rem;
 			background-repeat: no-repeat;
 			background-position: center center;
