@@ -1,4 +1,9 @@
-# etherealcss
+# Etherealcss
+
+[![forthebadge](https://forthebadge.com/images/badges/makes-people-smile.svg)](https://github.com/explooosion/etherealcss)
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://github.com/GitbookIO/gitbook-cli)
+[![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)](https://forthebadge.com)
+
 An Elegant, Lightweight CSS Framework.
 
 👉 [Demo](http://robby570.tw/etherealcss/)
@@ -71,7 +76,7 @@ yarn build
 
 ### Stylelint
 
-Please install extensions before running `stylelint` :
+Please install following extensions before running `stylelint` :
 
 - [stylelint](https://marketplace.visualstudio.com/items?itemName=shinnn.stylelint)
 - [vscode-stylefmt](https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-stylefmt)
