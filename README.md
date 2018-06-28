@@ -16,7 +16,6 @@ An Elegant, Lightweight CSS Framework.
 - [x] Forms
 - [x] Modals
 - [x] Navbars
-- [ ] Tooltips
 - [ ] Tabs
 
 ### Content
@@ -34,7 +33,7 @@ An Elegant, Lightweight CSS Framework.
 
 ### Utils
 
-- [ ] borders
+- [x] borders
 - [x] colors
 - [x] display
 - [x] position

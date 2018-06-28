@@ -6,6 +6,12 @@
 @import 'models/rwd';
 @import 'models/svg';
 @import 'models/reset';
+// Utils
+@import 'utils/colors';
+@import 'utils/borders';
+@import 'utils/display';
+@import 'utils/position';
+@import 'utils/spacing';
 // Layout
 @import 'layout/container';
 @import 'layout/flexbox';
@@ -15,11 +21,6 @@
 @import 'content/images';
 @import 'content/lists';
 @import 'content/tables';
-// Utils
-@import 'utils/colors';
-@import 'utils/display';
-@import 'utils/position';
-@import 'utils/spacing';
 // Components
 @import 'components/alerts';
 @import 'components/badges';

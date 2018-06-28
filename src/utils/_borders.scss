@@ -1,0 +1,47 @@
+$sizes: 6;
+$spacer: .125;
+
+.border {
+	border: 1px solid $dark;
+}
+
+.no-border {
+	border: 0;
+}
+
+.circle {
+	border-radius: 100%;
+}
+
+.border-white {
+	border-color: $white;
+}
+
+.border-dotted {
+	border-style: dotted;
+}
+
+.border-dashed {
+	border-style: dashed;
+}
+
+/* Create border color */
+@each $colorName, $color in $colors {
+	.border-#{$colorName} {
+		border-color: $color !important;
+	}
+}
+
+/* Create border width */
+@for $i from 0 through $sizes {
+	.border-#{$i} {
+		border: #{$i}px solid $dark;
+	}
+}
+
+/* Create border width */
+@for $i from 0 through $sizes {
+	.border-radius-#{$i} {
+		border-radius: #{$spacer * $i}rem !important;
+	}
+}
