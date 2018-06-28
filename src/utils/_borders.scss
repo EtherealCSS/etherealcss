@@ -6,23 +6,24 @@ $spacer: .125;
 }
 
 .no-border {
-	border: 0;
+	border: 0 !important;
 }
 
 .circle {
-	border-radius: 100%;
+	border-radius: 100% !important;
 }
 
-.border-white {
-	border-color: $white;
-}
-
+/* Border style */
 .border-dotted {
-	border-style: dotted;
+	border-style: dotted !important;
 }
 
 .border-dashed {
-	border-style: dashed;
+	border-style: dashed !important;
+}
+
+.border-double {
+	border-style: double !important;
 }
 
 /* Create border color */
@@ -32,10 +33,19 @@ $spacer: .125;
 	}
 }
 
+/* Create border other colors */
+.border-white {
+	border-color: $white !important;
+}
+
+.border-transparent {
+	border-color: transparent !important;
+}
+
 /* Create border width */
 @for $i from 0 through $sizes {
 	.border-#{$i} {
-		border: #{$i}px solid $dark;
+		border-width: #{$i}px !important;
 	}
 }
 
