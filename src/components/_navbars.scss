@@ -38,9 +38,17 @@ nav {
 		justify-content: space-between;
 	}
 
-	/* Set to top */
+	/* Pin to top, use fixed */
 	&.fixed {
 		position: fixed;
+		top: 0;
+		right: 0;
+		left: 0;
+	}
+
+	/* Pin to top, use absolute */
+	&.absolute {
+		position: absolute;
 		top: 0;
 		right: 0;
 		left: 0;

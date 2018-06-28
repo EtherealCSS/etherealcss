@@ -2402,6 +2402,12 @@ nav.fixed {
   right: 0;
   left: 0
 }
+nav.absolute {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0
+}
 nav .nav-brand h1,
 nav .nav-brand h2,
 nav .nav-brand h3,
