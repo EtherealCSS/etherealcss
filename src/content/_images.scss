@@ -18,13 +18,4 @@ img {
 		max-width: initial;
 		height: initial;
 	}
-
-	&.no-border {
-		border: 0;
-		border-radius: 0;
-	}
-
-	&.circle {
-		border-radius: 100%;
-	}
 }
