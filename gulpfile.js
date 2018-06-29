@@ -28,4 +28,3 @@ gulp.task('minify-css', () => {
 
 gulp.task('default', ['sass', 'watch']);
 gulp.task('build', ['sass', 'minify-css']);
-gulp.task('postinstall', ['sass', 'minify-css']);
