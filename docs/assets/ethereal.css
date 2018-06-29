@@ -1558,11 +1558,10 @@ table.table-border tbody tr td:last-child {
   text-decoration: underline
 }
 .breadcrumb .driver {
-  padding: 0 .4rem;
+  padding: .2rem .4rem 0;
   color: #a5afa3;
   text-align: center;
-  font-size: .6rem;
-  line-height: 2
+  font-size: .6rem
 }
 .btn {
   padding: .375rem .75rem;
