@@ -8,6 +8,16 @@ An Elegant, Lightweight CSS Framework.
 
 👉 [Demo](http://robby570.tw/etherealcss/)
 
+## Installation
+
+```bash
+npm install etherealcss --save
+```
+
+```js
+import 'etherealcss/dist/ethereal.css'
+```
+
 ## Todo
 
 ### Components
