@@ -18,7 +18,7 @@ npm install etherealcss --save
 import 'etherealcss/dist/ethereal.css'
 ```
 
-## Todo
+## Documentation
 
 ### Components
 
