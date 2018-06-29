@@ -21,7 +21,7 @@ An Elegant, Lightweight CSS Framework.
 - [x] Forms
 - [x] Modals
 - [x] Navbars
-- [ ] Tabs
+- [x] Tabs
 
 ### Content
 
