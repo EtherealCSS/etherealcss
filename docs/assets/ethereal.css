@@ -2197,7 +2197,7 @@ textarea[disabled] {
 }
 .form-radio label::before {
   content: '';
-  padding-right: 1.4rem;
+  padding-right: 1.35rem;
   margin-right: .512rem;
   background-repeat: no-repeat;
   background-position: center center;
@@ -2635,4 +2635,76 @@ nav input[type=checkbox]:checked + .nav-toggler .bar::after {
 }
 nav input[type=checkbox]:checked ~ .nav-collapse {
   max-height: 20rem
+}
+.tabs {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  width: 100%
+}
+.tabs input[type=radio] {
+  display: none
+}
+.tabs input[type=radio]:checked + label {
+  color: #44679f;
+  -webkit-transition: all 183ms ease-in-out 0s;
+  -ms-transition: all 183ms ease-in-out 0s;
+  -moz-transition: all 183ms ease-in-out 0s;
+  -o-transition: all 183ms ease-in-out 0s;
+  transition: all 183ms ease-in-out 0s
+}
+.tabs input[type=radio]:checked + label::after {
+  width: 100%;
+  border-bottom: 2px solid #a4b8d8
+}
+.tabs input[type=radio]:checked + label + .tab-content {
+  opacity: 1;
+  z-index: initial;
+  -webkit-transition: all 183ms ease-in-out 0s;
+  -ms-transition: all 183ms ease-in-out 0s;
+  -moz-transition: all 183ms ease-in-out 0s;
+  -o-transition: all 183ms ease-in-out 0s;
+  transition: all 183ms ease-in-out 0s
+}
+.tabs label {
+  padding: .5rem .5rem .5rem 0;
+  color: #a4b8d8;
+  text-align: center;
+  font-weight: 500
+}
+.tabs label::after {
+  content: '';
+  position: relative;
+  display: block;
+  width: 0;
+  border-bottom: 2px solid transparent;
+  -webkit-transition: all 183ms ease-in-out 0s;
+  -ms-transition: all 183ms ease-in-out 0s;
+  -moz-transition: all 183ms ease-in-out 0s;
+  -o-transition: all 183ms ease-in-out 0s;
+  transition: all 183ms ease-in-out 0s
+}
+.tabs label:hover {
+  color: #a5afa3;
+  cursor: pointer
+}
+.tabs label:hover::after {
+  width: 100%;
+  border-bottom: 2px solid #a4b8d8
+}
+.tabs .tab-content {
+  position: absolute;
+  top: 2.4rem;
+  left: 0;
+  width: inherit;
+  opacity: 0;
+  z-index: -1
+}
+.tabs .tab-content p {
+  padding: 0 0 2rem;
+  margin: 0
 }
