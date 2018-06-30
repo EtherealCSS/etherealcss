@@ -1,0 +1,12 @@
+hr {
+	height: 1px;
+	border: 0;
+	border-top: 1px solid lighten($muted, 24%);
+}
+
+/* Color light theme */
+@each $colorName, $color, $color-light in $colors {
+	.hr-#{$colorName} {
+		border-color: $color-light !important;
+	}
+}
