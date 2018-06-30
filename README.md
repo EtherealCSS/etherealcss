@@ -34,10 +34,10 @@ Include the [CDN](https://unpkg.com) link, and you can check out the latest vers
 
 ```html
 <!-- Latest compiled CSS -->
-<link rel="stylesheet" href="https://unpkg.com/etherealcss@0.0.3/dist/ethereal.css">
+<link rel="stylesheet" href="https://unpkg.com/etherealcss@0.0.4/dist/ethereal.css">
 
 <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://unpkg.com/etherealcss@0.0.3/dist/ethereal.min.css">
+<link rel="stylesheet" href="https://unpkg.com/etherealcss@0.0.4/dist/ethereal.min.css">
 ```
 
 ### npm
