@@ -1,16 +1,7 @@
-// font color
-$dark-text: $white !default;
-$primary-text: $white !default;
-$success-text: $white !default;
-$info-text: $white !default;
-$danger-text: $white !default;
-$warning-text: $light-dark !default;
-$joy-text: $white !default;
-$muted-text: $light-dark !default;
-
-// font family
+// font theme
 $global-font-size: 1rem !default;
 $header-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, 'Microsoft YaHei UI', 'Microsoft Yahei' !default;
 $body-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, 'Microsoft YaHei UI', 'Microsoft Yahei' !default;
 $light-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, 'Microsoft JhengHei UI', 'Microsoft JhengHei' !default;
 $font-color: $dark !default;
+$font-weight: normal, bold, lighter;

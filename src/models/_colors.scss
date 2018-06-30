@@ -15,7 +15,7 @@ $warning: #f0e48e !default;
 $danger: #d95858 !default;
 $muted: #a5afa3 !default;
 
-// light
+// Light
 $dark-light: lighten($dark, 30%) !default;
 $primary-light: lighten($primary, 30%) !default;
 $success-light: lighten($success, 30%) !default;
@@ -23,10 +23,23 @@ $info-light: lighten($info, 30%) !default;
 $joy-light: lighten($joy, 30%) !default;
 $warning-light: lighten($warning, 20%) !default;
 $danger-light: lighten($danger, 30%) !default;
-$muted-light: lighten($muted, 20%) !default;
+$muted-light: lighten($muted, 28%) !default;
 
-// dark
+// Dark
 $white-dark: rgba(#000, 0.03) !default;
 $light-dark: rgba(#000, 0.7) !default;
 $white: rgba(#fff, 1) !default;
 $main-background: rgba(#fff, 1) !default;
+
+// Font color
+$dark-text: $white !default;
+$primary-text: $white !default;
+$success-text: $white !default;
+$info-text: $white !default;
+$danger-text: $white !default;
+$warning-text: $light-dark !default;
+$joy-text: $white !default;
+$muted-text: $light-dark !default;
+
+// Map to set your color names
+$colors: (dark, $dark, $dark-light, $dark-text), (primary, $primary, $primary-light, $primary-text), (success, $success, $success-light, $success-text), (info, $info, $info-light, $info-text), (joy, $joy, $joy-light, $joy-text), (warning, $warning, $warning-light, $warning-text), (danger, $danger, $danger-light, $danger-text), (muted, $muted, $muted-light, $muted-text);
