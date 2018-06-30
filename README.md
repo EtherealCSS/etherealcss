@@ -14,7 +14,10 @@ This library support in the following browsers:
 
 | <img src="http://i.imgur.com/NjIVmRO.png" width="48px" height="48px" alt="Chrome logo"> | <img src="http://i.imgur.com/o1m5RcQ.png" width="48px" height="48px" alt="Firefox logo"> | <img src="http://i.imgur.com/0R5whqc.png" width="48px" height="48px" alt="Internet Explorer logo"> | <img src="http://i.imgur.com/kQ1e7Mk.png" width="45px" height="45px" alt="Edge logo"> | <img src="http://i.imgur.com/FSJB8BL.png" width="48px" height="48px" alt="Opera logo"> | <img src="http://i.imgur.com/yLwF24I.png" width="48px" height="48px" alt="Safari logo"> |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| 43+ ✔ | 38+ ✔ | 11 ✔ |  13 ✔ | 32+ ✔ | 8+ ✔ |
+| 43+ ✔ | 38+ ✔ | Nope ✘ |  13 ✔ | 32+ ✔ | 8+ ✔ |
+
+
+Testing on [BrowseEmAll](https://www.browseemall.com/).
 
 For more information, check on [Can I Use](http://caniuse.com/#feat=css-filters).
 
