@@ -8,21 +8,29 @@ An Elegant, Lightweight CSS Framework.
 
 👉 [Demo](http://robby570.tw/etherealcss/)
 
-## Installation
+## Browser Support
 
-### cdn
+This library support in the following browsers:
 
-Download from cdn
+| <img src="http://i.imgur.com/NjIVmRO.png" width="48px" height="48px" alt="Chrome logo"> | <img src="http://i.imgur.com/o1m5RcQ.png" width="48px" height="48px" alt="Firefox logo"> | <img src="http://i.imgur.com/0R5whqc.png" width="48px" height="48px" alt="Internet Explorer logo"> | <img src="http://i.imgur.com/kQ1e7Mk.png" width="45px" height="45px" alt="Edge logo"> | <img src="http://i.imgur.com/FSJB8BL.png" width="48px" height="48px" alt="Opera logo"> | <img src="http://i.imgur.com/yLwF24I.png" width="48px" height="48px" alt="Safari logo"> |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| 43+ ✔ | 38+ ✔ | 11 ✔ |  13 ✔ | 32+ ✔ | 8+ ✔ |
+
+For more information, check on [Can I Use](http://caniuse.com/#feat=css-filters).
+
+## Usage
+
+### Use CSS classes
+
+Include the [CDN](https://unpkg.com) link, and you can check out the latest version [HERE](https://unpkg.com/etherealcss).
 
 ```html
 <!-- Latest compiled CSS -->
-<link rel="stylesheet" href="https://unpkg.com/etherealcss@0.0.2/dist/ethereal.css">
+<link rel="stylesheet" href="https://unpkg.com/etherealcss@0.0.3/dist/ethereal.css">
 
 <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://unpkg.com/etherealcss@0.0.2/dist/ethereal.min.css">
+<link rel="stylesheet" href="https://unpkg.com/etherealcss@0.0.3/dist/ethereal.min.css">
 ```
-
-Or get the latest version [here](https://unpkg.com/etherealcss)
 
 ### npm
 
@@ -70,9 +78,11 @@ import 'etherealcss'
 - [x] position
 - [x] spacing
 
-## Contribute
+## Customizing
 
-### Install
+You can customize EtherealCSS lightly.
+
+### Clone
 
 ```bash
 git clone https://github.com/explooosion/etherealcss.git
@@ -84,39 +94,50 @@ git install
 
 ### Run
 
+Run local HTTP server.
+
 ```bash
-yarn dev
+npm run dev
 ```
 
 ### Watch
 
 ```
-yarn start
+npm run start
 ```
 
 ### Build
 
 ```
-yarn build
+npm run build
 ```
+
+## Contributing
+
+This repository is open source and contributions are very welcomed. It is also as beginner friendly as possible.
+
+Please before sending a PR, make sure you are properly running `yarn lint`.
 
 ### Stylelint
 
-Please install following extensions before running `stylelint` :
+Please install following extensions before running `stylelint` 😇.
 
 - [stylelint](https://marketplace.visualstudio.com/items?itemName=shinnn.stylelint)
 - [vscode-stylefmt](https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-stylefmt)
 - [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
 
 ```bash
-yarn lint
+nmp run lint
 ```
 
-## FAQ
+## About
 
-What is `Ethereal` ?
+Q: What is `Ethereal`?
+
+A: As you can see, ethereal is the feeling you feel 😶 .
 
 ![Image](https://i.imgur.com/NgJhJbd.png)
 
 ## License
+
 [MIT](http://opensource.org/licenses/MIT)
