@@ -24,6 +24,7 @@ For more information, check on [Can I Use](http://caniuse.com/#feat=css-filters)
 ## Example
 
 - [CMS](http://robby570.tw/etherealcss/example/cms)
+- [Register](http://robby570.tw/etherealcss/example/register)
 
 ## Usage
 
