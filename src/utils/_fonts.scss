@@ -12,6 +12,14 @@ $sizes: 6;
 	text-align: right !important;
 }
 
+.underline {
+	text-decoration: underline;
+}
+
+.no-underline {
+	text-decoration: none;
+}
+
 .font-family-light {
 	font-family: $light-font, sans-serif !important;
 }
