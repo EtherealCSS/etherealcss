@@ -69,6 +69,7 @@ import 'etherealcss'
 
 - [x] code
 - [x] fonts
+- [x] hr
 - [x] images
 - [x] lists
 - [x] tables
@@ -83,6 +84,7 @@ import 'etherealcss'
 - [x] borders
 - [x] colors
 - [x] display
+- [x] fonts
 - [x] position
 - [x] spacing
 
