@@ -16,6 +16,14 @@ $sizes: 6;
 	text-decoration: underline;
 }
 
+.underline-hover {
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
 .no-underline {
 	text-decoration: none;
 }
