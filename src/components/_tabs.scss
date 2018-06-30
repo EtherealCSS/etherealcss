@@ -1,7 +1,6 @@
 .tabs {
 	position: relative;
-	display: -ms-flexbox;
-	display: flex;
+	@include display-flex;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 	padding-left: 0;

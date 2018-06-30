@@ -1,5 +1,5 @@
 .collapse {
-	display: flex;
+	@include display-flex;
 	flex-direction: column;
 	border-top: 1px solid $muted-light;
 	border-left: 1px solid $muted-light;

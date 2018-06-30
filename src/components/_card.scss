@@ -1,13 +1,11 @@
 .card {
 	position: relative;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
 	flex-direction: column;
 	border-radius: .15rem;
 	border: 1px solid $muted-light;
 	backface-visibility: hidden;
 	word-wrap: break-word;
+	@include display-flex;
 
 	.card-header,
 	.card-footer {
@@ -30,8 +28,12 @@
 	}
 
 	.card-body {
+		-webkit-box-flex: 1 1 auto;  /* OLD - iOS 6-, Safari 3.1-6 */
+		-moz-box-flex: 1 1 auto;     /* OLD - Firefox 19- */
+		-webkit-flex: 1 1 auto;      /* Chrome */
+		-ms-flex: 1 1 auto;          /* IE 10 */
+		flex: 1 1 auto;;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
 		padding: 1rem;
-		flex: 1 1 auto;
 
 		.card-title {
 			font-weight: 500;

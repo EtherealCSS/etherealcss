@@ -1,9 +1,5 @@
 .modal {
 	position: fixed;
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
 	align-items: center;
 	justify-content: center;
 	top: 0;
@@ -15,6 +11,7 @@
 	visibility: hidden;
 	word-wrap: break-word;
 	z-index: 500;
+	@include display-flex;
 	@include transition(opacity);
 
 	// modal background
