@@ -1,0 +1,32 @@
+$sizes: 6;
+
+.text-left {
+	text-align: left !important;
+}
+
+.text-center {
+	text-align: center !important;
+}
+
+.text-right {
+	text-align: right !important;
+}
+
+.font-family-light {
+	font-family: $light-font, sans-serif !important;
+}
+
+/* font weight style */
+@each $weight in $font-weight {
+	.font-#{$weight} {
+		font-weight: $weight !important;
+	}
+}
+
+/* font size style */
+/* Create border width */
+@for $i from 0 through $sizes {
+	.font-size-#{$i} {
+		font-size: #{$i}rem !important;
+	}
+}
