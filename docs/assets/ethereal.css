@@ -2494,6 +2494,9 @@ nav.nav.nav-muted ul li:hover {
 nav.nav.split-nav {
   justify-content: space-between
 }
+nav.nav.split-nav > .container {
+  justify-content: space-between
+}
 nav.nav.fixed {
   position: fixed;
   top: 0;

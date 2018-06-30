@@ -36,6 +36,9 @@ nav.nav {
 	&.split-nav {
 		justify-content: space-between;
 		/* Split brand and nav in container */
+		> .container {
+			justify-content: space-between;
+		}
 	}
 
 	/* Pin to window top with fixed */
