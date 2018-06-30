@@ -27,9 +27,13 @@ $spacer: .125;
 }
 
 /* Create border color */
-@each $colorName, $color in $colors {
+@each $colorName, $color, $color-light in $colors {
 	.border-#{$colorName} {
 		border-color: $color !important;
+	}
+
+	.border-#{$colorName}-light {
+		border-color: $color-light !important;
 	}
 }
 
