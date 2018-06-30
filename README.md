@@ -10,31 +10,22 @@ An Elegant, Lightweight CSS Framework.
 
 ## Installation
 
-### Use cdn
+### cdn
 
-Automatically download the latest version
+Download from cdn
 
 ```html
 <!-- Latest compiled CSS -->
-<link rel="stylesheet" href="https://unpkg.com/etherealcss/dist/ethereal.min.csss">
+<link rel="stylesheet" href="https://unpkg.com/etherealcss@0.0.2/dist/ethereal.css">
 
 <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://unpkg.com/etherealcss/dist/ethereal.min.csss">
+<link rel="stylesheet" href="https://unpkg.com/etherealcss@0.0.2/dist/ethereal.min.css">
 ```
 
-Download an older version
+Or get the latest version [here](https://unpkg.com/etherealcss)
 
-`etherealcss@[version]`
+### npm
 
-```bash
-https://unpkg.com/etherealcss@0.0.2/dist/ethereal.css
-```
-
-```bash
-https://unpkg.com/etherealcss@0.0.2/dist/ethereal.min.css
-```
-
-### Use npm
 ```bash
 npm install etherealcss --save
 ```
