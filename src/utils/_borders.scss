@@ -1,8 +1,26 @@
 $sizes: 6;
 $spacer: .125;
 
+/* Common border */
+
 .border {
 	border: 1px solid $dark;
+}
+
+.border-top {
+	border-top: 1px solid $dark;
+}
+
+.border-right {
+	border-right: 1px solid $dark;
+}
+
+.border-bottom {
+	border-bottom: 1px solid $dark;
+}
+
+.border-left {
+	border-left: 1px solid $dark;
 }
 
 .no-border {
