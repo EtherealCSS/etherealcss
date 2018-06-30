@@ -12,6 +12,8 @@ nav.nav {
 	}
 
 	@each $colorName, $color, $color-light, $color-text in $colors {
+
+		/* Default color */
 		&.nav-#{$colorName} {
 			border-color: $color;
 			background-color: $color;
@@ -22,6 +24,26 @@ nav.nav {
 
 				&.active {
 					background-color: darken($color, 10%);
+				}
+			}
+
+			.nav-brand:hover,
+			ul li:hover {
+				color: lighten($color-text, 20%);
+			}
+		}
+
+		/* Light color */
+		&.nav-#{$colorName}-light {
+			border-color: $color-light;
+			background-color: $color-light;
+			color: $color-text;
+
+			ul li {
+				color: darken($color-text, 10%);
+
+				&.active {
+					background-color: darken($color-light, 10%);
 				}
 			}
 
