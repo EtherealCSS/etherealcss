@@ -1,11 +1,11 @@
-nav {
+nav.nav {
 	position: relative;
-	display: flex;
 	align-items: center;
 	padding: .5rem .85rem;
 	background-color: $main-background;
 	line-height: 1;
 	z-index: 100;
+	@include display-flex;
 	@include resp(small) {
 		/* Mobile */
 		display: block;
@@ -38,27 +38,29 @@ nav {
 		/* Split brand and nav in container */
 	}
 
-	/* Pin to top, use fixed */
+	/* Pin to window top with fixed */
 	&.fixed {
 		position: fixed;
 		top: 0;
 		right: 0;
 		left: 0;
+		z-index: 101;
 	}
 
-	/* Pin to top, use absolute */
+	/* Pin to window top with fixed */
 	&.absolute {
 		position: absolute;
 		top: 0;
 		right: 0;
 		left: 0;
+		z-index: 101;
 	}
 
 	/* Fix display in container mode */
 	> .container {
+		width: 100%;
 		@include resp(null, $small-screen + 1px) {
-			display: flex;
-			justify-content: space-between;
+			@include display-flex;
 		}
 
 		.nav-toggler {
@@ -99,7 +101,7 @@ nav {
 		background-color: $main-background;
 		@include transition;
 		@include resp(small) {
-			display: flex;
+			@include display-flex;
 			align-items: center;
 			justify-content: center;
 		}
