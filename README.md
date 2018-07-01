@@ -60,6 +60,7 @@ import 'etherealcss'
 - [x] Buttons
 - [x] Cards
 - [x] Collapsibles
+- [x] Dropdowns
 - [x] Forms
 - [x] Modals
 - [x] Navbars
