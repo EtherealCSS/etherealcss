@@ -689,12 +689,14 @@
     <div class="row">
       <div class="col lg-6 md-6 sm-12">
         <h5>Textarea default</h5>
+        <pre data-type="html"><code class="html"><textarea rows="3"></textarea></code></pre>
         <div class="form-group">
           <textarea rows="3"></textarea>
         </div>
       </div>
       <div class="col lg-6 md-6 sm-12">
         <h5>Textarea noresize</h5>
+        <pre data-type="html"><code class="html"><textarea class="no-resize" rows="3"></textarea></code></pre>
         <div class="form-group">
           <textarea class="no-resize" rows="3"></textarea>
         </div>
@@ -703,11 +705,19 @@
     <div class="row">
       <div class="col lg-6 md-6 sm-12">
         <h5>File default</h5>
+        <pre data-type="html"><code class="html"><div class="form-group">
+  <label for="InputFile">File browser</label>
+  <input type="file" id="InputFile">
+</div></code></pre>
         <div class="form-group">
           <label for="InputFile">File browser</label>
           <input type="file" id="InputFile">
         </div>
         <h5>File, data-prefix (chrome)</h5>
+        <pre data-type="html"><code class="html"><div class="form-group">
+  <label for="InputFilePrefix">File browser</label>
+  <input type="file" id="InputFilePrefix" data-prefix="Choose file">
+</div></code></pre>
         <div class="form-group">
           <label for="InputFilePrefix">File browser</label>
           <input type="file" id="InputFilePrefix" data-prefix="Choose file">
@@ -720,6 +730,15 @@
       </div>
       <div class="col lg-6 md-6 sm-12">
         <h5>Select</h5>
+        <pre data-type="html"><code class="html"><div class="form-group">
+  <label>Preference</label>
+  <select>
+    <option>Choose...</option>
+    <option>Angular</option>
+    <option>React</option>
+    <option>Vue</option>
+  </select>
+</div></code></pre>
         <div class="form-group">
           <label>Preference</label>
           <select>
@@ -730,6 +749,9 @@
           </select>
         </div>
         <h5>Select, disabled</h5>
+        <pre data-type="html"><code class="html"><select class="disabled" disabled>
+  <!-- --- -->
+</select></code></pre>
         <div class="form-group">
           <label>Preference</label>
           <select class="disabled" disabled>
@@ -740,6 +762,17 @@
           </select>
         </div>
         <h5>Select, inline</h5>
+        <pre data-type="html"><code class="html"><div class="form-group row">
+  <label class="col lg-3 md-3 sm-12">Preference</label>
+  <div class="col lg-9 md-3 sm-12">
+    <select>
+      <option>Choose...</option>
+      <option>Angular</option>
+      <option>React</option>
+      <option>Vue</option>
+    </select>
+  </div>
+</div></code></pre>
         <div class="form-group row">
           <label class="col lg-3 md-3 sm-12">Preference</label>
           <div class="col lg-9 md-3 sm-12">
@@ -756,7 +789,24 @@
     <hr>
     <h4>Modals</h4>
     <div class="row">
-      <div class="col lg-12">
+      <pre data-type="html"><code class="html"><label class="btn btn-primary mr" for="ModalBasic">Basic</label>
+<input class="modal-state" id="ModalBasic" type="checkbox">
+
+<div class="modal">
+  <div class="modal-body">
+    <label class="modal-close" for="ModalBasic">×</label>
+    <h4 class="modal-title">Modal Title</h4>
+    <div class="modal-text">
+      <p>Modal Body</p>
+    </div>
+    <div class="float-right">
+      <label class="btn" for="ModalBasic">Close</label>
+      <label class="btn btn-primary" for="ModalBasic">Save</label>
+    </div>
+  </div>
+</div>
+</code></pre>
+<div class="col lg-12">
         <label class="btn btn-primary mr" for="ModalBasic">Basic</label>
         <label class="btn btn-primary" for="ModalForm">Form</label>
         <label class="btn btn-primary" for="ModalCloseBG">Close by background</label>
@@ -778,7 +828,6 @@
           </div>
         </div>
       </div>
-
       <input class="modal-state" id="ModalForm" type="checkbox">
       <div class="modal">
         <div class="modal-body">
