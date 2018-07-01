@@ -23,6 +23,8 @@
 			}
 
 			+ label + .tab-content {
+				max-height: 85%;
+				overflow-y: scroll;
 				opacity: 1;
 				z-index: initial;
 				@include transition;
@@ -60,6 +62,7 @@
 		position: absolute;
 		top: 2.4rem;
 		left: 0;
+		margin-top: .5rem;
 		width: inherit;
 		opacity: 0;
 		z-index: -1;

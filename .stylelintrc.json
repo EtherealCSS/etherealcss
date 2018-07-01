@@ -7,6 +7,7 @@
     "indentation": "tab",
     "max-nesting-depth": 5,
     "number-leading-zero": null,
+    "no-missing-end-of-source-newline": null,
     "order/properties-alphabetical-order": null,
     "order/order": null,
     "property-no-vendor-prefix": null,
