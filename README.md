@@ -4,6 +4,8 @@
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://github.com/GitbookIO/gitbook-cli)
 [![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)](https://forthebadge.com)
 
+![img](https://raw.githubusercontent.com/EtherealCSS/etherealcss/master/logo/logo.png)
+
 An Elegant, Lightweight CSS Framework without JavaScript.
 
 ## [**Demo**](http://etherealcss.github.io/etherealcss/)
