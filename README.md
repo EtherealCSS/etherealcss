@@ -19,14 +19,16 @@ This library support in the following browsers:
 | 43+ ✔ | 38+ ✔ | Nope ✘ |  13 ✔ | 32+ ✔ | 8+ ✔ |
 
 
+
 Testing on [BrowseEmAll](https://www.browseemall.com/).
 
 For more information, check on [Can I Use](http://caniuse.com/#feat=css-filters).
 
 ## Example
 
-- [CMS](http://etherealcss.github.io/etherealcss/example/cms)
-- [Register](http://etherealcss.github.io/etherealcss/example/register)
+You can find more example here:
+
+[ethereal-example](https://github.com/EtherealCSS/ethereal-example)
 
 ## Usage
 
@@ -129,7 +131,7 @@ npm run build
 
 This repository is open source and contributions are very welcomed. It is also as beginner friendly as possible.
 
-Please before sending a PR, make sure you are properly running `yarn lint`.
+Please before sending a PR, make sure you are properly running `npm run lint`.
 
 ### Stylelint
 
