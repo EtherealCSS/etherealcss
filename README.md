@@ -1,7 +1,7 @@
 # Etherealcss
 
-[![forthebadge](https://forthebadge.com/images/badges/makes-people-smile.svg)](https://github.com/EtherealCSS/etherealcss)
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://github.com/GitbookIO/gitbook-cli)
+[![forthebadge](https://forthebadge.com/images/badges/makes-people-smile.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)](https://forthebadge.com)
 
 ![img](https://raw.githubusercontent.com/EtherealCSS/etherealcss/master/logo/logo.png)
@@ -24,9 +24,9 @@ Testing on [BrowseEmAll](https://www.browseemall.com/).
 
 For more information, check on [Can I Use](http://caniuse.com/#feat=css-filters).
 
-## Example
+## Examples
 
-You can find more example here:
+You can find more examples here:
 
 [ethereal-example](https://github.com/EtherealCSS/ethereal-example)
 
