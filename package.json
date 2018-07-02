@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/explooosion/etherealcss.git"
+    "url": "git+https://github.com/EtherealCSS/etherealcss.git"
   },
   "author": "Robby <ta7382@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/explooosion/etherealcss/issues"
+    "url": "https://github.com/EtherealCSS/etherealcss/issues"
   },
-  "homepage": "https://github.com/explooosion/etherealcss#readme",
+  "homepage": "https://github.com/EtherealCSS/etherealcss#readme",
   "dependencies": {
     "gulp": "3.9.1",
     "gulp-clean-css": "3.9.4",

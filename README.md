@@ -1,12 +1,12 @@
 # Etherealcss
 
-[![forthebadge](https://forthebadge.com/images/badges/makes-people-smile.svg)](https://github.com/explooosion/etherealcss)
+[![forthebadge](https://forthebadge.com/images/badges/makes-people-smile.svg)](https://github.com/EtherealCSS/etherealcss)
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://github.com/GitbookIO/gitbook-cli)
 [![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)](https://forthebadge.com)
 
 An Elegant, Lightweight CSS Framework without JavaScript.
 
-## [**Demo**](http://robby570.tw/etherealcss/)
+## [**Demo**](http://etherealcss.github.io/etherealcss/)
 
 ## Browser Support
 
@@ -23,8 +23,8 @@ For more information, check on [Can I Use](http://caniuse.com/#feat=css-filters)
 
 ## Example
 
-- [CMS](http://robby570.tw/etherealcss/example/cms)
-- [Register](http://robby570.tw/etherealcss/example/register)
+- [CMS](http://etherealcss.github.io/etherealcss/example/cms)
+- [Register](http://etherealcss.github.io/etherealcss/example/register)
 
 ## Usage
 
@@ -96,7 +96,7 @@ You can customize EtherealCSS lightly.
 ### Clone
 
 ```bash
-git clone https://github.com/explooosion/etherealcss.git
+git clone https://github.com/EtherealCSS/etherealcss.git
 ```
 
 ```bash
