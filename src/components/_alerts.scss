@@ -7,11 +7,36 @@
 	border: 1px solid lighten($muted, 10%);
 	border-radius: .15rem;
 
+	.alert-close {
+		text-decoration: none;
+		float: right;
+		color: $dark;
+		font-size: 1.5rem;
+		font-weight: bold;
+		line-height: 1;
+		outline: none;
+		opacity: .4;
+		@include transition;
+
+		&:hover {
+			color: $dark;
+			opacity: .8;
+		}
+	}
+
 	@each $colorName, $color, $color-light, $color-text in $colors {
 		&.alert-#{$colorName} {
 			color: $color-text;
 			background-color: lighten($color, 10%);
 			border-color: $color;
+
+			.alert-close {
+				color: $color-text;
+
+				&:hover {
+					color: $color-text;
+				}
+			}
 		}
 	}
 }
