@@ -1726,45 +1726,112 @@ table.table-border tbody tr td:last-child {
   border: 1px solid #c0c7be;
   border-radius: .15rem
 }
+.alert .alert-close {
+  text-decoration: none;
+  float: right;
+  color: #2f3944;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+  outline: 0;
+  opacity: .4;
+  -webkit-transition: all 183ms ease-in-out 0s;
+  -ms-transition: all 183ms ease-in-out 0s;
+  -moz-transition: all 183ms ease-in-out 0s;
+  -o-transition: all 183ms ease-in-out 0s;
+  transition: all 183ms ease-in-out 0s
+}
+.alert .alert-close:hover {
+  color: #2f3944;
+  opacity: .8
+}
 .alert.alert-dark {
   color: #fff;
   background-color: #445262;
   border-color: #2f3944
+}
+.alert.alert-dark .alert-close {
+  color: #fff
+}
+.alert.alert-dark .alert-close:hover {
+  color: #fff
 }
 .alert.alert-primary {
   color: #fff;
   background-color: #5c80ba;
   border-color: #44679f
 }
+.alert.alert-primary .alert-close {
+  color: #fff
+}
+.alert.alert-primary .alert-close:hover {
+  color: #fff
+}
 .alert.alert-success {
   color: #fff;
   background-color: #8ec3ac;
   border-color: #6db193
+}
+.alert.alert-success .alert-close {
+  color: #fff
+}
+.alert.alert-success .alert-close:hover {
+  color: #fff
 }
 .alert.alert-info {
   color: #fff;
   background-color: #98bbe2;
   border-color: #70a1d7
 }
+.alert.alert-info .alert-close {
+  color: #fff
+}
+.alert.alert-info .alert-close:hover {
+  color: #fff
+}
 .alert.alert-joy {
   color: #fff;
   background-color: #ffb8a4;
   border-color: #ff9071
+}
+.alert.alert-joy .alert-close {
+  color: #fff
+}
+.alert.alert-joy .alert-close:hover {
+  color: #fff
 }
 .alert.alert-warning {
   color: rgba(0,0,0,.7);
   background-color: #f6efbb;
   border-color: #f0e48e
 }
+.alert.alert-warning .alert-close {
+  color: rgba(0,0,0,.7)
+}
+.alert.alert-warning .alert-close:hover {
+  color: rgba(0,0,0,.7)
+}
 .alert.alert-danger {
   color: #fff;
   background-color: #e28282;
   border-color: #d95858
 }
+.alert.alert-danger .alert-close {
+  color: #fff
+}
+.alert.alert-danger .alert-close:hover {
+  color: #fff
+}
 .alert.alert-muted {
   color: rgba(0,0,0,.7);
   background-color: #c0c7be;
   border-color: #a5afa3
+}
+.alert.alert-muted .alert-close {
+  color: rgba(0,0,0,.7)
+}
+.alert.alert-muted .alert-close:hover {
+  color: rgba(0,0,0,.7)
 }
 .badge {
   display: inline-block;
@@ -2383,7 +2450,8 @@ textarea.btn[disabled] {
   overflow: hidden;
   margin: .5rem 0;
   height: 0;
-  border-top: 1px solid #f0f1ef
+  border-top: 1px solid #f0f1ef;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,"Microsoft JhengHei UI","Microsoft JhengHei"
 }
 .dropdown > .dropdown-menu .dropdown-item {
   display: block;

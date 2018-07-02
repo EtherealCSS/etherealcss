@@ -4,9 +4,9 @@
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://github.com/GitbookIO/gitbook-cli)
 [![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)](https://forthebadge.com)
 
-An Elegant, Lightweight CSS Framework.
+An Elegant, Lightweight CSS Framework without JavaScript.
 
-👉 [Demo](http://robby570.tw/etherealcss/)
+## [**Demo**](http://robby570.tw/etherealcss/)
 
 ## Browser Support
 
@@ -34,10 +34,10 @@ Include the [CDN](https://unpkg.com) link, and you can check out the latest vers
 
 ```html
 <!-- Latest compiled CSS -->
-<link rel="stylesheet" href="https://unpkg.com/etherealcss@0.0.4/dist/ethereal.css">
+<link rel="stylesheet" href="https://unpkg.com/etherealcss@0.0.5/dist/ethereal.css">
 
 <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://unpkg.com/etherealcss@0.0.4/dist/ethereal.min.css">
+<link rel="stylesheet" href="https://unpkg.com/etherealcss@0.0.5/dist/ethereal.min.css">
 ```
 
 ### npm

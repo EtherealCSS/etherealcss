@@ -27,13 +27,13 @@
       <div class="nav-collapse">
         <ul>
           <li>
-            <a href="#">Home</a>
+            <a href="http://robby570.tw/etherealcss/" target="_blank">Home</a>
           </li>
           <li>
-            <a href="#">Docs</a>
+            <a href="https://github.com/explooosion/etherealcss" target="_blank">Docs</a>
           </li>
           <li>
-            <a href="#">Github</a>
+            <a href="https://github.com/explooosion/etherealcss" target="_blank">Github</a>
           </li>
         </ul>
       </div>
@@ -44,7 +44,6 @@
       <small>.css</small>
     </h1>
     <h5>An Elegant, Lightweight CSS Framework.</h5>
-    <h5>一個優雅的輕量級CSS框架。</h5>
     <nav class="d-inline-block mt-2">
       <a class="badge badge-primary" href="https://github.com/explooosion/etherealcss" target="_balnk">Github</a>
       <a class="badge badge-primary" href="https://github.com/explooosion/etherealcss" target="_balnk">Docs</a>
@@ -286,15 +285,15 @@
     <div class="row">
       <div class="col lg-12 md-12 sm-12">
         <pre data-type="html"><code class="html"><div class="alert alert-primary"></div></code></pre>
-        <div class="alert">This is a default alert—check it out!</div>
-        <div class="alert alert-primary">This is a primary alert—check it out!</div>
-        <div class="alert alert-success">This is a success alert—check it out!</div>
-        <div class="alert alert-info">This is a info alert—check it out!</div>
-        <div class="alert alert-danger">This is a danger alert—check it out!</div>
-        <div class="alert alert-warning">This is a warning alert—check it out!</div>
-        <div class="alert alert-dark">This is a dark alert—check it out!</div>
-        <div class="alert alert-joy">This is a joy alert—check it out!</div>
-        <div class="alert alert-muted">This is a muted alert—check it out!</div>
+        <div class="alert">This is a default alert—check it out!<a class="alert-close" href="#">×</a></div>
+        <div class="alert alert-primary">This is a primary alert—check it out!<a class="alert-close" href="#">×</a></div>
+        <div class="alert alert-success">This is a success alert—check it out!<a class="alert-close" href="#">×</a></div>
+        <div class="alert alert-info">This is a info alert—check it out!<a class="alert-close" href="#">×</a></div>
+        <div class="alert alert-danger">This is a danger alert—check it out!<a class="alert-close" href="#">×</a></div>
+        <div class="alert alert-warning">This is a warning alert—check it out!<a class="alert-close" href="#">×</a></div>
+        <div class="alert alert-dark">This is a dark alert—check it out!<a class="alert-close" href="#">×</a></div>
+        <div class="alert alert-joy">This is a joy alert—check it out!<a class="alert-close" href="#">×</a></div>
+        <div class="alert alert-muted">This is a muted alert—check it out!<a class="alert-close" href="#">×</a></div>
       </div>
     </div>
     <hr>
@@ -750,7 +749,7 @@
         </div>
         <h5>Select, disabled</h5>
         <pre data-type="html"><code class="html"><select class="disabled" disabled>
-  <!-- --- -->
+  <!-- ... -->
 </select></code></pre>
         <div class="form-group">
           <label>Preference</label>
@@ -886,6 +885,30 @@
       <div class="col lg-12 md-12 sm-12">
         <!-- Fixd Example -->
         <h5>Default</h5>
+        <pre data-type="html"><code class="html"><nav class="nav">
+  <div class="nav-brand">
+    <h5>
+      <a href="#">Ethereal</a>
+    </h5>
+  </div>
+  <input id="toggler" type="checkbox">
+  <label class="nav-toggler" for="toggler">
+    <div class="bar"></div>
+  </label>
+  <div class="nav-collapse">
+    <ul>
+      <li>
+        <a href="#">Home</a>
+      </li>
+      <li>
+        <a href="#">Docs</a>
+      </li>
+      <li>
+        <a href="#">Github</a>
+      </li>
+    </ul>
+  </div>
+</nav></code></pre>
         <nav class="nav">
           <div class="nav-brand">
             <h5>
@@ -911,6 +934,11 @@
           </div>
         </nav>
         <h5>Color schemes</h5>
+        <pre data-type="html"><code class="html"><nav class="nav nav-primary"></nav>
+<nav class="nav nav-dark"></nav>
+<nav class="nav nav-info"></nav>
+<!-- ... -->
+</code></pre>
         <nav class="nav nav-primary">
           <div class="nav-brand">
             <h5>
@@ -1032,6 +1060,9 @@
           </div>
         </nav>
         <h5>Active</h5>
+        <pre data-type="html"><code class="html"><li class="active">
+  <a href="#">Home</a>
+</li></code></pre>
         <nav class="nav nav-primary">
           <div class="nav-brand">
             <h5>
@@ -1057,6 +1088,7 @@
           </div>
         </nav>
         <h5>Split</h5>
+        <pre data-type="html"><code class="html"><nav class="nav split-nav"></nav></code></pre>
         <nav class="nav nav-primary split-nav">
           <div class="nav-brand">
             <h5>
@@ -1082,6 +1114,11 @@
           </div>
         </nav>
         <h5>Logo</h5>
+        <pre data-type="html"><code class="html"><div class="nav-brand">
+  <a href="#">
+    <img class="no-border" src="http://robby570.tw/img/avatar.png" height="40" width="40">
+  </a>
+</div></code></pre>
         <nav class="nav nav-primary">
           <div class="nav-brand">
             <a href="#">
@@ -1110,57 +1147,93 @@
     </div>
     <h4>Border</h4>
     <h5>Border color</h5>
+    <pre data-type="html"><code class="html"><img class="border" />
+<img class="border border-primary" />
+<!-- ... -->
+</code></pre>
     <div class="row flex-left">
-      <img class="mr-2 mb-2" src="http://octodex.github.com/images/cherryontop-o-cat.jpg" width="100" height="100">
-      <img class="border-primary mr-2 mb-2" src="https://octodex.github.com/images/riddlocat.png" width="100" height="100">
-      <img class="border-danger mr-2 mb-2" src="http://neuroplausible.com/img/posts/github.png" width="100" height="100">
-      <img class="border-success mr-2 mb-2" src="http://octodex.github.com/images/octobiwan.jpg" width="100" height="100">
-      <img class="border-info mr-2 mb-2" src="https://pbs.twimg.com/profile_images/519367942866104320/PB96rDH__400x400.png" width="100"
-        height="100">
-      <img class="border-warning mr-2 mb-2" src="https://octodex.github.com/images/octdrey-catburn.jpg" width="100" height="100">
-      <img class="border-muted mr-2 mb-2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWFo8-uFwQe9IQ67vlu6xHkBJUPf1CzOC4oBxUV4MDwQiWQTtJ"
+      <img class="border mr-2 mb-2" src="http://octodex.github.com/images/cherryontop-o-cat.jpg" width="100" height="100">
+      <img class="border border-primary mr-2 mb-2" src="https://octodex.github.com/images/riddlocat.png" width="100" height="100">
+      <img class="border border-danger mr-2 mb-2" src="http://neuroplausible.com/img/posts/github.png" width="100" height="100">
+      <img class="border border-success mr-2 mb-2" src="http://octodex.github.com/images/octobiwan.jpg" width="100" height="100">
+      <img class="border border-info mr-2 mb-2" src="https://pbs.twimg.com/profile_images/519367942866104320/PB96rDH__400x400.png"
         width="100" height="100">
-      <img class="border-joy mr-2 mb-2" src="https://octodex.github.com/images/heisencat.png" width="100" height="100">
+      <img class="border border-warning mr-2 mb-2" src="https://octodex.github.com/images/octdrey-catburn.jpg" width="100" height="100">
+      <img class="border border-muted mr-2 mb-2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWFo8-uFwQe9IQ67vlu6xHkBJUPf1CzOC4oBxUV4MDwQiWQTtJ"
+        width="100" height="100">
+      <img class="border border-joy mr-2 mb-2" src="https://octodex.github.com/images/heisencat.png" width="100" height="100">
     </div>
     <h5>Border width</h5>
+    <pre data-type="html"><code class="html"><img class="border border-1" />
+<img class="border border-2" />
+<!-- ... -->
+<img class="border border-6" />
+</code></pre>
     <div class="row flex-left">
-      <img class="border-1 border-primary mr-2 mb-2" src="https://octodex.github.com/images/minion.png" width="100" height="100">
-      <img class="border-2 border-primary mr-2 mb-2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQWg8AQMwwY0YZ17BKglcpjyvTfcYQLzzPa9TDPA58PXGJtmnO"
+      <img class="border border-1 border-primary mr-2 mb-2" src="https://octodex.github.com/images/minion.png" width="100" height="100">
+      <img class="border border-2 border-primary mr-2 mb-2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQWg8AQMwwY0YZ17BKglcpjyvTfcYQLzzPa9TDPA58PXGJtmnO"
         width="100" height="100">
-      <img class="border-3 border-primary mr-2 mb-2" src="https://octodex.github.com/images/scarletteocat.jpg" width="100" height="100">
-      <img class="border-4 border-primary mr-2 mb-2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhF6MSPUg8oywFNRVcdhDTD-03zYl1ffTWYjB0ffGdTt7rTd3v"
+      <img class="border border-3 border-primary mr-2 mb-2" src="https://octodex.github.com/images/scarletteocat.jpg" width="100"
+        height="100">
+      <img class="border border-4 border-primary mr-2 mb-2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhF6MSPUg8oywFNRVcdhDTD-03zYl1ffTWYjB0ffGdTt7rTd3v"
         width="100" height="100">
-      <img class="border-5 border-primary mr-2 mb-2" src="http://octodex.github.com/images/trekkie.jpg" width="100" height="100">
-      <img class="border-6 border-primary mr-2 mb-2" src="https://octodex.github.com/images/mountietocat.png" width="100" height="100">
+      <img class="border border-5 border-primary mr-2 mb-2" src="http://octodex.github.com/images/trekkie.jpg" width="100" height="100">
+      <img class="border border-6 border-primary mr-2 mb-2" src="https://octodex.github.com/images/mountietocat.png" width="100"
+        height="100">
     </div>
     <h5>Border style</h5>
+    <pre data-type="html"><code class="html"><img class="border" />
+<img class="border-dotted" />
+<img class="border-dashed" />
+<!-- ... -->
+</code></pre>
     <div class="row flex-left">
-      <img class="border-dashed border-primary mr-2 mb-2" src="https://octodex.github.com/images/jean-luc-picat.jpg" width="100"
-        height="100">
+      <img class="border border-primary mr-2 mb-2" src="https://octodex.github.com/images/gracehoppertocat.jpg" width="100" height="100">
       <img class="border-dotted border-primary mr-2 mb-2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJQSfJJQa7znrS4ttuYVBLU8zmy0aEIvniXg_SUQGBAeMg-Fiy"
         width="100" height="100">
+      <img class="border-dashed border-primary mr-2 mb-2" src="https://octodex.github.com/images/jean-luc-picat.jpg" width="100"
+        height="100">
       <img class="border-double border-5 border-primary mr-2 mb-2" src="https://octodex.github.com/images/oktobercat.png" width="100"
         height="100">
       <img class="no-border border-primary mr-2 mb-2" src="https://octodex.github.com/images/twenty-percent-cooler-octocat.png"
         width="100" height="100">
     </div>
     <h5>Border radius</h5>
+    <pre data-type="html"><code class="html"><img class="border border-radius-1" />
+<img class="border border-radius-2" />
+<!-- ... -->
+<img class="border border-radius-6" />
+
+<img class="border circle" />
+</code></pre>
     <div class="row flex-left">
-      <img class="border-radius-1 border-primary mr-2 mb-2" src="https://octodex.github.com/images/megacat-2.png" width="100" height="100">
-      <img class="border-radius-2 border-primary mr-2 mb-2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR8aOHoh6FbCo5jUioUZMK94LvH-iBKH0Ly-9yCmhU1nuCOOwkJw"
-        width="100" height="100">
-      <img class="border-radius-3 border-primary mr-2 mb-2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZWsRwA-pnKM34tIDvSXYLmszn8cSVfJkDP5N8AyWeAZonT1bY"
-        width="100" height="100">
-      <img class="border-radius-4 border-primary mr-2 mb-2" src="https://octodex.github.com/images/bouncercat.png" width="100"
+      <img class="border border-radius-1 border-primary mr-2 mb-2" src="https://octodex.github.com/images/megacat-2.png" width="100"
         height="100">
-      <img class="border-radius-5 border-primary mr-2 mb-2" src="https://i.pinimg.com/736x/c9/9b/2b/c99b2b43cc115138fd13d87e847eed6e--programming.jpg"
+      <img class="border border-radius-2 border-primary mr-2 mb-2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR8aOHoh6FbCo5jUioUZMK94LvH-iBKH0Ly-9yCmhU1nuCOOwkJw"
         width="100" height="100">
-      <img class="border-radius-6 border-primary mr-2 mb-2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIwfb3gIPxR7qdNdAXnRjS6FPOaWTsBFI9USDEVgCU1KoqvZMm"
+      <img class="border border-radius-3 border-primary mr-2 mb-2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZWsRwA-pnKM34tIDvSXYLmszn8cSVfJkDP5N8AyWeAZonT1bY"
         width="100" height="100">
-      <img class="circle border-primary mr-2 mb-2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzlSIANeaHelrxhj0gtA9mVENQ2qj_4ezrBlf43dRrKMT2JnFH"
+      <img class="border border-radius-4 border-primary mr-2 mb-2" src="https://octodex.github.com/images/bouncercat.png" width="100"
+        height="100">
+      <img class="border border-radius-5 border-primary mr-2 mb-2" src="https://i.pinimg.com/736x/c9/9b/2b/c99b2b43cc115138fd13d87e847eed6e--programming.jpg"
+        width="100" height="100">
+      <img class="border border-radius-6 border-primary mr-2 mb-2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIwfb3gIPxR7qdNdAXnRjS6FPOaWTsBFI9USDEVgCU1KoqvZMm"
+        width="100" height="100">
+      <img class="border circle border-primary mr-2 mb-2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzlSIANeaHelrxhj0gtA9mVENQ2qj_4ezrBlf43dRrKMT2JnFH"
         width="100" height="100">
     </div>
     <h4>Dropdowns</h4>
+    <pre data-type="html"><code class="html"><div class="dropdown">
+  <button class="btn btn-primary dropdown-toggle" type="button">Dropdown</button>
+  <div class="dropdown-menu">
+    <h5 class="dropdown-header">Dropdown header</h5>
+    <a class="dropdown-item" href="javascript: alert('Item1');">Item1</a>
+    <a class="dropdown-item" href="javascript: alert('Item2');">Item2</a>
+    <div class="dropdown-driver"></div>
+    <a class="dropdown-item" href="javascript: alert('Item3');">Item3</a>
+  </div>
+</div>
+</code></pre>
     <div class="row flex-left">
       <div class="dropdown mr-1 mb-1">
         <button class="btn btn-primary dropdown-toggle" type="button">Dropdown</button>
@@ -1198,6 +1271,24 @@
       </div>
     </div>
     <h4>Tabs</h4>
+    <pre data-type="html"><code class="html"><div class="tabs" style="height: 200px;">
+  <input id="tab1" type="radio" name="tabs" checked="checked">
+  <label for="tab1">Tab 1</label>
+  <div class="tab-content">
+    <p>...</p>
+  </div>
+  <input id="tab2" type="radio" name="tabs">
+  <label for="tab2">Tab 2</label>
+  <div class="tab-content">
+    <p>...</p>
+  </div>
+  <input id="tab3" type="radio" name="tabs">
+  <label for="tab3">Tab 3</label>
+  <div class="tab-content">
+    <p>...</p>
+  </div>
+</div>
+</code></pre>
     <div class="row">
       <div class="tabs" style="height: 200px;">
         <input id="tab1" type="radio" name="tabs" checked>
