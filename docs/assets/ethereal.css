@@ -2443,6 +2443,7 @@ textarea.btn[disabled] {
   padding: .5rem 1.5rem;
   margin-bottom: 0;
   font-size: .875rem;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,"Microsoft JhengHei UI","Microsoft JhengHei";
   color: #a5afa3;
   white-space: nowrap
 }
@@ -2450,8 +2451,7 @@ textarea.btn[disabled] {
   overflow: hidden;
   margin: .5rem 0;
   height: 0;
-  border-top: 1px solid #f0f1ef;
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,"Microsoft JhengHei UI","Microsoft JhengHei"
+  border-top: 1px solid #f0f1ef
 }
 .dropdown > .dropdown-menu .dropdown-item {
   display: block;
