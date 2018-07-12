@@ -1,6 +1,6 @@
 {
   "name": "etherealcss",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Ethereal.css - An Elegant, Lightweight CSS Framework",
   "main": "dist/ethereal.min.css",
   "scripts": {
