@@ -508,6 +508,35 @@ html {
 .font-size-6 {
   font-size: 6rem!important
 }
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  margin: .5rem auto!important;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,"Microsoft YaHei UI","Microsoft Yahei",sans-serif!important;
+  font-weight: 500!important;
+  line-height: 1.2!important
+}
+.h1 {
+  font-size: 2.5rem!important
+}
+.h2 {
+  font-size: 2rem!important
+}
+.h3 {
+  font-size: 1.75rem!important
+}
+.h4 {
+  font-size: 1.5rem!important
+}
+.h5 {
+  font-size: 1.25rem!important
+}
+.h6 {
+  font-size: 1rem!important
+}
 .relative {
   position: relative!important
 }
@@ -1526,12 +1555,6 @@ thead,
 tr {
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,"Microsoft YaHei UI","Microsoft Yahei",sans-serif
 }
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6,
 h1,
 h2,
 h3,
@@ -1543,27 +1566,21 @@ h6 {
   font-weight: 500;
   line-height: 1.2
 }
-.h1,
 h1 {
   font-size: 2.5rem
 }
-.h2,
 h2 {
   font-size: 2rem
 }
-.h3,
 h3 {
   font-size: 1.75rem
 }
-.h4,
 h4 {
   font-size: 1.5rem
 }
-.h5,
 h5 {
   font-size: 1.25rem
 }
-.h6,
 h6 {
   font-size: 1rem
 }
