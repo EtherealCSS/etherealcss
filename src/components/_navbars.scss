@@ -82,6 +82,7 @@ nav.nav {
 
 	&.fixed-left,
 	&.fixed-right {
+		display: initial;
 		position: fixed;
 		align-items: flex-start;
 		top: 0;
@@ -91,15 +92,9 @@ nav.nav {
 		border-right: 1px;
 		z-index: 101;
 		@include resp(small) {
+			display: block;
 			width: 100%;
 			height: initial;
-		}
-
-		.container {
-			display: initial;
-			@include resp(small) {
-				display: block;
-			}
 		}
 
 		.nav-brand {
@@ -112,6 +107,10 @@ nav.nav {
 
 		.nav-collapse {
 			margin-left: 0;
+
+			@include resp(small) {
+				overflow-y: scroll;
+			}
 
 			ul li {
 				display: block;

@@ -3088,6 +3088,7 @@ nav.nav.fixed-right {
 }
 nav.nav.fixed-left,
 nav.nav.fixed-right {
+  display: initial;
   position: fixed;
   align-items: flex-start;
   top: 0;
@@ -3100,18 +3101,9 @@ nav.nav.fixed-right {
 @media only screen and (max-width:768px) {
   nav.nav.fixed-left,
   nav.nav.fixed-right {
+    display: block;
     width: 100%;
     height: initial
-  }
-}
-nav.nav.fixed-left .container,
-nav.nav.fixed-right .container {
-  display: initial
-}
-@media only screen and (max-width:768px) {
-  nav.nav.fixed-left .container,
-  nav.nav.fixed-right .container {
-    display: block
   }
 }
 nav.nav.fixed-left .nav-brand,
@@ -3125,6 +3117,12 @@ nav.nav.fixed-right .nav-toggler {
 nav.nav.fixed-left .nav-collapse,
 nav.nav.fixed-right .nav-collapse {
   margin-left: 0
+}
+@media only screen and (max-width:768px) {
+  nav.nav.fixed-left .nav-collapse,
+  nav.nav.fixed-right .nav-collapse {
+    overflow-y: scroll
+  }
 }
 nav.nav.fixed-left .nav-collapse ul li,
 nav.nav.fixed-right .nav-collapse ul li {
