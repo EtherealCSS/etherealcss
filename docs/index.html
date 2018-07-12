@@ -13,6 +13,8 @@
 </head>
 
 <body>
+
+  <!-- Fixed -->
   <nav class="nav nav-primary fixed split-nav">
     <div class="container">
       <div class="nav-brand">
@@ -39,6 +41,48 @@
       </div>
     </div>
   </nav>
+
+  <!-- Fixed-left -->
+  <!-- <nav class="nav nav-primary fixed-left split-nav">
+    <div class="container">
+      <div class="nav-brand">
+        <h4>
+          <a href="#">Ethereal</a>
+        </h4>
+      </div>
+      <input id="togglerFixed" type="checkbox">
+      <label class="nav-toggler" for="togglerFixed">
+        <div class="bar"></div>
+      </label>
+      <div class="nav-collapse">
+        <ul>
+          <li class="active">
+            <a href="http://etherealcss.github.io/etherealcss/" target="_blank">Home</a>
+          </li>
+          <li>
+            <a href="https://github.com/EtherealCSS/etherealcss" target="_blank">Docs</a>
+          </li>
+          <li>
+            <a href="https://github.com/EtherealCSS/etherealcss" target="_blank">Github</a>
+          </li>
+          <li>Components
+            <ul>
+              <li >
+                <a href="https://github.com/EtherealCSS/etherealcss" target="_blank">Colors</a>
+              </li>
+              <li>
+                <a href="https://github.com/EtherealCSS/etherealcss" target="_blank">Buttons</a>
+              </li>
+              <li>
+                <a href="https://github.com/EtherealCSS/etherealcss" target="_blank">Tables</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav> -->
+
   <div class="container">
     <h1 class="title">Ethereal
       <small>.css</small>
@@ -285,15 +329,33 @@
     <div class="row">
       <div class="col lg-12 md-12 sm-12">
         <pre data-type="html"><code class="html"><div class="alert alert-primary"></div></code></pre>
-        <div class="alert">This is a default alert—check it out!<a class="alert-close" href="#">×</a></div>
-        <div class="alert alert-primary">This is a primary alert—check it out!<a class="alert-close" href="#">×</a></div>
-        <div class="alert alert-success">This is a success alert—check it out!<a class="alert-close" href="#">×</a></div>
-        <div class="alert alert-info">This is a info alert—check it out!<a class="alert-close" href="#">×</a></div>
-        <div class="alert alert-danger">This is a danger alert—check it out!<a class="alert-close" href="#">×</a></div>
-        <div class="alert alert-warning">This is a warning alert—check it out!<a class="alert-close" href="#">×</a></div>
-        <div class="alert alert-dark">This is a dark alert—check it out!<a class="alert-close" href="#">×</a></div>
-        <div class="alert alert-joy">This is a joy alert—check it out!<a class="alert-close" href="#">×</a></div>
-        <div class="alert alert-muted">This is a muted alert—check it out!<a class="alert-close" href="#">×</a></div>
+        <div class="alert">This is a default alert—check it out!
+          <a class="alert-close" href="#">×</a>
+        </div>
+        <div class="alert alert-primary">This is a primary alert—check it out!
+          <a class="alert-close" href="#">×</a>
+        </div>
+        <div class="alert alert-success">This is a success alert—check it out!
+          <a class="alert-close" href="#">×</a>
+        </div>
+        <div class="alert alert-info">This is a info alert—check it out!
+          <a class="alert-close" href="#">×</a>
+        </div>
+        <div class="alert alert-danger">This is a danger alert—check it out!
+          <a class="alert-close" href="#">×</a>
+        </div>
+        <div class="alert alert-warning">This is a warning alert—check it out!
+          <a class="alert-close" href="#">×</a>
+        </div>
+        <div class="alert alert-dark">This is a dark alert—check it out!
+          <a class="alert-close" href="#">×</a>
+        </div>
+        <div class="alert alert-joy">This is a joy alert—check it out!
+          <a class="alert-close" href="#">×</a>
+        </div>
+        <div class="alert alert-muted">This is a muted alert—check it out!
+          <a class="alert-close" href="#">×</a>
+        </div>
       </div>
     </div>
     <hr>
@@ -933,6 +995,11 @@
             </ul>
           </div>
         </nav>
+        <h5>Position</h5>
+        <pre data-type="html"><code class="html"><nav class="nav absolute"></nav>
+<nav class="nav fixed"></nav>
+<nav class="nav fixed-left"></nav>
+<nav class="nav fixed-right"></nav></code></pre>
         <h5>Color schemes</h5>
         <pre data-type="html"><code class="html"><nav class="nav nav-primary"></nav>
 <nav class="nav nav-dark"></nav>

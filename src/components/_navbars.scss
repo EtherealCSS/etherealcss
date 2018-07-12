@@ -72,6 +72,58 @@ nav.nav {
 		z-index: 101;
 	}
 
+	&.fixed-left {
+		left: 0;
+	}
+
+	&.fixed-right {
+		right: 0;
+	}
+
+	&.fixed-left,
+	&.fixed-right {
+		position: fixed;
+		align-items: flex-start;
+		top: 0;
+		padding: 0;
+		width: 14.5rem;
+		height: 100vh;
+		border-right: 1px;
+		z-index: 101;
+		@include resp(small) {
+			width: 100%;
+			height: initial;
+		}
+
+		.container {
+			display: initial;
+			@include resp(small) {
+				display: block;
+			}
+		}
+
+		.nav-brand {
+			padding: .5rem .85rem;
+		}
+
+		.nav-toggler {
+			top: .6rem !important;
+		}
+
+		.nav-collapse {
+			margin-left: 0;
+
+			ul li {
+				display: block;
+				padding: .5rem .85rem;
+
+				&.active {
+					background-color: darken($primary, 10%);
+				}
+			}
+		}
+	}
+
 	/* Pin to window top with fixed */
 	&.absolute {
 		position: absolute;
@@ -189,6 +241,7 @@ nav.nav {
 				padding: 0 .5rem;
 				list-style-type: none;
 				text-indent: 0;
+				font-size: 1.2rem;
 				@include resp(small) {
 					display: block;
 				}

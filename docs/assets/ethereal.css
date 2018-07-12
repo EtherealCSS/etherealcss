@@ -3080,6 +3080,61 @@ nav.nav.fixed {
   left: 0;
   z-index: 101
 }
+nav.nav.fixed-left {
+  left: 0
+}
+nav.nav.fixed-right {
+  right: 0
+}
+nav.nav.fixed-left,
+nav.nav.fixed-right {
+  position: fixed;
+  align-items: flex-start;
+  top: 0;
+  padding: 0;
+  width: 14.5rem;
+  height: 100vh;
+  border-right: 1px;
+  z-index: 101
+}
+@media only screen and (max-width:768px) {
+  nav.nav.fixed-left,
+  nav.nav.fixed-right {
+    width: 100%;
+    height: initial
+  }
+}
+nav.nav.fixed-left .container,
+nav.nav.fixed-right .container {
+  display: initial
+}
+@media only screen and (max-width:768px) {
+  nav.nav.fixed-left .container,
+  nav.nav.fixed-right .container {
+    display: block
+  }
+}
+nav.nav.fixed-left .nav-brand,
+nav.nav.fixed-right .nav-brand {
+  padding: .5rem .85rem
+}
+nav.nav.fixed-left .nav-toggler,
+nav.nav.fixed-right .nav-toggler {
+  top: .6rem!important
+}
+nav.nav.fixed-left .nav-collapse,
+nav.nav.fixed-right .nav-collapse {
+  margin-left: 0
+}
+nav.nav.fixed-left .nav-collapse ul li,
+nav.nav.fixed-right .nav-collapse ul li {
+  display: block;
+  padding: .5rem .85rem
+}
+nav.nav.fixed-left .nav-collapse ul li.active,
+nav.nav.fixed-right .nav-collapse ul li.active {
+  background-color: #35507b
+}
 nav.nav.absolute {
   position: absolute;
   top: 0;
@@ -3207,7 +3262,8 @@ nav.nav .nav-collapse ul li {
   display: inline-block;
   padding: 0 .5rem;
   list-style-type: none;
-  text-indent: 0
+  text-indent: 0;
+  font-size: 1.2rem
 }
 @media only screen and (max-width:768px) {
   nav.nav .nav-collapse ul li {
