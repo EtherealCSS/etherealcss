@@ -153,7 +153,7 @@ A: As you can see, ethereal is the feeling you feel 😶 .
 
 [dasha taran](https://www.instagram.com/taaarannn)
 
-![Image](https://i.imgur.com/Ukf71Fq.jpg)
+![Image](https://i.imgur.com/Gjej6ov.jpg)
 
 ## License
 
