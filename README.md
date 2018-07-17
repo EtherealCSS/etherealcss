@@ -151,7 +151,9 @@ Q: What is `Ethereal`?
 
 A: As you can see, ethereal is the feeling you feel 😶 .
 
-![Image](https://i.imgur.com/NgJhJbd.png)
+[dasha taran](https://www.instagram.com/taaarannn)
+
+![Image](https://i.imgur.com/Ukf71Fq.jpg)
 
 ## License
 
