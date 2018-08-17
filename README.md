@@ -104,7 +104,7 @@ git clone https://github.com/EtherealCSS/etherealcss.git
 ```
 
 ```bash
-git install
+npm install
 ```
 
 ### Run
@@ -144,16 +144,6 @@ Please install following extensions before running `stylelint` 😇.
 ```bash
 nmp run lint
 ```
-
-## About
-
-Q: What is `Ethereal`?
-
-A: As you can see, ethereal is the feeling you feel 😶 .
-
-[dasha taran](https://www.instagram.com/taaarannn)
-
-![Image](https://i.imgur.com/Gjej6ov.jpg)
 
 ## License
 
